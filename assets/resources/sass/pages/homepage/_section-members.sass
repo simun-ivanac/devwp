@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 >  ===============
+ *--------------------------------------------------------------*/
+
+.home-members__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.member-item
+    flex: 0 0 calc((100% - 60px) / 3)
+    max-width: calc((100% - 60px) / 3)
+    width: 100%
+    color: $text-color-light-strong
+    text-transform: uppercase
+    position: relative
+    overflow: hidden
+    display: inline-block
+    vertical-align: middle
+
+.member-item-image-holder
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    width: calc(100% - 70px)
+    border: 1px solid $border-color-light
+    border-radius: 3px
+    overflow: hidden
+    height: auto
+
+.member-item:hover
+    .member-item-image
+        transform: scale(1.1)
+    .member-item-image-overlay
+        background-color: transparent
+
+.member-item-image
+    transition: transform .3s ease
+    position: relative
+
+.member-item-image-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(#000000,0.1)
+
+.member-item-info
+    vertical-align: middle
+    z-index: 5
+    position: absolute
+    transform: rotate(90deg)
+    transform-origin: 0 top
+    display: block
+    top: 0
+    left: 100%
+    width: 92%
+    margin: 0
+    padding-top: 6px
+    cursor: default
+
+.member-item-type
+    margin: 10px 0 0 0
+    font-weight: 400
+    font-size: 13px
+    letter-spacing: 1.4px
+    word-wrap: break-word
+    color: $text-color-light-strong
+
+.member-item-name
+    margin: 5px 0 0
+    font-size: 20px
+    line-height: 20px
+    font-weight: 700
+    word-wrap: break-word
+    color: $text-color-light-strong
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1  ===============
+ *--------------------------------------------------------------*/

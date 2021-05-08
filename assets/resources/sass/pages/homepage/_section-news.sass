@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 >  ===============
+ *--------------------------------------------------------------*/
+
+.home-news__posts
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.post-item
+    flex: 0 0 calc((100% - 60px) / 3)
+    max-width: calc((100% - 60px) / 3)
+    width: 100%
+
+.post-item:hover
+    .caption-category,
+    .post-item-heading
+        margin-left: -2px
+
+.media-holder
+    text-align: center
+
+.attachment-wp-devwp-post
+    border-radius: 3px
+
+.post-item-caption
+    padding: 0 15px
+    margin-top: 6px
+    transition: padding 0.2s ease-in
+
+.caption-category
+    font-size: 16px
+    color: $link-text
+    transition: margin 0.1s ease-in
+
+.post-item-heading
+    font-family: $font-family-primary
+    color: $text-color-base
+    font-weight: 600
+    line-height: 22px
+    font-size: 19px
+    margin-top: 4px
+    transition: margin 0.2s ease-in
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1  ===============
+ *--------------------------------------------------------------*/

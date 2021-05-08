@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 >  ===============
+ *--------------------------------------------------------------*/
+
+.hero-image
+    background-attachment: fixed
+    background-color: $bg-color-hero-image
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 300px
+    padding-bottom: 0px
+    padding-top: 0px
+    position: relative
+    width: 100%
+    height: 100%
+
+.hero-image-overlay
+    background-color: $bg-color-hero-image
+    height: 100%
+    left: 0
+    overflow: hidden
+    position: absolute
+    top: 0
+    width: 100%
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1  ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #2 HERO-IMAGE--LARGE>  ===============
+ *--------------------------------------------------------------*/
+
+.hero-image--large
+    height: 100vh
+
+.hero-image-large
+    align-items: center
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 100%
+
+.site-title-link
+    text-align: center
+    display: inline-block
+
+.site-title-link-small
+    display: block
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#2 HERO-IMAGE--LARGE ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #3 HERO-IMAGE-SMALL>  ===============
+ *--------------------------------------------------------------*/
+
+.breadcrumbs
+    bottom: 5px
+    color: $text-color-light-medium
+    cursor: default
+    left: 15px
+    position: absolute
+    text-align: left
+    text-transform: capitalize
+    // span>a
+        border-bottom: 2px solid transparent
+        color: $text-color-light-strong
+        &:hover
+            border-bottom: 2px solid $link-text
+        &.breadcrumb-queried-object
+            text-transform: lowercase
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#3 HERO-IMAGE-SMALL ===============
+ *--------------------------------------------------------------*/
