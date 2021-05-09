@@ -53,28 +53,26 @@
     display: block
     margin-bottom: 30px
 
-.slick-prev,
-.slick-next
-    width: 50px
-    height: 40px
-    padding: 0 10px
-    color: $text-color-light-strong
-    background-color: transparent
-    position: relative
-    bottom: 0px
-    border: none
-    outline: none
-    cursor: pointer
-    &:hover
+.home-testimonials__slider
+    .slick-prev,
+    .slick-next
+        width: 50px
+        height: 40px
+        padding: 0 10px
         background-color: transparent
-    &.slick-prev
+        position: relative
+        bottom: 0px
+        border: none
+        >svg
+            stroke: $icon-fill
+        &:hover
+            background-color: transparent
+    .slick-prev
         left: 50%
         transform: translateX(calc(-50% - 30px))
-    &.slick-next
+    .slick-next
         left: 50%
         transform: translateX(calc(-50% - 30px))
-    >svg
-        stroke: $icon-fill
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 /*--------------------- <MEDIA-QUERIES ---------------------*/

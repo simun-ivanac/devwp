@@ -19,33 +19,33 @@
     justify-content: space-between
     flex-wrap: wrap
 
-.post-item
+.news-post
     flex: 0 0 calc((100% - 60px) / 3)
     max-width: calc((100% - 60px) / 3)
     width: 100%
 
-.post-item:hover
-    .caption-category,
-    .post-item-heading
+.news-post:hover
+    .news-post-category,
+    .news-post-heading
         margin-left: -2px
 
-.media-holder
+.news-post-media-holder
     text-align: center
 
-.attachment-wp-devwp-post
+.news-post-attachment
     border-radius: 3px
 
-.post-item-caption
+.news-post-caption
     padding: 0 15px
     margin-top: 6px
     transition: padding 0.2s ease-in
 
-.caption-category
+.news-post-category
     font-size: 16px
     color: $link-text
     transition: margin 0.1s ease-in
 
-.post-item-heading
+.news-post-heading
     font-family: $font-family-primary
     color: $text-color-base
     font-weight: 600

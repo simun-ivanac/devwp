@@ -2,7 +2,7 @@ var InteractiveMap = (function() {
     // CONFIGURE AND DISPLAY INTERACTIVE MAP, WHEN CLICKED ON MAP IMAGE
 
     // if not found, return
-    var map_holder = $('#home-map-holder');
+    var map_holder = $('#map-holder');
     if (!map_holder.length) return;
 
     var is_configured = false;
@@ -17,11 +17,9 @@ var InteractiveMap = (function() {
 
         // set options
         var zoom = 9;
-        var map = new L.map('home-map-holder', {
-            scrollWheelZoom: true,
-            // dragging: false,
-            // tap: false,
-            touchZoom: true
+        var map = new L.map('map-holder', {
+            scrollWheelZoom: false,
+            dragging: true,
         }).setView([45.83381143, 17.38545184], zoom);
 
         // set visuals

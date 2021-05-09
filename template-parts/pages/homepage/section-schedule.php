@@ -9,8 +9,8 @@
     			</h2>
             </div>
             <div class="row home-schedule__helper-icon">
-                <span class="helper-icon" title="Slide">
-    				<svg class="helper-icon-svg" width="67.709" height="36" viewBox="0 0 67.709 36">
+                <span class="schedule-helper-icon" title="Slide">
+    				<svg class="schedule-helper-icon-svg" width="67.709" height="36" viewBox="0 0 67.709 36">
     					<g transform="translate(14989.118 21942)">
     						<g transform="translate(8.067 0.377)">
     							<path d="M9.076,17.011l-.783.783a.843.843,0,0,1-1.2,0L.245,10.944a.843.843,0,0,1,0-1.2L7.1,2.9a.843.843,0,0,1,1.2,0l.783.783a.847.847,0,0,1-.014,1.209L4.814,8.935H14.946a.844.844,0,0,1,.846.846v1.128a.844.844,0,0,1-.846.846H4.814L9.062,15.8A.841.841,0,0,1,9.076,17.011Z" transform="translate(-14997.181 -21935.137)"/>

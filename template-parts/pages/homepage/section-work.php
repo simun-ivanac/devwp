@@ -8,11 +8,12 @@
     				<span class="section-title-colored"><?php esc_html_e( $section_title[ 'last_word' ] ); ?></span>
     			</h2>
             </div>
-            <div class="row home_work__image">
+            <div class="row home-work__image-holder">
                 <?php $work_image = get_field( 'work_image' ); ?>
                 <?php if ( $work_image ) : ?>
                     <img
                         data-src="<?php echo esc_url( $work_image[ 'url' ] ); ?>"
+                        class="home-work-image"
                         width="<?php esc_html_e( $work_image[ 'width' ] ); ?>"
                         height="<?php esc_html_e( $work_image[ 'height' ] ); ?>"
                         alt="<?php esc_html_e( $work_image[ 'alt' ] ); ?>" />

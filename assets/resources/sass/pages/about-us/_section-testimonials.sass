@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 >  ===============
+ *--------------------------------------------------------------*/
+
+.section--about-testimonials
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+.about-testimonials__slider
+    position: relative
+    word-break: break-word
+
+.about-testimonials-comment
+    display: none
+    &.active-comment
+        display: block
+
+.about-testimonials-comment-text
+    color: $text-color-dark-strong
+    height: auto
+    margin-bottom: 25px
+    text-align: center
+    line-height: 28px
+
+.about-testimonials-comment-author
+    color: $text-color-light-highlight
+    display: block
+    font-weight: 700
+    line-height: 19px
+    margin-bottom: 30px
+    text-align: center
+    text-transform: uppercase
+
+.about-testimonials__slider
+    .slick-prev,
+    .slick-next
+        background-color: transparent
+        border: none
+        bottom: 0px
+        color: $text-color-dark-strong
+        cursor: pointer
+        height: 40px
+        outline: none
+        padding: 0 10px
+        position: relative
+        width: 50px
+        &:hover
+            background-color: transparent
+        &.slick-prev
+            left: 50%
+            transform: translateX(calc(-50% - 30px))
+        &.slick-next
+            left: 50%
+            transform: translateX(calc(-50% - 30px))
+        >svg
+            stroke: $text-color-dark-strong
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1  ===============
+ *--------------------------------------------------------------*/

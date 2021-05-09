@@ -31,7 +31,7 @@ endif;
             <div class="row home-testimonials__title">
                 <h2 class="section-title section-title--light"><?php esc_html(  the_field( 'testimonials_title' ) ); ?></h2>
             </div>
-            <div class="row home-testimonials__slider js-trigger-slider">
+            <div class="row home-testimonials__slider js-testimonials-slider">
                 <?php if ( have_rows( 'comment_1' ) ) : ?>
                     <?php while ( have_rows( 'comment_1' ) ) : the_row(); ?>
                         <?php $comment_1_checkbox = get_sub_field( 'comment_1_checkbox' ); ?>

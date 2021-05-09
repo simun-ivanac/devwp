@@ -17,24 +17,24 @@
 				if ( $posts->have_posts() ) :
                 	while( $posts->have_posts() ) : $posts->the_post();
 	                ?>
-                        <a class="post-item" href="<?php the_permalink(); ?>">
-                            <div class="post-item-image">
-                                <figure class="media-holder">
+                        <a href="<?php the_permalink(); ?>" class="news-post">
+                            <div class="news-post-image">
+                                <figure class="news-post-media-holder">
                                     <?php
         							if( has_post_thumbnail() && !post_password_required() ) :
-        								the_post_thumbnail( 'wp-devwp-post' );
+        								the_post_thumbnail( 'wp-devwp-post', array( 'class' => 'news-post-attachment' ) );
         							else:
-        								echo '<img data-src="' . get_template_directory_uri() . '/assets/images/picture_placeholder_2.jpg" data-src="' . get_template_directory_uri() . '/assets/images/picture_placeholder_2.jpg" width="350" height="280" >';
+        								echo '<img data-src="' . get_template_directory_uri() . '/assets/images/picture_placeholder_2.jpg" class="news-post-media" width="350" height="280" >';
         							endif;
         							?>
                                 </figure>
                             </div>
-                            <div class="post-item-caption">
-                                <div class="caption-category">
+                            <div class="news-post-caption">
+                                <div class="news-post-category">
                                     <?php $category = get_the_category(); ?>
                                     <?php esc_html_e( $category[0]->name ); ?>
                                 </div>
-                                <h4 class="post-item-heading"><?php the_title(); ?></h4>
+                                <h4 class="news-post-heading"><?php the_title(); ?></h4>
                             </div>
                         </a>
                         <?php
