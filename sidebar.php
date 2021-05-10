@@ -12,7 +12,7 @@ endif;
 ?>
 
 <!-- SITE-SIDEBAR -->
-<aside id="site-sidebar" class="site-sidebar widget-area">
+<aside id="site-sidebar" class="aside__widgets site-sidebar widget-area">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside>
 <!-- !SITE-SIDEBAR -->

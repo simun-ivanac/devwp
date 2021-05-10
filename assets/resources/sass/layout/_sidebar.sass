@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 >  ===============
+ *--------------------------------------------------------------*/
+
+.aside__widgets
+    background-color: $bg-color-light-strong
+    border-radius: 3px
+    border: 1px solid $border-color-dark
+    flex: 0 0 calc(33.333333% - 15px)
+    height: 100%
+    max-width: calc(33.333333% - 15px)
+    padding: 30px 15px
+    width: 100%
+
+.widget
+    border-bottom: 1px solid $border-color-dark
+    margin-bottom: 30px
+    padding-bottom: 30px
+    &:last-child
+        border-bottom: 0
+        margin-bottom: 0
+        padding-bottom: 0
+
+.widget-title
+    color: $text-color-dark-strong
+    cursor: default
+    font-family: $font-family-secondary
+    font-weight: bold
+    line-height: 43px
+    font-size: $font-size-h5
+    margin: 0 0 5px 0
+    padding: 0
+    position: relative
+    text-align: left
+    text-transform: uppercase
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1  ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #2 SEARCH-FORM>  ===============
+ *--------------------------------------------------------------*/
+
+.widget_search
+    .widget-title
+        display: none
+
+form.search-form
+    >label
+        display: inline-block
+        height: 40px
+        width: calc(100% - 90px)
+        >input.search-field
+            border-bottom-left-radius: 3px
+            border-radius: 0px
+            border-right-width: 0px
+            border-top-left-radius: 3px
+            display: inline-block
+            height: 40px
+            max-width: 100%
+            width: 100%
+    >input.search-submit
+        background-color: $button-dark-bg
+        border-bottom-right-radius: 3px
+        border-left-width: 0px
+        border-radius: 0px
+        border-top-right-radius: 3px
+        float: right
+        font-size: 15px
+        height: 40px
+        padding-left: 9px
+        padding-right: 9px
+        width: 90px
+        &:hover
+            background-color: $button-primary-bg
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#2 SEARCH-FORM ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #3 LATEST-POSTS>  ===============
+ *--------------------------------------------------------------*/
+
+.latest-entries-content
+    padding: 0 10px
+
+.latest-entry-post
+    margin-bottom: 15px
+    display: block
+
+.latest-entry-link
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 3px
+    &:hover
+        background-color: $bg-color-base
+
+.latest-entry-media-holder
+    max-width: 80px
+
+.latest-entry-attachment
+    border-radius: 3px
+
+.latest-entry-caption
+    padding-left: 10px
+
+.latest-entry-title
+    color: $text-color-dark-medium
+    cursor: pointer
+    font-family: $font-family-primary
+    font-size: $font-size-base
+    font-weight: 600
+    line-height: 17px
+    margin: 0 0 5px 0
+    text-align: left
+    text-transform: lowercase
+    &:first-letter
+        text-transform: capitalize
+
+.latest-entry-date
+    color: $text-color-dark-medium
+    display: inline-block
+    font-size: 12px
+    font-weight: 500
+    margin-left: 1px
+    vertical-align: middle
+    >i
+        color: $text-color-light-highlight
+
+.latest-entry-date-format
+    margin-left: 1px
+    display: inline-block
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#3 LATEST-POSTS ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #4 CATEGORIES>  ===============
+ *--------------------------------------------------------------*/
+
+.widget_categories
+    >ul
+        padding: 0 10px
+
+.cat-item
+    position: relative
+
+.cat-item-link
+    color: $text-color-dark-medium
+    display: inline-block
+    font-size: 15px
+    min-width: 150px
+    padding: 7px 0 7px 30px
+    position: relative
+    transition: padding-left .3s ease-in-out
+    width: 100%
+    z-index: 9
+    &:hover
+        color: $link-text
+        padding-left: 31px
+
+.cat-item-number
+    background-color: $text-color-dark-highlight
+    border-radius: 50%
+    color: $text-color-light-strong
+    display: inline-block
+    font-size: 10px
+    height: 24px
+    left: 0
+    line-height: 14px
+    min-width: 24px
+    padding: 6px 0
+    position: absolute
+    text-align: center
+    top: 7px
+    transition: all .15s ease-in-out
+
+.cat-item:hover
+    .cat-item-number
+        background-color: $text-color-light-highlight
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#4 CATEGORIES ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #5 TAGS>  ===============
+ *--------------------------------------------------------------*/
+
+.wp-tag-cloud
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    >li
+        margin: 0 5px 5px 0
+
+.tag-cloud-link
+    background-color: $text-color-dark-highlight
+    border-radius: 6px
+    color: $text-color-light-strong
+    display: block
+    padding: 3px 10px 3px
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out
+    word-wrap: break-word
+    &:hover
+        background-color: $text-color-light-highlight
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#5 TAGS ===============
+ *--------------------------------------------------------------*/

@@ -22,7 +22,9 @@ if ( ! function_exists( 'devwp_3rd_party_scripts' ) ) :
         /**
          * Font awesome
          */
-        // wp_enqueue_style( 'devwp-font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1.0.0' );
+        if ( ! is_front_page() && ! is_page_template() ) {
+            wp_enqueue_style( 'devwp-font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1.0.0' );
+        }
 
 
         /**

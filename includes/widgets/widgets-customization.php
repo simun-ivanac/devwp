@@ -9,7 +9,11 @@
 if ( ! function_exists( 'devwp_ctheme_add_span_element_to_category_list' ) ) :
     function devwp_ctheme_add_span_element_to_category_list( $links ) {
 
-    	$links = str_replace( '</a> (', '</a><span>', $links );
+        // add class to category item link
+    	$links = str_replace( '<a href', '<a class="cat-item-link" href', $links );
+
+        // remove brackets from category item: (1) -> 1
+    	$links = str_replace( '</a> (', '</a><span class="cat-item-number">', $links );
     	$links = str_replace( ')', '</span>', $links );
     	return $links;
 

@@ -18,20 +18,89 @@
     display: flex
     justify-content: center
     flex-wrap: wrap
-
+    box-shadow: 0px 0px 20px $shadow-dark-medium
 
 .contact-form-content
-    // box-shadow: -5px 0px 20px $shadow-dark-medium
     background-color: $bg-color-light-medium
     flex: 0 0 55%
     max-width: 55%
     padding: 40px
     width: 100%
 
+// form
+.contact-form-heading
+    color: $text-color-dark-medium
+    cursor: default
+    font-family: $font-family-secondary
+    font-size: $font-size-h4
+    font-weight: bold
+    line-height: 43px
+    margin-bottom: 20px
+    text-align: left
+    text-transform: uppercase
+
+.screen-reader-response
+    display: none !important
+
+.wpcf7-form
+    >p
+        margin-bottom: 25px
+        &:last-of-type
+            margin-top: 40px
+            margin-bottom: 0
+
+    .wpcf7-text,
+    .wpcf7-email
+        width: 100%
+        padding: 14px 10px
+
+    .wpcf7-textarea
+        padding: 14px 10px
+        min-height: 200px
+
+    .wpcf7-form-control-wrap.checkbox-62,
+    .contact-form-consent
+        display: inline-block
+
+    .wpcf7-form-control-wrap.checkbox-62
+        vertical-align: top
+        margin-top: 3px
+        height: 25px
+        width: 20px
+        .wpcf7-not-valid-tip
+            position: relative
+            left: 25px
+            bottom: 0
+            margin-top: 23px
+            width: 200px
+        input
+            width: 18px
+            height: 18px
+
+    .contact-form-consent
+        width: calc(100% - 30px)
+
+    .wpcf7-list-item
+        margin: 0
+
+    .wpcf7-submit
+        display: block
+        margin: 0 auto
+        min-width: 140px
+        padding-top: 12px
+        padding-bottom: 12px
+
+    .ajax-loader
+        display: block !important
+        height: 0 !important
+        margin: 0 !important
+        opacity: 0 !important
+        visibility: hidden !important
+        width: 0 !important
 
 
+// general
 .contact-form-general
-    // box-shadow: 5px 0px 20px $shadow-dark-medium
     padding: 100px 80px
     background-color: $bg-color-dark-strong
     color: $text-color-light-medium
@@ -40,7 +109,6 @@
     flex: 0 0 45%
     justify-content: center
     max-width: 45%
-    // padding: 0 80px
     width: 100%
 
 .form-general-heading

@@ -73,39 +73,35 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
         // title
         if ( $title ) echo $args['before_title'] . $title . $args['after_title'];
         ?>
-		<ul>
+		<ul class="latest-entries-content">
             <?php while ( $r->have_posts() ) : $r->the_post(); ?>
-                <li class="custom-latest-post">
-                    <a href="<?php the_permalink(); ?>">
-                        <!-- thumbnail -->
+                <li class="latest-entry-post">
+                    <a href="<?php the_permalink(); ?>" class="latest-entry-link">
                         <?php
                         if ( $show_thumbnail ) :
                             if ( has_post_thumbnail() ) :
-                                echo get_the_post_thumbnail( null, $thumbnail_size );
+                                ?>
+                                    <figure class="latest-entry-media-holder">
+                                        <?php echo get_the_post_thumbnail( null, $thumbnail_size, [ 'class' => 'latest-entry-attachment' ] ); ?>
+                                    </figure>
+                                <?php
                             endif;
                         endif;
                         ?>
-                        <!-- !thumbnail -->
-                        <!-- post data -->
-                        <div class="post-data">
-                            <!-- post title -->
-                            <h2 class="post-title">
+                        <div class="latest-entry-caption">
+                            <h2 class="latest-entry-title">
                                 <?php
                                 $post_title = $this->get_the_trimmed_post_title();
                                 if ( $post_title ) echo $post_title;
                                 ?>
                             </h2>
-                            <!-- !post title -->
                             <?php if ( $show_date ) : ?>
-                                <!-- post-date -->
-                                <span class="post-date">
+                                <span class="latest-entry-date">
                                     <i class="fa fa-calendar-o"></i>
-                                    <span class="post-date"><?php echo get_the_date(); ?></span>
+                                    <span class="latest-entry-date-format"><?php echo get_the_date(); ?></span>
                                 </span>
-                                <!-- !post-date -->
                             <?php endif; ?>
                         </div>
-                        <!-- !post data -->
                     </a>
                 </li>
             <?php endwhile; ?>

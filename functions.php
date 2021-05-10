@@ -62,6 +62,7 @@ require THEME_DIR . '/includes/widgets/latest-posts-with-thumbnails.php';
  */
 // Add attributes to menu items
 require THEME_DIR . '/includes/extras/menu-items-attributes.php';
+require THEME_DIR . '/includes/extras/modify-post-classes.php';
 
 
 /**
