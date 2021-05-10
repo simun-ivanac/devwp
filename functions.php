@@ -34,7 +34,14 @@ require THEME_DIR . '/includes/core/template-functions.php';
 /**
  * Enqueue css stylesheets and js scripts
  */
-require THEME_DIR . '/includes/scripts/scripts.php';
+// 3rd party files (google font, slick...)
+require THEME_DIR . '/includes/scripts/3rd-party.php';
+
+// Core scripts: style.css, script.js
+require THEME_DIR . '/includes/scripts/core-scripts.php';
+
+// Inline scripts
+require THEME_DIR . '/includes/scripts/inline-scripts.php';
 
 
 /**
@@ -55,7 +62,6 @@ require THEME_DIR . '/includes/widgets/latest-posts-with-thumbnails.php';
  */
 // Add attributes to menu items
 require THEME_DIR . '/includes/extras/menu-items-attributes.php';
-require THEME_DIR . '/includes/extras/disable-gutenberg-on-page-templates.php';
 
 
 /**
@@ -66,6 +72,18 @@ require THEME_DIR . '/includes/helper/split-last-word-from-string.php';
 
 
 /**
+ * Plugins files || modifications
+ */
+// CONTACT-FORM-7: Dequeue scripts globally and enable only on certain page-templates
+require THEME_DIR . '/includes/plugins/contact-form/dequeue-scripts-selectively.php';
+
+// JETPACK: Load compatibility file
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require THEME_DIR . '/includes/plugins/jetpack/jetpack-setup.php';
+}
+
+
+/**
  * Include admin files
  */
 if ( is_admin() ) {
@@ -73,12 +91,8 @@ if ( is_admin() ) {
 }
 
 
-/**
- * Customizer additions
- */
-if ( is_admin() ) {
-	require THEME_DIR . '/includes/customizer/customizer.php';
-}
+
+
 
 
 /**
@@ -89,11 +103,3 @@ if ( is_admin() ) {
 // require THEME_DIR . '/page-templates/about-us.php';
 // require THEME_DIR . '/page-templates/contact.php';
 // require THEME_DIR . '/page-templates/gallery.php';
-
-
-/**
- * Load Jetpack compatibility file
- */
-// if ( defined( 'JETPACK__VERSION' ) ) {
-// 	require THEME_DIR . '/includes/plugins/jetpack.php';
-// }

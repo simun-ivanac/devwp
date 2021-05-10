@@ -27,10 +27,10 @@ add_filter( 'wp_list_categories', 'devwp_ctheme_add_span_element_to_category_lis
  */
 if ( ! function_exists( 'devwp_ctheme_tag_widget_cloud' ) ) :
     function devwp_ctheme_tag_widget_cloud( $args ) {
-    	$args[ 'largest' ] = 14;
-    	$args[ 'smallest' ] = 14;
-    	$args[ 'unit' ] = 'px';
-    	$args[ 'format' ] = 'list';
+    	$args['largest'] = 14;
+    	$args['smallest'] = 14;
+    	$args['unit'] = 'px';
+    	$args['format'] = 'list';
 
     	return $args;
     }

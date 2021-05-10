@@ -11,7 +11,7 @@ if ( ! function_exists( 'devwp_images' ) ) :
 
         // Enable support for post thumbnails on posts and pages
         add_theme_support( 'post-thumbnails' );
-        add_image_size('wp-devwp-post', 350, 280, array('center', 'center'));
+        add_image_size( 'wp-devwp-post', 350, 280, array( 'center', 'center' ) );
         // set_post_thumbnail_size( 620, 9999, false );
         // add_image_size( 'wp-devwp-banner', 525, 525, array( 'center', 'center' ) );
         // add_image_size( 'wp-devwp-features', 225, 525, array( 'center', 'center' ) );
@@ -73,7 +73,7 @@ if ( ! function_exists( 'devwp_image_size_names' ) ) :
     function devwp_image_size_names( $sizes ) {
 
         return array_merge( $sizes, array(
-            'wp-devwp-post' => __('Post', 'wp_ctheme'),
+            'wp-devwp-post' => __( 'Post', 'devwp' ),
             // 'wp-devwp-banner'   => __( 'Banner', 'devwp' ),
             // 'wp-devwp-features' => __( 'Features', 'devwp' ),
         ) );

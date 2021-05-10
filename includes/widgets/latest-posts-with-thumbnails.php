@@ -7,7 +7,7 @@
  * @version 1.0.0
  */
 
-if ( !class_exists('Latest_Posts_With_Thumbnails_Widget') ) :
+if ( ! class_exists( 'Latest_Posts_With_Thumbnails_Widget' ) ) :
 class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
 
     /**
@@ -15,8 +15,8 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
      */
     function __construct() {
         $widget_ops = array(
-			'classname' => 'widget_latest_entries',
-			'description' => __('Your site&#8217;s latest Posts.'),
+			'classname'                   => 'widget_latest_entries',
+			'description'                 => __( 'Your site&#8217;s latest Posts.' ),
 			'customize_selective_refresh' => true,
 		);
 		parent::__construct(
@@ -30,30 +30,30 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
     /**
      * Creating widget front-end.
      */
-    public function widget($args, $instance) {
-        if ( !isset($args['widget_id']) ) {
+    public function widget( $args, $instance ) {
+        if ( ! isset( $args['widget_id'] ) ) {
 			$args['widget_id'] = $this->id;
 		}
 
         // title
-        $title = ( !empty($instance['title']) ) ? $instance['title'] : 'Latest Posts';
-        $title = apply_filters('widget_title', $title, $instance, $this->id_base);
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : 'Latest Posts';
+        $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
 
         // number of posts
-        $num_of_posts = ( !empty($instance['num_of_posts']) ) ? absint($instance['num_of_posts']) : 5;
-		if ( !$num_of_posts ) $num_of_posts = 5;
+        $num_of_posts = ( ! empty( $instance['num_of_posts'] ) ) ? absint( $instance['num_of_posts'] ) : 5;
+		if ( ! $num_of_posts ) $num_of_posts = 5;
 
         // other options
-        $show_date = !empty($instance['show_date']) ? '1' : '0';
-        $random_order = !empty($instance['random_order']) ? '1' : '0';
-        $show_thumbnail = !empty($instance['show_thumbnail']) ? '1' : '0';
-        $thumbnail_size = !empty($instance['thumbnail_size']) ? $instance['thumbnail_size'] : 'thumbnail';
+        $show_date = ! empty( $instance['show_date'] ) ? '1' : '0';
+        $random_order = ! empty( $instance['random_order'] ) ? '1' : '0';
+        $show_thumbnail = ! empty( $instance['show_thumbnail'] ) ? '1' : '0';
+        $thumbnail_size = ! empty( $instance['thumbnail_size'] ) ? $instance['thumbnail_size'] : 'thumbnail';
 
         // standard params
         $query_args = array(
             'posts_per_page' => $num_of_posts,
-            'no_found_rows' => true,
-            'post_status' => 'publish'
+            'no_found_rows'  => true,
+            'post_status'    => 'publish',
         );
 
         // set order of posts in widget
@@ -61,10 +61,10 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
         $query_args['order'] = 'DESC';
 
         // run the query: get the latest posts
-        $r = new WP_Query($query_args);
+        $r = new WP_Query( $query_args );
 
         // stop if no posts found
-        if ( !$r->have_posts() ) return;
+        if ( ! $r->have_posts() ) return;
 
 
         // START HTML
@@ -81,7 +81,7 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
                         <?php
                         if ( $show_thumbnail ) :
                             if ( has_post_thumbnail() ) :
-                                echo get_the_post_thumbnail(null, $thumbnail_size);
+                                echo get_the_post_thumbnail( null, $thumbnail_size );
                             endif;
                         endif;
                         ?>
@@ -119,22 +119,22 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
     /**
      * Updating widget - replacing old instances with new.
      */
-    public function update($new_instance, $old_instance) {
+    public function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 
-		$instance['title'] = sanitize_text_field($new_instance['title']);
+		$instance['title'] = sanitize_text_field( $new_instance['title'] );
 		$instance['num_of_posts'] = (int) $new_instance['num_of_posts'];
-        $instance['show_date'] = ! empty($new_instance['show_date']) ? 1 : 0;
-        $instance['random_order'] = ! empty($new_instance['random_order']) ? 1 : 0;
-        $instance['show_thumbnail'] = ! empty($new_instance['show_thumbnail']) ? 1 : 0;
+        $instance['show_date'] = ! empty( $new_instance['show_date'] ) ? 1 : 0;
+        $instance['random_order'] = ! empty( $new_instance['random_order'] ) ? 1 : 0;
+        $instance['show_thumbnail'] = ! empty( $new_instance['show_thumbnail'] ) ? 1 : 0;
 
         $thumbnail_sizes = wp_get_registered_image_subsizes();
         $thumbnail_sizes_arr = array();
         foreach ( $thumbnail_sizes as $key => $value ) {
-            array_push($thumbnail_sizes_arr, $key);
+            array_push( $thumbnail_sizes_arr, $key );
         }
 
-        if ( in_array($new_instance['thumbnail_size'], $thumbnail_sizes_arr, true) ) {
+        if ( in_array( $new_instance['thumbnail_size'], $thumbnail_sizes_arr, true ) ) {
 			$instance['thumbnail_size'] = $new_instance['thumbnail_size'];
 		} else {
 			$instance['thumbnail_size'] = 'thumbnail';
@@ -146,55 +146,57 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
     /**
      * Widget Backend: outputs the settings form for widget.
      */
-    public function form($instance) {
+    public function form( $instance ) {
         // Defaults
         // $instance = wp_parse_args(
 		// 	(array) $instance,
 		// 	array(
-		// 		'title' => 'Latest Posts',
-		// 		'num_of_posts' => 5,
-		// 		'show_date' => false,
-		// 		'random_order' => false,
+		// 		'title'          => 'Latest Posts',
+		// 		'num_of_posts'   => 5,
+		// 		'show_date'      => false,
+		// 		'random_order'   => false,
 		// 		'show_thumbnail' => false,
 		// 		'thumbnail_size' => 'thumbnail'
 		// 	)
 		// );
 
-        $title = isset($instance['title']) ? esc_attr($instance['title']) : 'Latest Posts';
-        $num_of_posts = isset($instance['num_of_posts']) ? absint($instance['num_of_posts']) : 5;
-        $show_date = isset($instance['show_date']) ? (bool) $instance['show_date'] : false;
-        $random_order = isset($instance['random_order']) ? (bool) $instance['random_order'] : false;
-        $show_thumbnail = isset($instance['show_thumbnail']) ? (bool) $instance['show_thumbnail'] : false;
-        $thumbnail_size = isset($instance['thumbnail_size']) ? esc_attr($instance['thumbnail_size']) : 'thumbnail';
+        $title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : 'Latest Posts';
+        $num_of_posts = isset( $instance['num_of_posts'] ) ? absint( $instance['num_of_posts'] ) : 5;
+        $show_date = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;
+        $random_order = isset( $instance['random_order'] ) ? (bool) $instance['random_order'] : false;
+        $show_thumbnail = isset( $instance['show_thumbnail'] ) ? (bool) $instance['show_thumbnail'] : false;
+        $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr( $instance['thumbnail_size'] ) : 'thumbnail';
         ?>
 
         <p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 		</p>
         <p>
-			<label for="<?php echo $this->get_field_id('num_of_posts'); ?>"><?php _e('Number of posts to show:'); ?></label>
-			<input class="tiny-text" id="<?php echo $this->get_field_id('num_of_posts'); ?>" name="<?php echo $this->get_field_name('num_of_posts'); ?>" type="number" step="1" min="1" value="<?php echo $num_of_posts; ?>" size="3" />
+			<label for="<?php echo $this->get_field_id( 'num_of_posts' ); ?>"><?php _e( 'Number of posts to show:' ); ?></label>
+			<input class="tiny-text" id="<?php echo $this->get_field_id( 'num_of_posts' ); ?>" name="<?php echo $this->get_field_name( 'num_of_posts' ); ?>" type="number" step="1" min="1" value="<?php echo $num_of_posts; ?>" size="3" />
 		</p>
         <p>
-            <input class="checkbox" type="checkbox"<?php checked($random_order); ?> id="<?php echo $this->get_field_id('random_order' ); ?>" name="<?php echo $this->get_field_name('random_order'); ?>" />
-			<label for="<?php echo $this->get_field_id('random_order'); ?>"><?php _e('Show posts in random order?'); ?></label>
+            <input class="checkbox" type="checkbox"<?php checked( $random_order ); ?> id="<?php echo $this->get_field_id( 'random_order'  ); ?>" name="<?php echo $this->get_field_name( 'random_order' ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'random_order' ); ?>"><?php _e('Show posts in random order?'); ?></label>
             <br />
-			<input class="checkbox" type="checkbox"<?php checked($show_date); ?> id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" />
-			<label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Show post date?'); ?></label>
+			<input class="checkbox" type="checkbox"<?php checked( $show_date ); ?> id="<?php echo $this->get_field_id( 'show_date' ); ?>" name="<?php echo $this->get_field_name( 'show_date' ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Show post date?' ); ?></label>
             <br />
-            <input class="checkbox" type="checkbox"<?php checked($show_thumbnail); ?> id="<?php echo $this->get_field_id('show_thumbnail'); ?>" name="<?php echo $this->get_field_name('show_thumbnail'); ?>" />
-			<label for="<?php echo $this->get_field_id('show_thumbnail'); ?>"><?php _e('Show thumbnail?'); ?></label>
+            <input class="checkbox" type="checkbox"<?php checked( $show_thumbnail ); ?> id="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>" name="<?php echo $this->get_field_name( 'show_thumbnail' ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>"><?php _e( 'Show thumbnail?' ); ?></label>
 		</p>
         <p>
-            <label for="<?php echo esc_attr($this->get_field_id('thumbnail_size')); ?>"><?php _e('Thumbnail size:'); ?></label>
-			<select name="<?php echo esc_attr($this->get_field_name('thumbnail_size')); ?>" id="<?php echo esc_attr($this->get_field_id('thumbnail_size')); ?>" class="widefat">
+            <label for="<?php esc_attr_e( $this->get_field_id( 'thumbnail_size' ) ); ?>"><?php _e( 'Thumbnail size:' ); ?></label>
+			<select name="<?php esc_attr_e( $this->get_field_name( 'thumbnail_size' ) ); ?>" id="<?php esc_attr_e( $this->get_field_id( 'thumbnail_size' ) ); ?>" class="widefat">
                 <?php
                 $thumbnail_sizes = wp_get_registered_image_subsizes();
                 foreach ( $thumbnail_sizes as $key => $value ) :
-                    if( is_integer($key) ) continue;
-                ?>
-                    <option value="<?php echo esc_html($key); ?>"<?php selected($thumbnail_size, $key); ?>><?php echo esc_html($key); ?> (<?php echo absint($value['width']); ?> &times; <?php echo absint($value['height']); ?>)</option>
+                    if( is_integer( $key ) ) continue;
+                    ?>
+                    <option value="<?php esc_html_e( $key ); ?>"<?php selected( $thumbnail_size, $key ); ?>>
+                        <?php esc_html_e( $key ); ?> (<?php echo absint( $value['width'] ); ?> &times; <?php echo absint( $value['height'] ); ?>)
+                    </option>
                 <?php endforeach; ?>
             </select>
         </p>
@@ -210,10 +212,10 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
 
 		// get current post's post_title
 		$post_title = get_the_title();
-        $title = ( !empty($post_title) ) ? $post_title : __('(no title)');
+        $title = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
 
 		// get post_title in desired length and append ellipses
-		$post_title = mb_substr($post_title, 0, 35);
+		$post_title = mb_substr( $post_title, 0, 35 );
 		$post_title .= '...';
 
 		return $post_title;
@@ -224,7 +226,7 @@ endif;
 
 // Register and load the widget.
 function custom_load_widget() {
-    register_widget('Latest_Posts_With_Thumbnails_Widget');
+    register_widget( 'Latest_Posts_With_Thumbnails_Widget' );
 }
-add_action('widgets_init', 'custom_load_widget');
+add_action( 'widgets_init', 'custom_load_widget' );
 ?>

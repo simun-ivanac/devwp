@@ -91,22 +91,22 @@ endif;
  */
 $header_images = array(
     'digital_art' => array(
-            'url'           => get_template_directory_uri() . '/assets/images/headers/digital_art-futuristic.jpg',
-            'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/digital_art-futuristic-thumbnail.jpg',
-            'description'   => 'Digital art',
+        'url'           => get_template_directory_uri() . '/assets/images/headers/digital_art-futuristic.jpg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/digital_art-futuristic-thumbnail.jpg',
+        'description'   => 'Digital art',
     ),
     'night_and_mountain' => array(
-            'url'           => get_template_directory_uri() . '/assets/images/headers/night_and_mountain_2.jpg',
-            'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/night_and_mountain-thumbnail.jpg',
-            'description'   => 'Desert',
+        'url'           => get_template_directory_uri() . '/assets/images/headers/night_and_mountain_2.jpg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/night_and_mountain-thumbnail.jpg',
+        'description'   => 'Desert',
     ),
     'programming' => array(
-            'url'           => get_template_directory_uri() . '/assets/images/headers/programming-2.jpg',
-            'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/programming-2-thumbnail.jpg',
-            'description'   => 'Programming',
+        'url'           => get_template_directory_uri() . '/assets/images/headers/programming-2.jpg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/images/headers/programming-2-thumbnail.jpg',
+        'description'   => 'Programming',
     ),
 );
-register_default_headers($header_images);
+register_default_headers( $header_images );
 
 
 /**

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * devwp Theme Customizer
+ * Theme Customizer
  *
  * @package devwp
  * @since 1.0.0

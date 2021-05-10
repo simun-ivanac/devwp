@@ -9,11 +9,9 @@
 if ( ! function_exists( 'devwp_disable_gutenberg_on_page_templates' ) ) :
     function devwp_disable_gutenberg_on_page_templates( $use_block_editor, $post_type ) {
 
-        // must be on ADMIN,
         // $_GET['post'] must be set
         // post_type must be PAGE
         if (
-            ! is_admin() ||
             empty( $_GET['post'] ) ||
             $post_type != 'page'
         ) {
