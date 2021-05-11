@@ -62,7 +62,15 @@ require THEME_DIR . '/includes/widgets/latest-posts-with-thumbnails.php';
  */
 // Add attributes to menu items
 require THEME_DIR . '/includes/extras/menu-items-attributes.php';
+
+// Modify post classes
 require THEME_DIR . '/includes/extras/modify-post-classes.php';
+
+// Shorten post excerpt
+require THEME_DIR . '/includes/extras/excerpt-length.php';
+
+// Customize comment fields
+require THEME_DIR . '/includes/extras/comment-fields-customization.php';
 
 
 /**

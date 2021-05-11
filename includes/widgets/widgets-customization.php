@@ -6,11 +6,12 @@
  * @package devwp
  * @version 1.0.0
  */
-if ( ! function_exists( 'devwp_ctheme_add_span_element_to_category_list' ) ) :
-    function devwp_ctheme_add_span_element_to_category_list( $links ) {
+if ( ! function_exists( 'devwp_modify_category_list' ) ) :
+    function devwp_modify_category_list( $links ) {
 
         // add class to category item link
-    	$links = str_replace( '<a href', '<a class="cat-item-link" href', $links );
+    	$links = str_replace( '/">', '/" class="cat-item-link">', $links );
+    	// $links = str_replace( '<a href', '<a class="cat-item-link" href', $links );
 
         // remove brackets from category item: (1) -> 1
     	$links = str_replace( '</a> (', '</a><span class="cat-item-number">', $links );
@@ -19,7 +20,7 @@ if ( ! function_exists( 'devwp_ctheme_add_span_element_to_category_list' ) ) :
 
     }
 endif;
-add_filter( 'wp_list_categories', 'devwp_ctheme_add_span_element_to_category_list' );
+add_filter( 'wp_list_categories', 'devwp_modify_category_list' );
 
 
 /**
@@ -29,8 +30,9 @@ add_filter( 'wp_list_categories', 'devwp_ctheme_add_span_element_to_category_lis
  * @package devwp
  * @version 1.0.0
  */
-if ( ! function_exists( 'devwp_ctheme_tag_widget_cloud' ) ) :
-    function devwp_ctheme_tag_widget_cloud( $args ) {
+if ( ! function_exists( 'devwp_tag_widget_cloud' ) ) :
+    function devwp_tag_widget_cloud( $args ) {
+
     	$args['largest'] = 14;
     	$args['smallest'] = 14;
     	$args['unit'] = 'px';
@@ -39,4 +41,4 @@ if ( ! function_exists( 'devwp_ctheme_tag_widget_cloud' ) ) :
     	return $args;
     }
 endif;
-add_filter( 'widget_tag_cloud_args', 'devwp_ctheme_tag_widget_cloud' );
+add_filter( 'widget_tag_cloud_args', 'devwp_tag_widget_cloud' );

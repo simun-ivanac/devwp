@@ -9,47 +9,45 @@
 get_header();
 ?>
 
+<?php get_template_part( 'template-parts/hero-image/hero-image-small' ); ?>
+
 
 <!-- SITE-CONTENT -->
 <main id="site-content" class="site-content">
+    <div id="page-content" class="page-content page-content--content-blog">
+        <div class="container">
+            <header class="blog-page-header">
+                <h1 class="blog-page-title">
+                    <?php
+                    /* translators: %s: search query. */
+                    printf( esc_html__( 'Search Results for: %s', 'devwp' ), '<span>' . get_search_query() . '</span>' );
+                    ?>
+                </h1>
+            </header>
+            <div class="content-holder content-blog">
+                <section class="section__blog-posts">
+                	<?php
+                    if ( have_posts() ) :
+                		while ( have_posts() ) :
+                			the_post();
+                			get_template_part( 'template-parts/content/content', 'blog' );
+                		endwhile;
 
-	<?php if ( have_posts() ) : ?>
+                		the_posts_navigation();
+                	else :
+                		get_template_part( 'template-parts/content/content', 'none' );
+                	endif;
+                	?>
+                </section>
 
-		<header class="page-header">
-			<h1 class="page-title">
-				<?php
-				/* translators: %s: search query. */
-				printf( esc_html__( 'Search Results for: %s', 'devwp' ), '<span>' . get_search_query() . '</span>' );
-				?>
-			</h1>
-		</header>
+                <?php get_sidebar(); ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			/**
-			 * Run the loop for the search to output the results.
-			 * If you want to overload this in a child theme then include a file
-			 * called content-search.php and that will be used instead.
-			 */
-			get_template_part( 'template-parts/content/content', 'search' );
-
-		endwhile;
-
-		the_posts_navigation();
-
-	else :
-
-		get_template_part( 'template-parts/content/content', 'none' );
-
-	endif;
-	?>
-
+            </div>
+        </div>
+    </div>
 </main>
 <!-- !SITE-CONTENT -->
 
 
 <?php
-get_sidebar();
 get_footer();

@@ -18,9 +18,11 @@
     background-color: $bg-color-light-strong
     border-radius: 3px
     border: 1px solid $border-color-dark
-    flex: 0 0 calc(33.333333% - 15px)
+    flex: 0 0 calc(30% - 15px)
+    max-width: calc(30% - 15px)
+    // flex: 0 0 calc(33.333333% - 15px)
+    // max-width: calc(33.333333% - 15px)
     height: 100%
-    max-width: calc(33.333333% - 15px)
     padding: 30px 15px
     width: 100%
 
@@ -116,7 +118,7 @@ form.search-form
     justify-content: center
     align-items: center
     border-radius: 3px
-    &:hover
+    // &:hover
         background-color: $bg-color-base
 
 .latest-entry-media-holder
@@ -221,6 +223,9 @@ form.search-form
 /*--------------------------------------------------------------
  * ===============  #5 TAGS>  ===============
  *--------------------------------------------------------------*/
+
+.tagcloud
+    padding: 0 10px
 
 .wp-tag-cloud
     display: flex

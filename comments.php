@@ -31,15 +31,13 @@ if ( post_password_required() ) {
 			if ( '1' === $devwp_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'devwp' ),
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
+                    esc_html__( 'One thought', 'devwp' )
 				);
 			} else {
 				printf(
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $devwp_comment_count, 'comments title', 'devwp' ) ),
+                    esc_html( _nx( '%1$s thought', '%1$s thoughts', $devwp_comment_count, 'comments title', 'devwp' ) ),
 					number_format_i18n( $devwp_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
 			?>
@@ -53,6 +51,7 @@ if ( post_password_required() ) {
 				array(
 					'style'      => 'ol',
 					'short_ping' => true,
+                    'avatar_size' => 60,
 				)
 			);
 			?>
@@ -70,7 +69,12 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+
+    $comments_args = array(
+        'label_submit' => __( 'Post', 'devwp' ),
+        'title_reply'  => __( 'Write a Reply or Comment', 'devwp' ),
+	);
+	comment_form( $comments_args );
 	?>
 
 </div>

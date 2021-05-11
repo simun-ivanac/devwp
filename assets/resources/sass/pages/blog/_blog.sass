@@ -1,0 +1,153 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 LAYOUT>  ===============
+ *--------------------------------------------------------------*/
+
+.page-content--content-blog
+    padding: 60px 0
+    max-width: 100%
+    width: 100%
+
+.blog-page-header
+    margin-bottom: 35px
+
+.blog-page-title
+    border-bottom: 1px solid $border-color-dark
+    color: $text-color-dark-medium
+    font-size: $font-size-h3
+
+.content-blog
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.section__blog-posts
+    max-width: calc(70% - 15px)
+    flex: 0 0 calc(70% - 15px)
+    // max-width: calc(66.666667% - 15px)
+    // flex: 0 0 calc(66.666667% - 15px)
+    width: 100%
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1 LAYOUT ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #2 ARTICLES>  ===============
+ *--------------------------------------------------------------*/
+
+.blog-post.type-post,
+.blog-post.type-page
+    background-color: $bg-color-light-strong
+    border-radius: 3px
+    border: 1px solid $border-color-dark
+    margin-bottom: 30px
+    padding: 15px
+    width: 100%
+    transition: background-color .3s ease, box-shadow .3s ease
+    &:last-child
+        margin-bottom: 0
+    &:hover
+        box-shadow: 0px 0px 20px -5px $shadow-dark-medium
+
+
+/*----------------------------------------------
+ * #2.1 Post heading
+ */
+.blog-post-heading
+    font-size: $font-size-h5
+    line-height: 25px
+
+.blog-post-heading-link
+    color: $text-color-dark-medium
+    display: block
+    font-family: $font-family-primary
+    font-size: $font-size-h5
+    font-weight: 600
+    line-height: 25px
+    text-transform: lowercase
+    &:first-letter
+        text-transform: capitalize
+
+
+/*----------------------------------------------
+ * #2.2 Post type: page
+ */
+.blog-post.type-page
+    .blog-post-caption
+        padding: 0
+    .blog-post-excerpt
+        display: none
+
+
+/*----------------------------------------------
+ * #2.3 Post type: post
+ */
+.blog-post.type-post
+    display: flex
+    justify-content: space-between
+    max-width: 100%
+
+.blog-post-image
+    width: 340px
+    display: block
+    height: 100%
+
+.blog-post-attachment
+    position: relative
+    border-radius: 3px
+
+.blog-post-caption
+    width: calc(100% - 30px)
+    padding-left: 20px
+
+.blog-post-meta
+    margin-top: 4px
+
+.blog-post-categories,
+.blog-post-posted-on
+    display: inline-block
+
+.blog-post-posted-on-link,
+.blog-post-category-link
+    color: $text-color-dark-medium
+    &:hover
+        color: $link-text
+    >i
+        margin-right: 4px
+        color: $link-text
+
+.blog-post-categories
+    margin-right: 45px
+    font-size: 14px
+    border-radius: 5px
+    padding: 0px 2px
+
+.blog-post-posted-on
+    font-size: 13px
+
+.blog-post-excerpt
+    font-size: 15px
+    margin-top: 12px
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#2 ARTICLES ===============
+ *--------------------------------------------------------------*/

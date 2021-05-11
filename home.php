@@ -29,17 +29,17 @@ get_header();
 
                         while ( have_posts() ) :
                             the_post();
-                            get_template_part( 'template-parts/content/content', get_post_type() );
+                            get_template_part( 'template-parts/content/content', 'blog' );
                         endwhile;
 
                         the_posts_navigation();
-                        else :
-                            get_template_part( 'template-parts/content/content', 'none' );
-                        endif;
-                        ?>
-                    </section>
+                    else :
+                        get_template_part( 'template-parts/content/content', 'none' );
+                    endif;
+                    ?>
+                </section>
 
-                    <?php get_sidebar(); ?>
+                <?php get_sidebar(); ?>
 
             </div>
         </div>

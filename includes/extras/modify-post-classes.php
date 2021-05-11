@@ -2,6 +2,7 @@
 
 /**
  * Remove 'category' and 'tag' classes from post classes
+ * Add classes to recognize if located on 'blog' page or 'singular' page
  *
  * @package devwp
  * @version 1.0.0
@@ -22,9 +23,9 @@ if ( ! function_exists( 'devwp_modify_post_classes' ) ) :
         }
 
         if ( is_singular() ) {
-            $classes[] = 'blog-post-content';
+            $classes[] = 'blog-post-single';
         } else {
-            $classes[] = 'blog-post-item';
+            $classes[] = 'blog-post clearfix';
         }
 
         return $classes;

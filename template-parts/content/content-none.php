@@ -9,6 +9,23 @@
 
 ?>
 
+<?php
+if ( is_search() ) :
+    ?>
+
+    <div class="search-no-results-content">
+        <h2 class="search-no-results-title"><?php esc_html_e( 'Nothing Found', 'devwp' ); ?></h2>
+        <p class="search-no-results-description"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'devwp' ); ?></p>
+        <?php get_search_form(); ?>
+    </div>
+
+    <?php
+    return;
+endif;
+?>
+
+
+
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'devwp' ); ?></h1>
@@ -30,13 +47,6 @@
 				) . '</p>',
 				esc_url( admin_url( 'post-new.php' ) )
 			);
-
-		elseif ( is_search() ) :
-			?>
-
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'devwp' ); ?></p>
-			<?php
-			get_search_form();
 
 		else :
 			?>

@@ -1,0 +1,404 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 LAYOUT>  ===============
+ *--------------------------------------------------------------*/
+
+.page-content--content-blog-single
+    padding: 60px 0
+    max-width: 100%
+    width: 100%
+
+.content-blog-single
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.section__blog-single
+    max-width: calc(70% - 15px)
+    flex: 0 0 calc(70% - 15px)
+    // max-width: calc(66.666667% - 15px)
+    // flex: 0 0 calc(66.666667% - 15px)
+    width: 100%
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1 LAYOUT ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #2 CONTENT>  ===============
+ *--------------------------------------------------------------*/
+
+.blog-post-single
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    background-color: $bg-color-light-strong
+
+.blog-single-attachment
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+
+.blog-single-content
+    padding: 25px 25px 50px 25px
+    border-left: 1px solid $border-color-dark
+    border-right: 1px solid $border-color-dark
+
+// header
+.blog-single-header
+    margin-bottom: 25px
+    padding-bottom: 10px
+    border-bottom: 1px dotted $border-color-dark
+
+.blog-single-posted-on,
+.blog-single-posted-by,
+.blog-single-comments-num
+    margin-right: 30px
+    display: inline-block
+    font-size: 15px
+    >i.fa
+        margin-right: 4px
+        color: $link-text
+
+.blog-single-comments-num
+    margin-right: 0
+
+.blog-single-posted-on-link,
+.blog-single-author-link,
+.blog-single-comments-link
+    color: $text-color-dark-medium
+    &:hover
+        color: $link-text
+    >i.fa
+        margin-right: 4px
+        color: $link-text
+
+
+
+// editor content
+.blog-editor-content
+    clear: both
+    margin-bottom: 30px
+
+.blog-editor-content
+    .wp-block-image,
+    blockquote,
+    code,
+    figure,
+    h3,
+    h4,
+    iframe,
+    img,
+    ol,
+    p,
+    pre,
+    ul,
+    video
+        display: block
+        font-family: $font-family-base
+        font-weight: 400
+        width: 100%
+        height: auto
+        max-width: 100%
+        margin-top: 0
+
+.blog-editor-content
+    p
+        line-height: 1.5
+        margin-bottom: 20px
+    a
+        display: inline-block
+    h1
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    h2
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    h3
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    h4
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    h5
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    h6
+        font-weight: 600
+        // font-size:
+        // line-height:
+        // margin-bottom:
+    img
+        // margin-bottom:
+    ol,
+    ul
+        // margin-top: .8em
+        // margin-bottom: .4em
+        counter-reset: bf-counter
+        line-height: 1.5
+        li
+            position: relative
+            padding-left: 30px
+            // margin-bottom: .4em
+            &::before
+                line-height: 1.5
+                font-size: 14px
+                content: counter(bf-counter) "."
+                counter-increment: bf-counter
+                position: absolute
+                top: 2px
+                left: 11px
+    ul
+        li
+            &::before
+                content: ""
+                position: absolute
+                top: 10px
+                left: 13px
+                width: 4px
+                height: 4px
+                border-radius: 100px
+                background-color: $text-color-base
+    p+h1
+    p+h2
+    p+h3
+    p+h4
+    p+h5
+    p+h6
+    p+ol
+    p+ul
+
+
+
+// footer
+.blog-single-footer
+    border-top: 1px dotted $border-color-dark
+    padding-top: 10px
+
+.blog-single-categories,
+.blog-single-tags
+    display: inline-block
+    margin-right: 30px
+    font-size: 15px
+    >i.fa
+        margin-right: 4px
+        color: $link-text
+
+.blog-single-tags
+    margin-right: 0
+
+.blog-single-category-link,
+.blog-single-tag-link
+    color: $text-color-dark-medium
+    &:hover
+        color: $link-text
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#2 CONTENT ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #3 POST-NAVIGATION>  ===============
+ *--------------------------------------------------------------*/
+
+.post-navigation
+    padding: 0px 25px 0px 25px
+    background-color: $bg-color-light-strong
+    margin-bottom: 30px
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
+    border: 1px solid $border-color-dark
+    border-top: 0
+
+.nav-links
+    padding: 0 0 25px 0
+    display: flex
+    justify-content: space-between
+
+.nav-previous,
+.nav-next
+    >a
+        border: 1px solid transparent
+        border-radius: 3px
+        padding: 8px 20px
+        display: inline-block
+        font-size: 14px
+        max-width: 250px
+        width: 100%
+        height: 100%
+        background-color: $button-primary-bg
+        color: $text-color-light-strong
+        &:hover
+            background-color: $button-primary-bg-hover
+
+.nav-title
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+
+.nav-subtitle
+    display: block
+    text-align: center
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#3 POST-NAVIGATION ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #4 COMMENTS>  ===============
+ *--------------------------------------------------------------*/
+
+.comments-area
+    border-radius: 3px
+    // background-color: $bg-color-light-strong
+    background-color: $bg-color-light-medium
+    padding: 25px
+    border: 1px solid $border-color-dark
+
+.comments-title
+    text-align: left
+    font-size: $font-size-h3
+    margin-bottom: 25px
+    padding: 0
+    >span
+        font-size: 23px
+
+.comment-list
+    margin: 0 0 50px 0
+
+li.comment
+    margin-bottom: 20px
+
+.comment-body
+    border: 1px solid $border-color-dark
+    border-radius: 3px
+    padding: 15px
+    padding-left: 90px
+    position: relative
+
+.avatar
+    position: absolute
+    left: 15px
+    top: 15px
+    border-radius: 50%
+    width: auto
+
+.comment-metadata
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 10px
+
+.edit-link
+    margin-left: 10px
+
+.comment-content
+    >p
+        margin: 0 0 10px 0
+        font-size: 15px
+        line-height: 22px
+
+.reply
+    text-align: right
+    .comment-reply-link
+        display: inline-block
+        height: 35px
+        font-size: 15px
+        padding: 5px 25px
+
+
+ol.children
+    padding: 0 0 0 20px
+    margin-top: 10px
+    li.comment
+        margin-bottom: 10px
+
+li.comment
+    .comment-respond
+        // margin-top: 5px
+        padding: 20px
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+        // background-color: darken($bg-color-light-medium, 3%)
+
+        background-color: scale-color($bg-color-light-medium, $lightness: -3%)
+        border: 1px solid $border-color-dark
+        border-top: 0
+
+
+.comment-respond
+    // margin: 30px 0
+    // background-color: $bg-color-base
+    // border-radius: 3px
+    // padding: 25px
+
+.comment-reply-title
+    margin-bottom: 25px
+    font-size: $font-size-h4
+    >small
+        margin-left: 25px
+
+.logged-in-as
+    margin-bottom: 10px
+
+.comment-notes,
+.comment-form-author,
+.comment-form-email,
+.comment-form-comment,
+.comment-form-cookies-consent
+    line-height: 25px
+    margin-bottom: 20px
+    >label
+        display: none
+    >input,
+    >textarea
+        padding: 12px 10px
+        line-height: 1.5
+
+.comment-form-cookies-consent
+    >label
+        display: inline-block
+
+.form-submit
+    .submit
+        min-width: 140px
+        padding: 11px
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#4 COMMENTS ===============
+ *--------------------------------------------------------------*/
