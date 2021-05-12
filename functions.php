@@ -72,6 +72,12 @@ require THEME_DIR . '/includes/extras/excerpt-length.php';
 // Customize comment fields
 require THEME_DIR . '/includes/extras/comment-fields-customization.php';
 
+// Display main page titles
+require THEME_DIR . '/includes/extras/display-page-title.php';
+
+// Display breadcrumbs
+require THEME_DIR . '/includes/extras/display-breadcrumbs.php';
+
 
 /**
  * Helper functions

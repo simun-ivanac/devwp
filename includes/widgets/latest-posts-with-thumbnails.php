@@ -76,7 +76,7 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
 		<ul class="latest-entries-content">
             <?php while ( $r->have_posts() ) : $r->the_post(); ?>
                 <li class="latest-entry-post">
-                    <a href="<?php the_permalink(); ?>" class="latest-entry-link">
+                    <a href="<?php the_permalink(); ?>" class="latest-entry-link" title="<?php the_title(); ?>">
                         <?php
                         if ( $show_thumbnail ) :
                             if ( has_post_thumbnail() ) :

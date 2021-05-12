@@ -27,8 +27,6 @@
 .section__blog-single
     max-width: calc(70% - 15px)
     flex: 0 0 calc(70% - 15px)
-    // max-width: calc(66.666667% - 15px)
-    // flex: 0 0 calc(66.666667% - 15px)
     width: 100%
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
@@ -42,6 +40,15 @@
 /*--------------------------------------------------------------
  * ===============  #2 CONTENT>  ===============
  *--------------------------------------------------------------*/
+
+.post-page-title
+    color: $text-color-light-strong
+    font-family: $font-family-secondary
+    font-size: $font-size-h3
+    font-weight: 700
+    text-transform: uppercase
+    cursor: default
+    line-height: 42px
 
 .blog-post-single
     border-top-left-radius: 3px
@@ -248,11 +255,10 @@
     >a
         border: 1px solid transparent
         border-radius: 3px
-        padding: 8px 20px
+        padding: 8px 15px
         display: inline-block
         font-size: 14px
-        max-width: 250px
-        width: 100%
+        width: 220px
         height: 100%
         background-color: $button-primary-bg
         color: $text-color-light-strong
@@ -261,8 +267,12 @@
 
 .nav-title
     display: inline-block
-    vertical-align: middle
+    max-width: 100%
+    overflow: hidden
     text-align: center
+    text-overflow: ellipsis
+    vertical-align: middle
+    white-space: nowrap
 
 .nav-subtitle
     display: block

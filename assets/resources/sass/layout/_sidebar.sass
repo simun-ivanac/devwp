@@ -20,8 +20,6 @@
     border: 1px solid $border-color-dark
     flex: 0 0 calc(30% - 15px)
     max-width: calc(30% - 15px)
-    // flex: 0 0 calc(33.333333% - 15px)
-    // max-width: calc(33.333333% - 15px)
     height: 100%
     padding: 30px 15px
     width: 100%
@@ -118,8 +116,8 @@ form.search-form
     justify-content: center
     align-items: center
     border-radius: 3px
-    // &:hover
-        background-color: $bg-color-base
+    &:hover
+        background-color: scale-color($bg-color-base, $lightness: +70%)
 
 .latest-entry-media-holder
     max-width: 80px
@@ -137,7 +135,7 @@ form.search-form
     font-size: $font-size-base
     font-weight: 600
     line-height: 17px
-    margin: 0 0 5px 0
+    margin-bottom: 3px
     text-align: left
     text-transform: lowercase
     &:first-letter
