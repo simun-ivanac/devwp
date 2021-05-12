@@ -17,10 +17,10 @@ if ( ! function_exists( 'devwp_core_scripts' ) ) :
 		 * CSS
 		 */
         wp_enqueue_style( 'devwp-style', get_stylesheet_uri(), array(), $style_ver );
+        wp_dequeue_style( 'wp-block-library' );
+ 	    wp_dequeue_style( 'wp-block-library-theme' );
+ 	    wp_dequeue_style( 'wc-block-style' );
         // wp_style_add_data( 'devwp-style', 'rtl', 'replace' );
-        // wp_dequeue_style( 'wp-block-library' );
- 	    // wp_dequeue_style( 'wp-block-library-theme' );
- 	    // wp_dequeue_style( 'wc-block-style' );
 
 
 		/**

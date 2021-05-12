@@ -23,7 +23,6 @@
 
 <!-- SITE-WRAPPER -->
 <div id="site-wrapper" class="site-wrapper">
-	<a class="skip-link screen-reader-text" href="#site-content"><?php esc_html_e( 'Skip to content', 'devwp' ); ?></a>
 
     <!-- SITE-HEADER -->
 	<header id="site-header" class="site-header">

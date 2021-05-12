@@ -10,54 +10,26 @@ get_header();
 ?>
 
 
+<div id="hero-image" class="hero-image hero-image--large">
+    <div class="hero-image-overlay"></div>
+</div>
+
 <!-- SITE-CONTENT -->
 <main id="site-content" class="site-content">
-
-	<section class="error-404 not-found">
-		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'devwp' ); ?></h1>
-		</header>
-
-		<div class="page-content">
-			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'devwp' ); ?></p>
-
-				<?php
-				get_search_form();
-
-				the_widget( 'WP_Widget_Recent_Posts' );
-				?>
-
-				<div class="widget widget_categories">
-					<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'devwp' ); ?></h2>
-					<ul>
-						<?php
-						wp_list_categories(
-							array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							)
-						);
-						?>
-					</ul>
-				</div>
-
-				<?php
-				/* translators: %1$s: smiley */
-				$devwp_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'devwp' ), convert_smilies( ':)' ) ) . '</p>';
-				the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$devwp_archive_content" );
-
-				the_widget( 'WP_Widget_Tag_Cloud' );
-				?>
-
-		</div>
-	</section>
-
+    <div id="page-content" class="page-content page-content--content-404">
+        <div class="container">
+            <header class="content-404-header">
+                <h1 class="page-title"><?php esc_html_e( 'Page not found', 'devwp' ); ?></h1>
+            </header>
+            <div class="content-holder content-404">
+                <section class="section__error-404">
+                    <p class="error-404-description">
+					    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try search form?', 'devwp' ); ?>
+				    </p>
+				    <?php get_search_form(); ?>
+                </section>
+            </div>
+        </div>
+    </div>
 </main>
 <!-- !SITE-CONTENT -->
-
-
-<?php
-get_footer();

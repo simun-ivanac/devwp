@@ -31,7 +31,7 @@
             <?php endif; ?>
         </header>
 
-        <div class="blog-editor-content">
+        <div class="editor-content">
             <?php
             the_content(
                 sprintf(

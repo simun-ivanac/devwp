@@ -145,8 +145,6 @@ if ( ! function_exists( 'devwp_entry_footer' ) ) :
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
             $categories_list = preg_replace('/<a /', '<a class="blog-single-category-link"', get_the_category_list( esc_html__( ', ', 'devwp' ) ) );
-
-
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
                 printf(
@@ -191,23 +189,6 @@ if ( ! function_exists( 'devwp_entry_footer' ) ) :
 			echo '</span>';
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'devwp' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
-
 	}
 endif;
 
@@ -227,7 +208,7 @@ if ( ! function_exists( 'devwp_post_thumbnail' ) ) :
 			return;
 		}
 
-		if ( is_singular() ) :
+		if ( is_singular() && ! is_page() ) :
 			?>
 
 			<div class="blog-single-image">
@@ -236,6 +217,19 @@ if ( ! function_exists( 'devwp_post_thumbnail' ) ) :
                     'post-thumbnail',
                     array(
                         'class' => 'blog-single-attachment',
+                    )
+                );
+                ?>
+			</div>
+
+		<?php elseif ( is_page() ) : ?>
+
+            <div class="page-singular-image">
+				<?php
+                the_post_thumbnail(
+                    'post-thumbnail',
+                    array(
+                        'class' => 'page-singular-attachment',
                     )
                 );
                 ?>

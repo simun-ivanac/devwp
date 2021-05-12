@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content-holder contact-form">
             <div class="row contact-form__content">
-                <div class="contact-form-content">
+                <div id="contact-form" class="contact-form-content">
                     <?php echo do_shortcode('[contact-form-7 id="21" title="Contact form 1"]'); ?>
                 </div>
                 <div class="contact-form-general">

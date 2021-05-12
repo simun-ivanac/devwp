@@ -63,20 +63,26 @@ require THEME_DIR . '/includes/widgets/latest-posts-with-thumbnails.php';
 // Add attributes to menu items
 require THEME_DIR . '/includes/extras/menu-items-attributes.php';
 
-// Modify post classes
-require THEME_DIR . '/includes/extras/modify-post-classes.php';
-
-// Shorten post excerpt
-require THEME_DIR . '/includes/extras/excerpt-length.php';
-
-// Customize comment fields
-require THEME_DIR . '/includes/extras/comment-fields-customization.php';
+// Active menu item fix
+require THEME_DIR . '/includes/extras/active-menu-item-fix.php';
 
 // Display main page titles
 require THEME_DIR . '/includes/extras/display-page-title.php';
 
 // Display breadcrumbs
 require THEME_DIR . '/includes/extras/display-breadcrumbs.php';
+
+// Disable emojis (since not used)
+require THEME_DIR . '/includes/extras/disable-emojis.php';
+
+// Modify post classes
+require THEME_DIR . '/includes/extras/post/modify-post-classes.php';
+
+// Shorten post excerpt
+require THEME_DIR . '/includes/extras/post/excerpt-length.php';
+
+// Customize comment fields
+require THEME_DIR . '/includes/extras/post/comment-fields-customization.php';
 
 
 /**

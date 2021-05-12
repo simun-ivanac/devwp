@@ -22,8 +22,10 @@ if ( ! function_exists( 'devwp_modify_post_classes' ) ) :
             }
         }
 
-        if ( is_singular() ) {
+        if ( is_singular() && ! is_page() ) {
             $classes[] = 'blog-post-single';
+        } else if ( is_page() ) {
+            $classes[] = 'page-singular';
         } else {
             $classes[] = 'blog-post clearfix';
         }

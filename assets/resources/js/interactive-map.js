@@ -1,7 +1,7 @@
 var InteractiveMap = (function() {
-    // CONFIGURE AND DISPLAY INTERACTIVE MAP, WHEN CLICKED ON MAP IMAGE
+    // CONFIGURE AND DISPLAY INTERACTIVE MAP (on scroll)
 
-    // if not found, return
+    // if not found, return early
     var map_holder = $('#map-holder');
     if (!map_holder.length) return;
 
@@ -55,43 +55,6 @@ var InteractiveMap = (function() {
     });
 
     configMap();
-
-
-
-
-
-    // CONFIGURATION OF INTERACTIVE MAP
-    // location.on('click', '.placeholder-image', function(e) {
-    //     e.stopPropagation();
-    //
-    //     // open overlay
-    //     ScreenOverlay.display(location.find('#leaflet-map'));
-    //     map_holder.addClass('active');
-    //
-    //     // if map is already initialized, skip configuration
-    //     if (map_holder.children().length) return;
-    //
-    //
-    //     var window_width = $(window).width();
-    //     var window_height = $(window).height();
-    //
-    // });
-
-
-
-    // CLOSE INTERACTIVE MAP
-    // $(window).click(function() {
-    //
-    //     // if map is not opened, return
-    //     if (!map_holder.hasClass('active')) return;
-    //     if (!map_holder.children().length) return;
-    //
-    //     // if clicked outside map, close overlay
-    //     if (!$(event.target).closest(map_holder).length) {
-    //         ScreenOverlay.hide();
-    //         map_holder.removeClass('active');
-    //     }
-    // });
 
 
 })(); // !InteractiveMap

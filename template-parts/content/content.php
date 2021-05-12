@@ -39,7 +39,7 @@
             <?php endif; ?>
         </header>
 
-        <div class="blog-post-content">
+        <div class="editor-content">
             <?php
             if ( is_singular() ) :
                 the_content(

@@ -15,7 +15,7 @@ var LazyImageLoading = (function() {
                 $(this).addClass('loaded');
             }
 
-            // if loaded, return
+            // if loaded, return early
             if ($(this).hasClass('loaded')) return;
 
 
