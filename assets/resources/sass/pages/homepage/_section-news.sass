@@ -55,6 +55,35 @@
     transition: margin 0.2s ease-in
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-lg)
+    .news-post
+        flex: 0 0 calc((100% - 30px) / 2)
+        max-width: calc((100% - 30px) / 2)
+        &:last-of-type
+            margin-top: 30px
+
+@media (max-width: $breakpoint-md)
+    .news-post-caption
+        padding: 0 7px
+
+@media (max-width: $breakpoint-sm)
+    .news-post
+        flex: 0 0 100%
+        max-width: 100%
+        margin-bottom: 30px
+        &:last-of-type
+            margin-bottom: 0
+            margin-top: 0
+
+    .news-post-attachment
+        width: auto
+        margin: 0 auto
+
+    .news-post-caption
+        max-width: 350px
+        margin: 0 auto
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

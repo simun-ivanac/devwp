@@ -14,16 +14,16 @@
  * ===============  #1 >  ===============
  *--------------------------------------------------------------*/
 
-.home-work__title
-    .section-title
-        text-align: left
-
 .home-work__title,
 .home-work__content,
 .home-work__image-holder
     display: inline-block
     max-width: calc((100% - 30px) / 2)
     width: 100%
+
+.home-work__title
+    .section-title
+        text-align: left
 
 .home-work__image-holder
     float: right
@@ -39,6 +39,37 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .home-work__title,
+    .home-work__content
+        top: 0
+
+
+@media (max-width: $breakpoint-lg)
+    .home-work__title,
+    .home-work__content,
+    .home-work__image-holder
+        display: block
+        max-width: 100%
+        width: 100%
+        float: none
+
+    .home-work__title
+        .section-title
+            text-align: center
+
+    .home-work-image
+        width: auto
+        margin: 0 auto
+
+    .home-work__content
+        text-align: center
+        margin-top: 25px
+
+    .home-work-button
+        margin-top: 15px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

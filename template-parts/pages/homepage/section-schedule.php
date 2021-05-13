@@ -21,7 +21,7 @@
     				</svg>
     			</span>
             </div>
-            <div class="row home-schedule__table">
+            <div class="row home-schedule__table js-schedule-table-holder">
                 <table id="schedule-table" class="table schedule-table">
 					<thead class="table-header">
 						<tr class="table-header-row">

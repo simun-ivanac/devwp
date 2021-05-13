@@ -37,6 +37,11 @@
     align-items: flex-start
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .site-header.fixed-menu
+        max-height: 60px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -52,10 +57,11 @@
     padding-top: 15px
     transition: padding 0.2s ease-in, line-height 0.2s ease-in
 
-.fixed-menu .header-content__branding
-    padding-top: 0
-    max-height: 70px
-    line-height: 70px
+.fixed-menu
+    .header-content__branding
+        padding-top: 0
+        max-height: 70px
+        line-height: 70px
 
 .custom-logo-link
     display: inline-block
@@ -73,6 +79,32 @@
         display: inline-block
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .fixed-menu
+        .header-content__branding
+            padding-top: 0
+            max-height: 60px
+            line-height: 60px
+    .custom-logo
+        max-width: 80px
+        max-height: 80px
+    .fixed-menu
+        .custom-logo
+            max-width: 45px
+            max-height: 45px
+            line-height: 60px
+
+@media (max-width: $breakpoint-sm)
+    .custom-logo
+        max-width: 70px
+        max-height: 70px
+
+@media (max-width: $breakpoint-xs)
+    .custom-logo
+        max-width: 60px
+        max-height: 60px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -106,7 +138,6 @@
     border: 0
     display: none
     height: 44px
-    outline: none
     padding: 0
     position: relative
     vertical-align: top
@@ -115,7 +146,7 @@
 .fixed-menu
     .primary-menu-icon
         background-color: transparent
-        margin-top: 0
+        margin-top: 7px
 
 .primary-menu-icon-style
     position: absolute
@@ -220,6 +251,21 @@
             text-transform: uppercase
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .header-menu-link
+        height: 60px
+        line-height: 60px
+    .header-sub-menu
+        top: 60px
+
+@media (max-width: $breakpoint-lg)
+    .menu-primary-menu-container
+        display: none
+    .primary-menu-icon
+        display: inline-block
+
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

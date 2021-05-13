@@ -82,6 +82,30 @@
     width: 100%
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-md)
+    .footer-content
+        flex-wrap: wrap
+
+    .footer-content__menu,
+    .footer-content__logo
+        flex: 0 0 100%
+        max-width: 100%
+
+    .footer-content__logo
+        margin-top: 30px
+
+    .footer-menu-item
+        text-align: center
+        left: 0
+        transform: translate(0, 0)
+
+
+@media (max-width: $breakpoint-sm)
+    .footer-menu-item
+        flex: 0 0 100%
+        max-width: 100%
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -130,6 +154,11 @@
     font-size: 13px
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-sm)
+    .footer-copyright-line-break
+        display: block
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

@@ -70,6 +70,39 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-lg)
+    .home-schedule__helper-icon
+        display: block
+
+    .table-header-heading,
+    .table-body-heading,
+    .table-data
+        width: 150px
+        padding: 25px 4px
+        overflow-x: auto
+
+    .table-body
+        overflow: hidden
+
+    .table-header-row .table-header-heading:first-of-type,
+    .table-body-heading
+        padding: 0 5px
+        text-align: center
+        width: 120px
+        position: absolute
+        z-index: 5
+        top: auto
+        left: 0
+        overflow: hidden
+
+@media (max-width: $breakpoint-xs)
+    .table-header-row .table-header-heading:first-of-type,
+    .table-body-heading
+        margin-left: 15px
+
+
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
