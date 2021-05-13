@@ -18,17 +18,16 @@ if ( ! function_exists( 'devwp_disable_gutenberg_on_page_templates' ) ) :
             return $use_block_editor;
         }
 
-        // list of excluded PAGES (front_page & blog)
+        // list of PAGES where NOT to use gutenberg (front_page & blog)
         $excluded_ids = array(
             get_option( 'page_on_front' ),
             get_option( 'page_for_posts' ),
         );
 
-        // list of excluded PAGE TEMPLATES
+        // list of PAGE TEMPLATES where NOT to use gutenberg
         $excluded_templates = array(
     		'page-templates/about-us.php',
     		'page-templates/contact.php',
-    		'page-templates/gallery.php'
     	);
 
 

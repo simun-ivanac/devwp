@@ -13,10 +13,10 @@ if ( ! function_exists( 'devwp_modify_post_classes' ) ) :
         $category_classes = 'category';
         $tag_classes = 'tag';
 
-        foreach ( $classes as $key => $value ) {
+        foreach ( $classes as $key => $class ) {
             if (
-                strpos( $value, $category_classes ) !== false ||
-                strpos( $value, $tag_classes ) !== false
+                strpos( $class, $category_classes ) !== false ||
+                strpos( $class, $tag_classes ) !== false
             ) {
                 unset( $classes[$key] );
             }

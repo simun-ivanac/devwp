@@ -57,7 +57,7 @@ add_filter( 'nav_menu_link_attributes' , 'devwp_menu_links_atts' , 10, 3 );
 
 
 /**
- * Add classes to SUBMENU, depending on location (header).
+ * Add classes to SUBMENU, depending on location (header in this case).
  *
  * @package devwp
  * @version 1.0.0

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Remove "Website url" from comment form (useless?).
+ * Remove "Website url" from comment form.
  *
  * @package devwp
  * @version 1.0.0
@@ -66,7 +66,7 @@ add_filter( 'comment_form_fields', 'devwp_customize_fields' );
 
 
 /**
- * Add extra classes to reply link.
+ * Add extra classes to comment reply link.
  *
  * @package devwp
  * @version 1.0.0
