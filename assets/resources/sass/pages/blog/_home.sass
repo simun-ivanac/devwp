@@ -1,11 +1,11 @@
 /*--------------------------------------------------------------
  * [TABLE OF CONTENTS]
  *
- * #1
- * #2
- * #3
- *    #3.1
- *    #3.2
+ * #1 LAYOUT
+ * #2 ARTICLES
+ *    #2.1 Post heading
+ *    #2.2 Post type: page
+ *    #2.2 Post type: post
  *
  *--------------------------------------------------------------*/
 
@@ -15,8 +15,8 @@
  *--------------------------------------------------------------*/
 
 .page-content--content-blog
-    padding: 60px 0
     max-width: 100%
+    padding: 60px 0
     width: 100%
 
 .blog-page-header
@@ -26,18 +26,37 @@
     border-bottom: 1px solid $border-color-dark
     color: $text-color-dark-medium
     font-size: $font-size-h3
+    line-height: 39px
 
 .content-blog
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: space-between
 
 .section__blog-posts
-    max-width: calc(70% - 15px)
     flex: 0 0 calc(70% - 15px)
+    max-width: calc(70% - 15px)
     width: 100%
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .section__blog-posts
+        flex: 0 0 calc(66.666667% - 15px)
+        max-width: calc(66.666667% - 15px)
+
+@media (max-width: $breakpoint-lg)
+    .section__blog-posts
+        flex: 0 0 100%
+        margin-bottom: 30px
+        max-width: 100%
+
+@media (max-width: $breakpoint-md)
+    .blog-page-title
+        font-size: $font-size-h3 * 0.8
+        line-height: 32px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -56,8 +75,8 @@
     border: 1px solid $border-color-dark
     margin-bottom: 30px
     padding: 15px
-    width: 100%
     transition: background-color .3s ease, box-shadow .3s ease
+    width: 100%
     &:last-child
         margin-bottom: 0
     &:hover
@@ -102,17 +121,17 @@
     max-width: 100%
 
 .blog-post-image
-    width: 340px
     display: block
     height: 100%
+    max-width: 340px
 
 .blog-post-attachment
-    position: relative
     border-radius: 3px
+    position: relative
 
 .blog-post-caption
-    width: calc(100% - 30px)
     padding-left: 20px
+    width: calc(100% - 30px)
 
 .blog-post-meta
     margin-top: 4px
@@ -127,13 +146,13 @@
     &:hover
         color: $link-text
     >i
-        margin-right: 4px
         color: $link-text
+        margin-right: 4px
 
 .blog-post-categories
-    margin-right: 45px
-    font-size: 14px
     border-radius: 5px
+    font-size: 14px
+    margin-right: 45px
     padding: 0px 2px
 
 .blog-post-posted-on
@@ -143,7 +162,68 @@
     font-size: 15px
     margin-top: 12px
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-md)
+    .blog-post-image
+        max-width: 200px
+        width: 100%
+    .blog-post-excerpt
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 3
+        display: -webkit-box
+        overflow: hidden
+        text-overflow: ellipsis
+
+
+@media (max-width: $breakpoint-sm)
+    .blog-post-heading,
+    .blog-post-heading-link
+        font-size: 19px
+        line-height: 21px
+    .blog-post.type-post
+        display: block
+    .blog-post-media-holder
+        float: left
+        margin: 0 15px 0 0
+        max-width: 170px
+    .blog-post-image
+        width: auto
+    .blog-post-caption
+        padding: 0
+        width: 100%
+    .blog-post-meta
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .blog-post-categories
+        margin-right: 30px
+    .blog-post-excerpt
+        display: block
+        overflow: visible
+
+@media (max-width: 410px)
+    .blog-post.type-post
+        display: block
+    .blog-post-media-holder
+        float: none
+        margin: 0
+        max-width: 100%
+        width: 100%
+    .blog-post-image
+        margin-bottom: 15px
+        max-width: 100%
+        width: 100%
+    .blog-post-caption
+        padding: 0
+        width: 100%
+    .blog-post-meta
+        display: block
+    .blog-post-categories
+        margin-right: 45px
+
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

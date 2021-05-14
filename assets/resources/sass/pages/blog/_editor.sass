@@ -142,6 +142,51 @@
     margin-top: 10px
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-sm)
+    .editor-content
+        .alignleft
+            max-width: 60%
+            margin: 0 15px 5px 0
+        .alignright
+            max-width: 60%
+            margin: 0 0 5px 15px
+    .editor-content h1
+        font-size: $font-size-h1 * 0.9
+    .editor-content h2
+        font-size: $font-size-h2 * 0.9
+    .editor-content h3
+        font-size: $font-size-h3 * 0.9
+    .editor-content h4
+        font-size: $font-size-h4 * 0.9
+    .editor-content h5
+        font-size: $font-size-h5 * 0.9
+    .editor-content h6
+        font-size: $font-size-h6 * 0.9
+
+
+@media (max-width: $breakpoint-xs)
+    .editor-content
+        .alignleft,
+        .alignright
+            max-width: 100%
+            margin: 0 0 10px 0
+        .wp-block-quote
+            padding-left: 10px
+    .editor-content h1
+        font-size: $font-size-h1 * 0.8
+    .editor-content h2
+        font-size: $font-size-h2 * 0.8
+    .editor-content h3
+        font-size: $font-size-h3 * 0.8
+    .editor-content h4
+        font-size: $font-size-h4 * 0.8
+    .editor-content h5
+        font-size: $font-size-h5 * 0.8
+    .editor-content h6
+        font-size: $font-size-h6 * 0.8
+
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

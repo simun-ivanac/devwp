@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+ * [TABLE OF CONTENTS]
+ *
+ * #1 COMMENTS
+ * #2
+ * #3
+ *    #3.1
+ *    #3.2
+ *
+ *--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+ * ===============  #1 COMMENTS>  ===============
+ *--------------------------------------------------------------*/
+
+.comments-area
+    border-radius: 3px
+    background-color: $bg-color-light-medium
+    padding: 25px
+    border: 1px solid $border-color-dark
+
+.comments-title
+    text-align: left
+    font-size: $font-size-h3
+    margin-bottom: 25px
+    padding: 0
+    >span
+        font-size: 23px
+
+.comment-list
+    margin: 0 0 50px 0
+
+li.comment
+    margin-bottom: 20px
+
+.comment-body
+    border: 1px solid $border-color-dark
+    border-radius: 3px
+    padding: 15px
+    padding-left: 90px
+    position: relative
+
+.avatar
+    position: absolute
+    left: 15px
+    top: 15px
+    border-radius: 50%
+    width: auto
+
+.comment-metadata
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 10px
+
+.edit-link
+    margin-left: 10px
+
+.comment-content
+    >p
+        margin: 0 0 10px 0
+        font-size: 15px
+        line-height: 22px
+
+.reply
+    text-align: right
+    .comment-reply-link
+        display: inline-block
+        height: 35px
+        font-size: 15px
+        padding: 5px 25px
+
+
+ol.children
+    padding: 0 0 0 20px
+    margin-top: 10px
+    li.comment
+        margin-bottom: 10px
+
+li.comment
+    .comment-respond
+        // margin-top: 5px
+        padding: 20px
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+        // background-color: darken($bg-color-light-medium, 3%)
+
+        background-color: scale-color($bg-color-light-medium, $lightness: -3%)
+        border: 1px solid $border-color-dark
+        border-top: 0
+
+
+// .comment-respond
+
+.comment-reply-title
+    margin-bottom: 10px
+    font-size: $font-size-h4
+    >small
+        margin-left: 25px
+
+.logged-in-as
+    margin-bottom: 10px
+
+.comment-notes,
+.comment-form-author,
+.comment-form-email,
+.comment-form-comment,
+.comment-form-cookies-consent
+    line-height: 25px
+    margin-bottom: 20px
+    >label
+        display: none
+    >input,
+    >textarea
+        padding: 12px 10px
+        line-height: 1.5
+
+.comment-form-author,
+.comment-form-email
+    >input
+        max-width: 320px
+        width: 100%
+
+.comment-form-cookies-consent
+    >label
+        display: inline
+
+.form-submit
+    .submit
+        min-width: 140px
+        padding: 11px
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-sm)
+    .comments-area
+        padding: 15px
+    .comment-body
+        padding-left: 80px
+    .avatar
+        top: 10px
+        left: 10px
+    ol.children
+        padding: 0 0 0 15px
+
+@media (max-width: $breakpoint-xs)
+    .comment-body
+        padding-left: 70px
+    .avatar
+        width: 50px
+        height: 50px
+    .comment-reply-title
+        font-size: $font-size-h4 * 0.9
+        line-height: 28px
+
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1 COMMENTS ===============
+ *--------------------------------------------------------------*/

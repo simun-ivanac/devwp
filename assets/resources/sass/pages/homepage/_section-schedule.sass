@@ -96,11 +96,21 @@
         left: 0
         overflow: hidden
 
+@media (max-width: $breakpoint-sm)
+    .table-header-heading,
+    .table-body-heading,
+    .table-data
+        width: 135px
+
+    .table-header-row .table-header-heading:first-of-type,
+    .table-body-heading
+        width: 100px
+
+
 @media (max-width: $breakpoint-xs)
     .table-header-row .table-header-heading:first-of-type,
     .table-body-heading
         margin-left: 15px
-
 
 
 /*--------------------- <MEDIA-QUERIES ---------------------*/

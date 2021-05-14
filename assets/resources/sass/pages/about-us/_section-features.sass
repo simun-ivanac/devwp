@@ -55,6 +55,48 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+
+@media (max-width: $breakpoint-lg)
+    .about-features__cards
+        justify-content: center
+
+    .features-card
+        flex: 0 0 calc((100% - 30px) / 2)
+        max-width: calc((100% - 30px) / 2)
+
+    .features-card:nth-of-type(2)
+        margin-left: 30px
+
+    .features-card:last-of-type
+        margin-top: 30px
+
+
+@media (max-width: $breakpoint-md)
+    .features-card
+        padding: 15px
+
+
+@media (max-width: $breakpoint-sm)
+    .features-card
+        flex: 0 0 100%
+        max-width: 100%
+
+    .features-card:nth-of-type(2)
+        margin-left: 0
+        margin-top: 30px
+
+    .features-card-number
+        font-size: 32px
+
+    .features-card-description
+        font-size: 18px
+
+
+@media (max-width: $breakpoint-xs)
+    .features-card-number
+        font-size: 28px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

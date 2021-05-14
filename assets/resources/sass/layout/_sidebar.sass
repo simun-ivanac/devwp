@@ -19,8 +19,8 @@
     border-radius: 3px
     border: 1px solid $border-color-dark
     flex: 0 0 calc(30% - 15px)
-    max-width: calc(30% - 15px)
     height: 100%
+    max-width: calc(30% - 15px)
     padding: 30px 15px
     width: 100%
 
@@ -37,9 +37,9 @@
     color: $text-color-dark-strong
     cursor: default
     font-family: $font-family-secondary
+    font-size: $font-size-h5
     font-weight: bold
     line-height: 43px
-    font-size: $font-size-h5
     margin: 0 0 5px 0
     padding: 0
     position: relative
@@ -48,6 +48,17 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .aside__widgets
+        flex: 0 0 calc(33.333333% - 15px)
+        max-width: calc(33.333333% - 15px)
+
+@media (max-width: $breakpoint-lg)
+    .aside__widgets
+        flex: 0 0 100%
+        max-width: 100%
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -108,19 +119,20 @@ form.search-form
     padding: 0 10px
 
 .latest-entry-post
-    margin-bottom: 15px
     display: block
+    margin-bottom: 15px
 
 .latest-entry-link
-    display: flex
-    justify-content: center
     align-items: center
     border-radius: 3px
+    display: flex
+    justify-content: center
     &:hover
         background-color: scale-color($bg-color-base, $lightness: +70%)
 
 .latest-entry-media-holder
     max-width: 80px
+    width: 100%
 
 .latest-entry-attachment
     border-radius: 3px
@@ -152,11 +164,25 @@ form.search-form
         color: $text-color-light-highlight
 
 .latest-entry-date-format
-    margin-left: 1px
     display: inline-block
+    margin-left: 1px
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-lg)
+    .latest-entries-content
+        padding: 0 25px
+    .latest-entry-link
+        justify-content: flex-start
+
+@media (max-width: $breakpoint-md)
+    .latest-entries-content
+
+@media (max-width: $breakpoint-xs)
+    .latest-entries-content
+        padding: 0 10px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -211,6 +237,19 @@ form.search-form
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-lg)
+    .widget_categories>ul
+        padding: 0 25px
+
+@media (max-width: $breakpoint-md)
+    .widget_categories>ul
+        padding: 0 15px
+
+@media (max-width: $breakpoint-xs)
+    .widget_categories>ul
+        padding: 0 10px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -227,8 +266,8 @@ form.search-form
 
 .wp-tag-cloud
     display: flex
-    justify-content: flex-start
     flex-wrap: wrap
+    justify-content: flex-start
     >li
         margin: 0 5px 5px 0
 
@@ -243,7 +282,21 @@ form.search-form
     &:hover
         background-color: $text-color-light-highlight
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-lg)
+    .tagcloud
+        padding: 0 25px
+
+@media (max-width: $breakpoint-md)
+    .tagcloud
+        padding: 0 15px
+
+@media (max-width: $breakpoint-xs)
+    .tagcloud
+        padding: 0 10px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

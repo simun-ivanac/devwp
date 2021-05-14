@@ -11,14 +11,15 @@
  *--------------------------------------------------------------*/
 
 .search-no-results-title
-    margin-bottom: 10px
     color: $text-color-dark-medium
     font-size: $font-size-h4
+    margin-bottom: 10px
 
 .search-no-results-description
     margin-bottom: 10px
 
 .search-no-results-content
+    margin-bottom: 30px
     form.search-form
         max-width: 500px
         width: 100%
@@ -27,7 +28,17 @@
             &:hover
                 background-color: $button-primary-bg-hover
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-md)
+    .search-no-results-title
+        font-size: 23px
+
+@media (max-width: $breakpoint-xs)
+    .search-no-results-title
+        font-size: 20px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

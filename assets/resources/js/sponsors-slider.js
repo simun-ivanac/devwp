@@ -22,7 +22,7 @@ var SponsorsSlider = (function() {
         slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 995,
+                breakpoint: 1020,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3
@@ -36,7 +36,7 @@ var SponsorsSlider = (function() {
                 }
             },
             {
-                breakpoint: 400,
+                breakpoint: 430,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

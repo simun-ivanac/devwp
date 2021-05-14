@@ -30,6 +30,18 @@
     width: 100%
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .section__blog-single
+        flex: 0 0 calc(66.666667% - 15px)
+        max-width: calc(66.666667% - 15px)
+
+@media (max-width: $breakpoint-lg)
+    .section__blog-single
+        flex: 0 0 100%
+        margin-bottom: 30px
+        max-width: 100%
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -119,6 +131,25 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-md)
+    .post-page-title
+        font-size: $font-size-h3 * 0.9
+        line-height: 39px
+
+@media (max-width: $breakpoint-sm)
+    .blog-single-content
+        padding: 15px 15px 30px 15px
+    .post-page-title
+        font-size: $font-size-h3 * 0.85
+        line-height: 37px
+
+@media (max-width: $breakpoint-xs)
+    .post-page-title
+        font-size: $font-size-h3 * 0.8
+        line-height: 35px
+
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -174,135 +205,19 @@
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-sm)
+    .nav-links
+        flex-wrap: wrap
+        justify-content: center
+    .nav-previous,
+    .nav-next
+        margin-bottom: 10px
+        &:last-of-type
+            margin-bottom: 0
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
  * ===============  <#3 POST-NAVIGATION ===============
- *--------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
- * ===============  #4 COMMENTS>  ===============
- *--------------------------------------------------------------*/
-
-.comments-area
-    border-radius: 3px
-    // background-color: $bg-color-light-strong
-    background-color: $bg-color-light-medium
-    padding: 25px
-    border: 1px solid $border-color-dark
-
-.comments-title
-    text-align: left
-    font-size: $font-size-h3
-    margin-bottom: 25px
-    padding: 0
-    >span
-        font-size: 23px
-
-.comment-list
-    margin: 0 0 50px 0
-
-li.comment
-    margin-bottom: 20px
-
-.comment-body
-    border: 1px solid $border-color-dark
-    border-radius: 3px
-    padding: 15px
-    padding-left: 90px
-    position: relative
-
-.avatar
-    position: absolute
-    left: 15px
-    top: 15px
-    border-radius: 50%
-    width: auto
-
-.comment-metadata
-    font-size: 12px
-    line-height: 16px
-    margin-bottom: 10px
-
-.edit-link
-    margin-left: 10px
-
-.comment-content
-    >p
-        margin: 0 0 10px 0
-        font-size: 15px
-        line-height: 22px
-
-.reply
-    text-align: right
-    .comment-reply-link
-        display: inline-block
-        height: 35px
-        font-size: 15px
-        padding: 5px 25px
-
-
-ol.children
-    padding: 0 0 0 20px
-    margin-top: 10px
-    li.comment
-        margin-bottom: 10px
-
-li.comment
-    .comment-respond
-        // margin-top: 5px
-        padding: 20px
-        border-bottom-left-radius: 3px
-        border-bottom-right-radius: 3px
-        // background-color: darken($bg-color-light-medium, 3%)
-
-        background-color: scale-color($bg-color-light-medium, $lightness: -3%)
-        border: 1px solid $border-color-dark
-        border-top: 0
-
-
-.comment-respond
-    // margin: 30px 0
-    // background-color: $bg-color-base
-    // border-radius: 3px
-    // padding: 25px
-
-.comment-reply-title
-    margin-bottom: 25px
-    font-size: $font-size-h4
-    >small
-        margin-left: 25px
-
-.logged-in-as
-    margin-bottom: 10px
-
-.comment-notes,
-.comment-form-author,
-.comment-form-email,
-.comment-form-comment,
-.comment-form-cookies-consent
-    line-height: 25px
-    margin-bottom: 20px
-    >label
-        display: none
-    >input,
-    >textarea
-        padding: 12px 10px
-        line-height: 1.5
-
-.comment-form-cookies-consent
-    >label
-        display: inline-block
-
-.form-submit
-    .submit
-        min-width: 140px
-        padding: 11px
-
-/*--------------------- MEDIA-QUERIES> ---------------------*/
-/*--------------------- <MEDIA-QUERIES ---------------------*/
-
-/*--------------------------------------------------------------
- * ===============  <#4 COMMENTS ===============
  *--------------------------------------------------------------*/

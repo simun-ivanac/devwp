@@ -94,7 +94,7 @@
     bottom: 5px
     color: $text-color-light-medium
     cursor: default
-    left: 15px
+    left: 0
     position: absolute
     text-align: left
 
@@ -104,6 +104,13 @@ li.breadcrumb-taxonomy,
 li.breadcrumb-author,
 li.breadcrumb-date
     display: inline-block
+
+li.breadcrumb-post
+    width: 200px
+    vertical-align: middle
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
 li.breadcrumb-search-query,
 li.breadcrumb-taxonomy
@@ -118,6 +125,11 @@ li.breadcrumb-taxonomy
 
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xs)
+    .hero-image-breadcrumbs
+        left: 15px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

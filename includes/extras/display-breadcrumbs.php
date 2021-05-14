@@ -27,7 +27,7 @@ if ( ! function_exists( 'devwp_breadcrumbs' ) ) :
     	}
         // single
         elseif ( is_single() ) {
-            $list .= '<li class="breadcrumb-page">' . get_the_title() . '</li>';
+            $list .= '<li class="breadcrumb-page breadcrumb-post">' . get_the_title() . '</li>';
         }
     	// blog
     	elseif ( is_home() ) {
