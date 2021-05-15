@@ -2,11 +2,11 @@
     <div class="container">
         <div class="content-holder home-location">
             <div class="row home-location__title">
-                <h2 class="section-title section-title--light"><?php esc_html( the_field( 'location_title' ) ); ?></h2>
+                <h2 class="section-title section-title--light"><?php esc_html( the_field( 'home_location_title' ) ); ?></h2>
             </div>
-            <div class="row home-location__map">
-                <div class="home-map-preloader"></div>
-                <div class="home-map-fullsize-icon">
+            <div class="row home-location__map js-map">
+                <div class="home-map-preloader js-map-preloader"></div>
+                <div class="home-map-fullsize-icon js-map-fullsize">
                     <svg class="home-map-fullsize-icon-svg" x="0px" y="0px" width="357px" height="357px" viewBox="0 0 357 357">
                         <g>
                         	<g>
@@ -16,8 +16,16 @@
                         </g>
                     </svg>
                 </div>
-                <div class="home-map-address-cloud hidden"><?php esc_html( the_field( 'location_address' ) ); ?></div>
+                <div class="js-map-data hidden"
+                    data-address="<?php esc_html( the_field( 'home_location_address' ) ); ?>"
+                    data-lat="<?php esc_html( the_field( 'home_location_latitude' ) ); ?>"
+                    data-long="<?php esc_html( the_field( 'home_location_longitude' ) ); ?>"></div>
                 <div id="map-holder" class="home-map-holder js-home-map-holder"></div>
+                <div class="overlay-container js-overlay-container">
+                    <div class="overlay-close js-map-close hidden"><span class="overlay-close-icon"></span></div>
+                    <div class="overlay-preloader js-map-preloader hidden"></div>
+                    <div id="map-holder-fullscreen" class="js-home-map-holder overlay-content"></div>
+                </div>
             </div>
         </div>
     </div>

@@ -2,20 +2,20 @@ var SponsorsSlider = (function() {
     // TRIGGER IMAGE SLIDER USING "SLICK MASTER" LIBRARY
     // it has to be more than 4 images
 
-    var sponsors_slider = $('.js-sponsors-slider').eq(0);
-    if (!sponsors_slider.length) return;
+    var sponsorSlider = $('.js-sponsors-slider').eq(0);
+    if (!sponsorSlider.length) return;
 
-    var sponsor_items = sponsors_slider.find('.sponsor-item');
+    var sponsorItems = sponsorSlider.find('.js-sponsor-item');
 
     // TRIGER SLIDER ONLY IF HAS 4 OR MORE IMAGES
-    if (sponsor_items.length < 4) {
-        sponsor_items.addClass('no-slider');
+    if (sponsorItems.length < 4) {
+        sponsorItems.addClass('no-slider');
         return;
     }
 
 
     // trigger slider
-    sponsors_slider.slick({
+    sponsorSlider.slick({
         autoplay: true,
         speed: 1000,
         slidesToShow: 4,

@@ -31,11 +31,11 @@ body.home
     background-color: $bg-color-light-strong
 
 body.is-locked
-    height: 100vh
+    // height: 100vh
+    // pointer-events: none
+    // position: fixed
+    // width: 100vw
     overflow: hidden
-    pointer-events: none
-    position: fixed
-    width: 100vw
 
 article,
 aside,
@@ -48,6 +48,13 @@ menu,
 nav,
 section
     display: block
+
+
+// admin-bar adjustment
+#wpadminbar + .site-wrapper
+    .site-header
+        margin-top: 32px
+
 
 /*--------------------------------------------------------------
  * ===============  <#1 GENERAL ===============

@@ -12,8 +12,8 @@ var TestimonialsSetBackground = (function() {
         if (testimonials.css('background-image') != 'none') return;
 
         // get element position
-        var scrolling_position = checkElementViewportPosition(testimonials, 800);
-        if (scrolling_position == 'in_view') {
+        var scrollingPosition = checkElementViewportPosition(testimonials, 800);
+        if (scrollingPosition == 'in_view') {
             setBackgroundImage();
         }
     }
@@ -25,7 +25,7 @@ var TestimonialsSetBackground = (function() {
     $(window).on('scroll', function() {
         clearTimeout(scrollTimer);
 
-        resizeTimer = setTimeout(function() {
+        scrollTimer = setTimeout(function() {
             loadBackgroundImage();
         }, 250);
     });
@@ -36,24 +36,24 @@ var TestimonialsSetBackground = (function() {
 
     // SET BACKGROUND IMAGE DEPENDING ON SCREEN SIZE
     function setBackgroundImage() {
-        var media_query_mobile = window.matchMedia('(max-width: 470px)');
-        var media_query_tablet = window.matchMedia('(max-width: 768px)');
-        var bg_source = '';
+        var mediaMobile = window.matchMedia('(max-width: 470px)');
+        var mediaTablet = window.matchMedia('(max-width: 768px)');
+        var bgSource = '';
 
         // window width is less than 470px
-        if (media_query_mobile.matches) {
-            bg_source = testimonials.attr('data-mobile-bg');
+        if (mediaMobile.matches) {
+            bgSource = testimonials.attr('data-mobile-bg');
         }
         // window width is less than 768px
-        else if (media_query_tablet.matches) {
-            bg_source = testimonials.attr('data-tablet-bg');
+        else if (mediaTablet.matches) {
+            bgSource = testimonials.attr('data-tablet-bg');
         }
         // window width is greater than 768px
         else {
-            bg_source = testimonials.attr('data-desktop-bg');
+            bgSource = testimonials.attr('data-desktop-bg');
         }
 
-        testimonials.css('background-image', 'url(' + bg_source + ')');
+        testimonials.css('background-image', 'url(' + bgSource + ')');
     }
 
 

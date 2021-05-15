@@ -1,13 +1,13 @@
 var FixedMenu = (function(){
 
     var header = $('#site-header');
-    var current_scroll = 0;
+    var currentScroll = 0;
 
     // APPLY FIXED MENU ON SCROLL
     function fixedMenu() {
-        current_scroll = $(window).scrollTop();
+        currentScroll = $(window).scrollTop();
 
-        if (current_scroll != 0) {
+        if (currentScroll != 0) {
             header.addClass('fixed-menu');
         } else {
             header.removeClass('fixed-menu');

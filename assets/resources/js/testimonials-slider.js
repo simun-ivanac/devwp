@@ -1,10 +1,10 @@
 var TestimonialsSlider = (function() {
     // TRIGGER TESTIMONIALS SLIDER USING "SLICK MASTER" LIBRARY
 
-    var testimonials_slider = $('.js-testimonials-slider').eq(0);
-    if (!testimonials_slider.length) return;
+    var testimonialSlider = $('.js-testimonials-slider').eq(0);
+    if (!testimonialSlider.length) return;
 
     // Trigger slider -> slick
-    testimonials_slider.slick();
+    testimonialSlider.slick();
 
 })(); // !TestimonialsSlider

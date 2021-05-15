@@ -9,14 +9,13 @@
 // console.log( truncateText( "Lorem ipsum dolor sit amet, consectetur adipisicing elit", 10, "..." )  );
 
 
-function truncateText(text, max_nr_of_char, char_at_the_end) {
+function truncateText(text, maxCharNum, endChars) {
 
-    max_nr_of_char = Number(max_nr_of_char);  // string to number
-    var new_text = text;
+    maxCharNum = Number(maxCharNum);  // string to number
 
-    if (new_text.length > max_nr_of_char) {
-        new_text = jQuery.trim(text).substring(0, max_nr_of_char).split(' ').join(' ') + char_at_the_end;
+    if (text.length > maxCharNum) {
+        text = jQuery.trim(text).substring(0, maxCharNum).split(' ').join(' ') + endChars;
     }
 
-    return new_text;
+    return text;
 }

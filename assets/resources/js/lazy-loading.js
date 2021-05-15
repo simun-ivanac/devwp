@@ -20,8 +20,8 @@ var LazyImageLoading = (function() {
 
 
             // check if element is within viewport
-            var scrolling_position = checkElementViewportPosition($(this), 800);
-            if (scrolling_position != 'in_view') return;
+            var scrollingPosition = checkElementViewportPosition($(this), 800);
+            if (scrollingPosition != 'in_view') return;
 
             // set 'data-src' as 'src'
             var src = $(this).attr('data-src');
@@ -38,11 +38,11 @@ var LazyImageLoading = (function() {
 
 
     // call function on scroll, in interval of 50ms
-    var resizeTimer;
+    var scrollTimer;
 
     $(window).scroll(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
             loadImageSource();
         }, 50);
     });

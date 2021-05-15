@@ -7,19 +7,18 @@ var TableFixedColumn = (function() {
     if (!schedule.length) return;
 
     var breakpoint = 1020;
+    var isColumnFixed = false;
+    var windowWidth;
 
-    var is_fixed = false;
-    var window_width;
-
-    function fixedTableColumn(breakpoint_width) {
-        window_width = $(window).width();
+    function fixedTableColumn(breakpointWidth) {
+        windowWidth = $(window).width();
 
         // if breakpoint is applied -> make first column fixed
-        if (window_width <= breakpoint_width) {
-            var table_rows = schedule.find('tr');
+        if (windowWidth <= breakpointWidth) {
+            var tableRows = schedule.find('tr');
 
-            for (var i = 0; i < table_rows.length; i++) {
-                var row = table_rows.eq(i);
+            for (var i = 0; i < tableRows.length; i++) {
+                var row = tableRows.eq(i);
                 var height = row.outerHeight(true);
                 var th = row.find('th').eq(0);
 
@@ -30,13 +29,13 @@ var TableFixedColumn = (function() {
                 }
             }
 
-            is_fixed = true;
+            isColumnFixed = true;
         }
         // remove styles and restore default values
-        else if (window_width > breakpoint_width && is_fixed) {
+        else if (windowWidth > breakpointWidth && isColumnFixed) {
             schedule.find('thead>tr th:first-of-type, tbody>tr th').removeAttr('style');
             schedule.closest('.js-schedule-table-holder').removeAttr('style');
-            is_fixed = false;
+            isColumnFixed = false;
         }
     }
 

@@ -2,18 +2,18 @@
     <div class="container">
         <div class="content-holder home-intro">
             <div class="row home-intro__title">
-                <?php $section_title = devwp_split_last_word_from_string( get_field( 'info_title' ) ) ?>
+                <?php $section_title = devwp_split_last_word_from_string( get_field( 'home_intro_title' ) ) ?>
     			<h2 class="section-title section-title--dark-mix">
     				<?php esc_html_e( $section_title[ 'all_but_last_word' ] ); ?>
     				<span class="section-title-colored"><?php esc_html_e( $section_title[ 'last_word' ] ); ?></span>
     			</h2>
             </div>
             <div class="row home-intro__content">
-                <p class="section-description"><?php esc_html( the_field( 'info_description' ) ); ?></p>
+                <p class="section-description"><?php esc_html( the_field( 'home_intro_description' ) ); ?></p>
             </div>
             <div class="row home-intro__icons">
-                <?php if ( have_rows( 'info_icons' ) ) : ?>
-					<?php while ( have_rows( 'info_icons' ) ) : the_row(); ?>
+                <?php if ( have_rows( 'home_intro_icons' ) ) : ?>
+					<?php while ( have_rows( 'home_intro_icons' ) ) : the_row(); ?>
                         <div class="intro-icon">
                             <svg class="intro-icon-svg" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
 								<g>
@@ -33,7 +33,7 @@
 									<path d="m378.614 319.401c-21.795 0-39.525 17.713-39.525 39.485s17.73 39.485 39.525 39.485c21.794 0 39.524-17.713 39.524-39.485s-17.731-39.485-39.524-39.485zm0 63.871c-13.46 0-24.411-10.939-24.411-24.386s10.952-24.386 24.411-24.386c13.46 0 24.41 10.94 24.41 24.386s-10.951 24.386-24.41 24.386z"/>
 								</g>
 							</svg>
-                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'icon_title_1' ) ); ?></span>
+                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'home_intro_icons_1_title' ) ); ?></span>
                         </div>
                         <div class="intro-icon">
                             <svg class="intro-icon-svg" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
@@ -46,7 +46,7 @@
 									<path d="m400.824 196.81v-63.38c0-11.677-10.985-20.824-25.009-20.824s-25.009 9.147-25.009 20.847l.19 63.343c-22.376 1.198-40.211 19.703-40.211 42.28 0 22.58 17.84 41.087 40.219 42.281l-.198 95.868c0 11.595 10.985 20.677 25.009 20.677s25.009-9.082 25.009-20.677v-95.883c22.286-1.292 40.021-19.752 40.021-42.266s-17.735-40.974-40.021-42.266zm-25.01-69.205c5.729 0 10.009 3.075 10.009 5.824v63.301h-19.829l-.19-63.301c.001-2.748 4.282-5.824 10.01-5.824zm0 255.295c-5.637 0-10.009-3.052-10.009-5.661l.198-95.819h19.821v95.804c0 2.625-4.372 5.676-10.01 5.676zm22.513-116.48h-45.024c-15.174 0-27.519-12.267-27.519-27.345s12.345-27.345 27.519-27.345h45.024c15.173 0 27.518 12.267 27.518 27.345s-12.345 27.345-27.518 27.345z"/>
 								</g>
 							</svg>
-                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'icon_title_2' ) ); ?></span>
+                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'home_intro_icons_2_title' ) ); ?></span>
                         </div>
                         <div class="intro-icon">
                             <svg class="intro-icon-svg" height="424pt" viewBox="0 -25 424 424" width="424pt">
@@ -59,7 +59,7 @@
 								<path d="m51.539062 78.378906c-12.214843 0-22.152343-9.9375-22.152343-22.152344 0-12.214843 9.9375-22.152343 22.152343-22.152343 12.214844 0 22.152344 9.9375 22.152344 22.152343 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304687c-4.492187 0-8.152343 3.660156-8.152343 8.152343 0 4.496094 3.660156 8.152344 8.152343 8.152344 4.496094 0 8.152344-3.65625 8.152344-8.152344 0-4.492187-3.65625-8.152343-8.152344-8.152343zm0 0"/>
 								<path d="m187.664062 78.804688c-12.210937 0-22.148437-9.9375-22.148437-22.152344 0-12.210938 9.9375-22.148438 22.148437-22.148438 12.214844 0 22.152344 9.9375 22.152344 22.148438 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304688c-4.492187 0-8.148437 3.65625-8.148437 8.152344s3.65625 8.152344 8.148437 8.152344c4.496094 0 8.152344-3.65625 8.152344-8.152344s-3.65625-8.152344-8.152344-8.152344zm0 0"/>
 							</svg>
-                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'icon_title_3' ) ); ?></span>
+                            <span class="intro-icon-text"><?php esc_html( the_sub_field( 'home_intro_icons_3_title' ) ); ?></span>
                         </div>
                     <?php endwhile; ?>
 				<?php endif; ?>
