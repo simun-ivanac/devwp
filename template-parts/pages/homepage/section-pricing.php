@@ -9,7 +9,7 @@
                 <?php for ($i = 1; $i <= $num_of_options; $i++) : ?>
                     <?php if ( have_rows( 'home_pricing_option_'.$i ) ) : ?>
                         <div class="pricing-card">
-                            <?php while ( have_rows( 'pricing_option_'.$i ) ) : the_row(); ?>
+                            <?php while ( have_rows( 'home_pricing_option_'.$i ) ) : the_row(); ?>
                                 <span class="pricing-card-number"><?php esc_html( the_sub_field( 'home_pricing_option_'.$i.'_price' ) ); ?></span>
                                 <span class="pricing-card-currency"><?php esc_html( the_sub_field( 'home_pricing_option_'.$i.'_currency_period' ) ); ?></span>
                                 <span class="pricing-card-period"><?php esc_html( the_sub_field( 'home_pricing_option_'.$i.'_description' ) ); ?></span>

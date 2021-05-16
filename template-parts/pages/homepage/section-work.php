@@ -12,7 +12,7 @@
                 <?php $work_image = get_field( 'home_work_image' ); ?>
                 <?php if ( $work_image ) : ?>
                     <img
-                        data-src="<?php echo esc_url( $work_image[ 'url' ] ); ?>"
+                        src="<?php echo esc_url( $work_image[ 'url' ] ); ?>"
                         class="home-work-image"
                         width="<?php esc_html_e( $work_image[ 'width' ] ); ?>"
                         height="<?php esc_html_e( $work_image[ 'height' ] ); ?>"

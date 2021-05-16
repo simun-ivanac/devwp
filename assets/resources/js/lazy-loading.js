@@ -3,6 +3,11 @@ var LazyImageLoading = (function() {
     // On window scroll -> check element viewport
     // If element is at defined viewport, get data-source and use it as source to load image
 
+    // w3 total cache handles lazy loading
+    return;
+
+
+
     var images = $('body img:not([loading])');
     if (!images.length) return;
 

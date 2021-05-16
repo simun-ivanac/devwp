@@ -72,13 +72,20 @@
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
+@media (max-width: $breakpoint-md)
+    .home-map-holder
+        pointer-events: none
+
 @media (max-width: $breakpoint-sm)
     .home-location__map
         height: 500px
 
-@media (max-width: $breakpoint-md)
-    .home-map-holder
-        pointer-events: none
+@media (max-width: $breakpoint-xs)
+    .home-map-fullsize-icon
+        bottom: 0
+        background-color: rgba($bg-color-dark-strong, 0.6)
+        .home-map-fullsize-icon-svg
+            fill: $icon-fill
 
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 

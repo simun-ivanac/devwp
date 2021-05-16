@@ -31,7 +31,7 @@
                                 ?>
         						<a href="<?php echo ( home_url( '/' ) ) ?>" class="custom-logo-link">
         							<img
-                                        data-src="<?php echo esc_url( $logo[0] ); ?>"
+                                        src="<?php echo esc_url( $logo[0] ); ?>"
                                         width="<?php esc_html_e( $logo[1] ); ?>"
                                         height="<?php esc_html_e( $logo[2] ); ?>"
                                         class="custom-logo"
@@ -93,6 +93,20 @@
 		</svg>
 	</div>
 	<!-- !COOKIE BUTTON -->
+
+    <!-- MOBILE MENU -->
+	<div id="mobile-menu" class="mobile-menu">
+		<div class="mobile-menu-container">
+			<div class="mobile-menu-header">
+				<span class="mobile-heading">Menu</span>
+				<span class="mobile-menu-icon">
+					<span class="mobile-menu-icon-style"></span>
+				</span>
+			</div>
+			<div class="mobile-menu-content"></div>
+		</div>
+	</div>
+	<!-- !MOBILE MENU -->
 
 </div>
 <!-- !SITE-WRAPPER -->

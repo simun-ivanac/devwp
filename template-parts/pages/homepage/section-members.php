@@ -15,7 +15,7 @@
                                     <?php if ( $member_image ) : ?>
                                         <img
                                         class="member-item-image"
-                                        data-src="<?php echo esc_url( $member_image[ 'url' ] ); ?>"
+                                        src="<?php echo esc_url( $member_image[ 'url' ] ); ?>"
                                         width="<?php esc_html_e( $member_image[ 'width' ] ); ?>"
                                         height="<?php esc_html_e( $member_image[ 'height' ] ); ?>"
                                         alt="<?php esc_html_e( $member_image[ 'alt' ] ); ?>" />

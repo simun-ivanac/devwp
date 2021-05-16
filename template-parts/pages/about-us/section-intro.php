@@ -12,7 +12,7 @@
                 <?php $about_image = get_field( 'about_intro_image' ); ?>
                 <?php if ( $about_image ) : ?>
                     <img
-                        data-src="<?php echo esc_url( $about_image[ 'url' ] ); ?>"
+                        src="<?php echo esc_url( $about_image[ 'url' ] ); ?>"
                         class="about-intro-image"
                         width="<?php esc_html_e( $about_image[ 'width' ] ); ?>"
                         height="<?php esc_html_e( $about_image[ 'height' ] ); ?>"
