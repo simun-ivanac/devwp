@@ -1,7 +1,11 @@
 <?php
 
 /**
- * Filter the excerpt length to 'n' words.
+ * Shorten the excerpt length to 'n' words.
+ * Must use in loop.
+ *
+ * @param string $limit = number of characters
+ * @return string
  *
  * @package devwp
  * @version 1.0.0

@@ -1,4 +1,13 @@
 <?php
+/**
+ * Page section: testimonials.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
+<?php
 $bg_desktop = '';
 $bg_tablet = '';
 $bg_mobile = '';

@@ -6,33 +6,6 @@ var TestimonialsSetBackground = (function() {
     if (!testimonials.length) return;
 
 
-    // ON SCROLL, LOAD BACKGROUND IMAGE
-    function loadBackgroundImage() {
-        // if background image is set, return
-        if (testimonials.css('background-image') != 'none') return;
-
-        // get element position
-        var scrollingPosition = checkElementViewportPosition(testimonials, 800);
-        if (scrollingPosition == 'in_view') {
-            setBackgroundImage();
-        }
-    }
-
-    // load background image on load & scroll
-    loadBackgroundImage();
-
-    var scrollTimer;
-    $(window).on('scroll', function() {
-        clearTimeout(scrollTimer);
-
-        scrollTimer = setTimeout(function() {
-            loadBackgroundImage();
-        }, 250);
-    });
-
-
-
-
 
     // SET BACKGROUND IMAGE DEPENDING ON SCREEN SIZE
     function setBackgroundImage() {
@@ -55,6 +28,8 @@ var TestimonialsSetBackground = (function() {
 
         testimonials.css('background-image', 'url(' + bgSource + ')');
     }
+
+    setBackgroundImage();
 
 
     // set background image at different sizes

@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: news.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--home-news">
     <div class="container">
         <div class="content-holder home-news">

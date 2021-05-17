@@ -10,19 +10,19 @@ var InteractiveMap = (function() {
 
     // address marker
     var address = mapData.attr('data-address');
-    if (!address) address = 'Address 20, Virovitica';
+    if (!address.length) address = 'Address 20, Virovitica';
 
     // location coordinates: latitude
     var latitude = mapData.attr('data-lat');
-    if (!latitude) latitude = 45.83381143;
+    if (!latitude.length) latitude = 45.83381143;
 
     // location coordinates: longitude
     var longitude = mapData.attr('data-long');
-    if (!longitude) longitude = 17.38545184;
+    if (!longitude.length) longitude = 17.38545184;
 
 
     // CONFIGURATION
-    // element: location of map
+    // element: selector where to load map
     // wheel_zoom: enable/disable wheel zooming
     // max_zoom: maximum zoom
     function configMap(element, wheelZoom, maxZoom) {
@@ -50,33 +50,11 @@ var InteractiveMap = (function() {
     }
 
 
-
-    // call function on scroll, in interval
-    // if element within viewport, configure map
-    var scrollTimer;
-    var isConfigured = false;
-
-    $(window).scroll(function() {
-        if (isConfigured) return;
-
-        clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(function() {
-
-            configMap('map-holder', false, 11);
-            isConfigured = true;
-            map.find('.js-map-preloader').addClass('hidden');
-
-        }, 50);
-    });
+    // config
+    configMap('map-holder', false, 11);
+    map.find('.js-map-preloader').addClass('hidden');
 
 
-    // if on page LOAD map is in viewport, configure it
-    var scrollingPosition = checkElementViewportPosition(map, 800);
-    if (scrollingPosition == 'in_view') {
-        configMap('map-holder', false, 11);
-        isConfigured = true;
-        map.find('.js-map-preloader').addClass('hidden');
-    }
 
 
     // if fullsize map configured?

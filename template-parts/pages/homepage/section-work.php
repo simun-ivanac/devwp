@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: work.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--home-work">
     <div class="container">
         <div class="content-holder home-work clearfix">

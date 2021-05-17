@@ -1,12 +1,6 @@
 <?php
 
 /**
- * Custom template tags for theme.
- * Eventually, some of the functionality here could be replaced by core features.
- */
-
-
-/**
  * Prints HTML with meta information for the current post-date/time.
  *
  * @package devwp
@@ -195,8 +189,6 @@ endif;
 
 /**
  * Displays an optional post thumbnail.
- * Wraps the post thumbnail in an anchor element on index views, or a div
- * element when on single views.
  *
  * @package devwp
  * @since 1.0.0

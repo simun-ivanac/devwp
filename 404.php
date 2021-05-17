@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying 404 pages (not found).
  *
  * @package devwp
  * @since 1.0.0
@@ -10,9 +10,12 @@ get_header();
 ?>
 
 
+<!-- HERO IMAGE: large -->
 <div id="hero-image" class="hero-image hero-image--large">
     <div class="hero-image-overlay"></div>
 </div>
+<!-- !HERO IMAGE: large -->
+
 
 <!-- SITE-CONTENT -->
 <main id="site-content" class="site-content">

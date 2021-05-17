@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all single posts.
  *
  * @package devwp
  * @since 1.0.0
@@ -9,19 +9,22 @@
 get_header();
 ?>
 
+
 <?php get_template_part( 'template-parts/hero-image/hero-image-small' ); ?>
+
 
 <!-- SITE-CONTENT -->
 <main id="site-content" class="site-content">
     <div id="page-content" class="page-content page-content--content-blog-single">
         <div class="container">
             <div class="content-holder content-blog-single">
+
                 <section class="section__blog-single">
                     <?php
                 	while ( have_posts() ) :
-                		the_post();
 
-                		get_template_part( 'template-parts/content/content', 'post' );
+                        the_post();
+                		get_template_part( 'template-parts/content/content' );
 
                 		the_post_navigation(
                 			array(
@@ -41,6 +44,7 @@ get_header();
                 </section>
 
                 <?php get_sidebar(); ?>
+
             </div>
         </div>
     </div>

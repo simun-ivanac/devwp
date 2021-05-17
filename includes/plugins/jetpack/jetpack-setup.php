@@ -1,6 +1,6 @@
 <?php
 /**
- * Jetpack Compatibility File
+ * Jetpack Compatibility File.
  *
  * @link https://jetpack.com/
  *
@@ -47,7 +47,7 @@ if ( ! function_exists( 'devwp_jetpack_setup' ) ) :
     	) );
     }
 endif;
-add_action( 'after_setup_theme', 'devwp_jetpack_setup' );
+// add_action( 'after_setup_theme', 'devwp_jetpack_setup' );
 
 
 /**

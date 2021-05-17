@@ -2,9 +2,8 @@
 /**
  * The main template file
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css)
- * It is used to display a page when nothing more specific matches a query
+ * This is the most generic template file in a WordPress theme.
+ * It is used to display a page when nothing more specific matches a query.
  *
  * @package devwp
  * @since 1.0.0
@@ -14,46 +13,44 @@ get_header();
 ?>
 
 
+<?php get_template_part( 'template-parts/hero-image/hero-image-small' ); ?>
+
+
 <!-- SITE-CONTENT -->
 <main id="site-content" class="site-content">
+    <div id="page-content" class="page-content">
+        <div class="container">
+            <div class="content-holder content-blog page-content--content-blog">
 
-	<?php
-	if ( have_posts() ) :
+                <section class="section__blog-posts">
+                    <?php
+                    if ( have_posts() ) :
 
-		if ( is_home() && ! is_front_page() ) :
-			?>
-			<header>
-				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-			</header>
-			<?php
-		endif;
+                        while ( have_posts() ) :
 
+                			the_post();
+                			get_template_part( 'template-parts/content/content', get_post_type() );
 
-		while ( have_posts() ) :
-			the_post();
+                		endwhile;
 
-			/*
-			 * Include the Post-Type-specific template for the content.
-			 * If you want to override this in a child theme, then include a file
-			 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-			 */
-			get_template_part( 'template-parts/content/content', get_post_type() );
+                        the_posts_navigation();
 
-		endwhile;
+                    else :
 
-		the_posts_navigation();
+                        get_template_part( 'template-parts/content/content', 'none' );
 
-	else :
+                    endif;
+                    ?>
+                </section>
 
-		get_template_part( 'template-parts/content/content', 'none' );
+                <?php get_sidebar(); ?>
 
-	endif;
-	?>
-
+            </div>
+        </div>
+    </div>
 </main>
 <!-- !SITE-CONTENT -->
 
 
 <?php
-get_sidebar();
 get_footer();

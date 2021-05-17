@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The functions template: include functions and definitions for ADMIN
+ * Include: functions and definitions for ADMIN.
  *
  * @package devwp
  * @since 1.0.0

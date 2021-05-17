@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: schedule.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--home-schedule">
     <div class="container">
         <div class="content-holder home-schedule">

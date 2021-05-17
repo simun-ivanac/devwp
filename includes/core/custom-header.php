@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Sample implementation of the Custom Header feature
- *
- * You can add an optional custom header image to header.php -> <?php the_header_image_tag(); ?>
+ * Implementation of the Custom Header feature.
  *
  * @package devwp
  * @since 1.0.0
@@ -11,7 +9,7 @@
 
 
 /**
- * Set up the WordPress core custom header feature
+ * Set up the WordPress core custom header feature.
  *
  * @uses devwp_header_style()
  */
@@ -20,7 +18,6 @@ if ( ! function_exists( 'devwp_custom_header_setup' ) ) :
 
 		add_theme_support( 'custom-header',
 			apply_filters( 'devwp_custom_header_args', array(
-				// 'default-image'      => '',
                 'default-image'      => get_template_directory_uri() . '/assets/images/headers/night_and_mountain_2.jpg',
 				'default-text-color' => '000000',
 				'width'              => 1920,
@@ -37,7 +34,7 @@ add_action( 'after_setup_theme', 'devwp_custom_header_setup' );
 
 
 /**
-* Styles the header image and text displayed on the blog
+* Styles the header image and text displayed on the blog.
 *
 * @see devwp_custom_header_setup()
 */

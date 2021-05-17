@@ -1,20 +1,15 @@
 <?php
 
 /**
- * Theme base support
+ * Theme base support.
+ * Sets up theme defaults and registers support for various WordPress features.
+ * Note that this function is hooked into the after_setup_theme hook,
+ * which runs before the init hook.
+ * The init hook is too late for some features.
  *
  * @package devwp
  * @since 1.0.0
  */
-
-
-/**
-* Sets up theme defaults and registers support for various WordPress features
-*
-* Note that this function is hooked into the after_setup_theme hook, which runs before the init hook
-* The init hook is too late for some features
-*
-*/
 if ( ! function_exists( 'devwp_setup' ) ) :
 	function devwp_setup() {
 

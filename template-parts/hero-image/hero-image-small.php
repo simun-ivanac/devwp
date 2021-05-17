@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying small hero image.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <!-- HERO-IMAGE: small -->
 <div id="hero-image" class="hero-image hero-image--small">
     <div class="hero-image-overlay"></div>

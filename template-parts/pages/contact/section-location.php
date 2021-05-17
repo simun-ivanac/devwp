@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: location.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--contact-location section--dark">
     <div class="container">
         <div class="content-holder contact-location">

@@ -6,8 +6,8 @@
  * @package devwp
  * @version 1.0.0
  */
-if ( ! function_exists( 'devwp_disable_gutenberg_on_page_templates' ) ) :
-    function devwp_disable_gutenberg_on_page_templates( $use_block_editor, $post_type ) {
+if ( ! function_exists( 'devwp_disable_gutenberg_on_pages' ) ) :
+    function devwp_disable_gutenberg_on_pages( $use_block_editor, $post_type ) {
 
         // $_GET['post'] must be set
         // post_type must be PAGE
@@ -51,8 +51,8 @@ if ( ! function_exists( 'devwp_disable_gutenberg_on_page_templates' ) ) :
 
     }
 endif;
-add_filter( 'gutenberg_can_edit_post_type', 'devwp_disable_gutenberg_on_page_templates', 10, 2 );
-add_filter( 'use_block_editor_for_post_type', 'devwp_disable_gutenberg_on_page_templates', 10, 2 );
+add_filter( 'gutenberg_can_edit_post_type', 'devwp_disable_gutenberg_on_pages', 10, 2 );
+add_filter( 'use_block_editor_for_post_type', 'devwp_disable_gutenberg_on_pages', 10, 2 );
 
 
 /**

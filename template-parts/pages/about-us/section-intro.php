@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: intro.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--about-intro">
     <div class="container">
         <div class="content-holder about-intro clearfix">

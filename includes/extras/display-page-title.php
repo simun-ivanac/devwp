@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Display page title in hero image.
+ * Display page title depending on user location.
  *
  * @package devwp
  * @version 1.0.0

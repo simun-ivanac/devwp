@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying posts on 'home' page.
  *
  * @package devwp
  * @since 1.0.0
@@ -34,7 +34,9 @@
                     endif;
                     ?>
                 </div>
-            <?php endif; ?>
+                <?php
+            endif;
+            ?>
         </header>
 
         <div class="blog-post-excerpt">

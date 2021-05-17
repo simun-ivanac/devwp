@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Remove 'category' and 'tag' classes from post classes
- * Add classes to recognize if located on 'blog' page or 'singular' page
+ * Remove 'category' and 'tag' classes from post classes.
+ * Add classes to recognize if located on 'blog' page or 'singular' page.
  *
  * @package devwp
  * @version 1.0.0
@@ -13,6 +13,7 @@ if ( ! function_exists( 'devwp_modify_post_classes' ) ) :
         $category_classes = 'category';
         $tag_classes = 'tag';
 
+        // unset 'category' and 'tag' classes
         foreach ( $classes as $key => $class ) {
             if (
                 strpos( $class, $category_classes ) !== false ||
@@ -22,6 +23,7 @@ if ( ! function_exists( 'devwp_modify_post_classes' ) ) :
             }
         }
 
+        // add classes depending on location
         if ( is_singular() && ! is_page() ) {
             $classes[] = 'blog-post-single';
         } else if ( is_page() ) {

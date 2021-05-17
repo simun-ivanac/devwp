@@ -1,9 +1,9 @@
 <?php
 /**
- * Widget API: Latest_Posts_With_Thumbnails_Widget class
- * Displays latest posts with few options
+ * Widget API: Latest_Posts_With_Thumbnails_Widget class.
+ * Displays latest posts with few options.
  *
- * @package wp_ctheme
+ * @package devwp
  * @version 1.0.0
  */
 
@@ -143,7 +143,7 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
      * Widget Backend: outputs the settings form for widget.
      */
     public function form( $instance ) {
-        // Defaults
+        // Merge with defaults
         // $instance = wp_parse_args(
 		// 	(array) $instance,
 		// 	array(
@@ -201,8 +201,10 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
     }
 
     /**
-	 * HELPER function:
-	 * Returns the shortened post title, must use in a loop.
+	 * HELPER function: returns the shortened post title,
+     * must use in a loop.
+	 *
+     * @return string
 	 */
 	private function get_the_trimmed_post_title() {
 

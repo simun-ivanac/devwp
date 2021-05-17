@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The functions template: include functions and definitions
+ * The functions template: include functions and definitions.
  *
  * @package devwp
  * @since 1.0.0

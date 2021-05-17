@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: pricing.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--home-pricing section--dark">
     <div class="container">
         <div class="content-holder home-pricing">

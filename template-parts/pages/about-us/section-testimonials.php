@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: testimonials.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--about-testimonials">
     <div class="container">
         <div class="content-holder about-testimonials">

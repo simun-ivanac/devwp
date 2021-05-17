@@ -1,9 +1,12 @@
 <?php
 
 /**
- * Split last word from string.
+ * Split last word from the rest of string string.
  *
- * @package wp_ctheme
+ * @param string $string = text from which to extract last word
+ * @return array
+ *
+ * @package devwp
  * @version 1.0.0
  */
 if ( ! function_exists( 'devwp_split_last_word_from_string' ) ) :

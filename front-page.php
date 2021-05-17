@@ -2,6 +2,8 @@
 /**
  * This is front-page template.
  *
+ * Displays specific sections which are populated using ACF.
+ *
  * @package devwp
  * @since 1.0.0
  */

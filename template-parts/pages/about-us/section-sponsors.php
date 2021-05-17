@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: sponsors.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--about-sponsors">
     <div class="container">
         <div class="content-holder about-sponsors">

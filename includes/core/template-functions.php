@@ -1,19 +1,12 @@
 <?php
-
-/**
- * Functions which enhance the theme by hooking into WordPress
- *
- * @package devwp
- * @since 1.0.0
- *
- */
-
-
 /**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
  * @return array
+ *
+ * @package devwp
+ * @since 1.0.0
  */
 if ( ! function_exists( 'devwp_body_classes' ) ) :
     function devwp_body_classes( $classes ) {
@@ -35,6 +28,9 @@ add_filter( 'body_class', 'devwp_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+ *
+ * @package devwp
+ * @since 1.0.0
  */
 if ( ! function_exists( 'devwp_pingback_header' ) ) :
     function devwp_pingback_header() {

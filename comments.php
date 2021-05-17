@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying comments
+ * The template for displaying comments.
  *
- * This is the template that displays the area of the page that contains both the current comments
- * and the comment form
+ * This is the template that displays the area of the page that contains
+ * both the current comments and the comment form
  *
  * @package devwp
  * @since 1.0.0
@@ -60,7 +60,7 @@ if ( post_password_required() ) {
 		<?php
 		the_comments_navigation();
 
-		// If comments are closed and there are comments, let's leave a little note, shall we?
+		// If comments are closed and there are comments, let's leave a note
 		if ( ! comments_open() ) :
 			?>
 			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'devwp' ); ?></p>

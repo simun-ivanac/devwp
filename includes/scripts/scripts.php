@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Enqueue scripts and styles
+ * Enqueue scripts and styles.
  *
  * @package devwp
  * @version 1.0.0
@@ -72,20 +72,20 @@ if ( ! function_exists( 'devwp_main_scripts' ) ) :
 
 
         /**
-         * MAIN JS
-         */
-        wp_enqueue_script( 'devwp-script', get_template_directory_uri() . '/assets/js/devwp-script.js', array('jquery'), $script_ver, true );
-		// wp_enqueue_script( 'devwp-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), $theme_ver, true  );
-        // wp_deregister_script( 'wp-embed' );
-
-
-        /**
          * 3rd party: LEAFLET
          */
         if ( is_front_page() || is_page_template( 'page-templates/contact.php' ) ) {
  			wp_enqueue_style( 'devwp-mapbox-style', 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css' );
  			wp_enqueue_script( 'devwp-mapbox-js', 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', array(), '10000', true );
  		}
+
+
+        /**
+         * MAIN JS
+         */
+        wp_enqueue_script( 'devwp-script', get_template_directory_uri() . '/assets/js/devwp-script.js', array('jquery'), $script_ver, true );
+		// wp_enqueue_script( 'devwp-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), $theme_ver, true  );
+        // wp_deregister_script( 'wp-embed' );
 
 
         /**

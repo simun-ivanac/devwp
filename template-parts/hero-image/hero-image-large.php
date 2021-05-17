@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying large hero image.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <!-- HERO-IMAGE: large -->
 <div id="hero-image" class="hero-image hero-image--large">
     <div class="hero-image-overlay"></div>

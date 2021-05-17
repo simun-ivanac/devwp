@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer.
  *
- * Contains <footer> and the closing of the #site-wrapper
+ * Contains <footer>, <cookie-button> and the closing of the #site-wrapper.
  *
  * @package devwp
  * @since 1.0.0

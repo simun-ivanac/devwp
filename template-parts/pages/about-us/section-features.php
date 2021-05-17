@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: features.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--about-features section--dark">
     <div class="container">
         <div class="content-holder about-features">

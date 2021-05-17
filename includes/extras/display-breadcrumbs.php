@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Display custom breadcrumbs in hero image.
+ * Create custom breadcrumbs depending on user location.
  *
  * @package devwp
  * @version 1.0.0

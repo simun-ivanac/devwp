@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page section: form.
+ *
+ * @package devwp
+ * @since 1.0.0
+ */
+?>
+
 <section class="section section--contact-form">
     <div class="container">
         <div class="content-holder contact-form">
