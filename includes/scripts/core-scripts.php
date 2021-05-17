@@ -11,6 +11,7 @@ if ( ! function_exists( 'devwp_core_scripts' ) ) :
 
         $style_ver = filemtime( get_stylesheet_directory() . '/style.css' );
 		$script_ver = filemtime( get_stylesheet_directory() . '/assets/js/devwp-script.js' );
+        $theme_ver = '1.0.0';
 
 
 		/**
@@ -27,7 +28,7 @@ if ( ! function_exists( 'devwp_core_scripts' ) ) :
 		 * JS
 		 */
         wp_enqueue_script( 'devwp-script', get_template_directory_uri() . '/assets/js/devwp-script.js', array(), $script_ver, true );
-		// wp_enqueue_script( 'devwp-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0.0', true  );
+		// wp_enqueue_script( 'devwp-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), $theme_ver, true  );
         // wp_deregister_script( 'wp-embed' );
 
 

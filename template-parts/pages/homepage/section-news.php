@@ -24,7 +24,7 @@
         							if( has_post_thumbnail() && !post_password_required() ) :
         								the_post_thumbnail( 'wp-devwp-post', array( 'class' => 'news-post-attachment' ) );
         							else:
-        								echo '<img data-src="' . get_template_directory_uri() . '/assets/images/picture_placeholder_2.jpg" class="news-post-media" width="350" height="280" >';
+        								echo '<img src="' . get_template_directory_uri() . '/assets/images/picture_placeholder_2.jpg" class="news-post-media" width="350" height="280" >';
         							endif;
         							?>
                                 </figure>

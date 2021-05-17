@@ -9,10 +9,6 @@
 if ( ! function_exists( 'devwp_3rd_party_scripts' ) ) :
 	function devwp_3rd_party_scripts() {
 
-        /* JQUERY above all */
-        wp_enqueue_script( 'jquery' );
-
-
         /**
 		 * Google fonts: montserrat
 		 */
@@ -32,8 +28,17 @@ if ( ! function_exists( 'devwp_3rd_party_scripts' ) ) :
          */
  		if ( is_front_page() || is_page_template( 'page-templates/contact.php' ) ) {
  			wp_enqueue_style( 'devwp-mapbox-style', 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css' );
- 			wp_enqueue_script( 'devwp-mapbox-js', 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', array(), '10000', false );
+ 			wp_enqueue_script( 'devwp-mapbox-js', 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.js', array(), '10000', true );
  		}
+
+
+        /**
+         * JQUERY (in footer)
+         */
+        wp_scripts()->add_data( 'jquery', 'group', 1 );
+        wp_scripts()->add_data( 'jquery-core', 'group', 1 );
+        wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
+        wp_enqueue_script( 'jquery' );
 
 
         /**

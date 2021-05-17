@@ -24,6 +24,20 @@
 <!-- SITE-WRAPPER -->
 <div id="site-wrapper" class="site-wrapper">
 
+    <!-- MOBILE MENU -->
+	<div id="mobile-menu" class="mobile-menu">
+		<div class="mobile-menu-container">
+			<div class="mobile-menu-header">
+				<span class="mobile-heading">Menu</span>
+				<span class="mobile-menu-icon">
+					<span class="mobile-menu-icon-style"></span>
+				</span>
+			</div>
+			<div class="mobile-menu-content js-mobile-menu-content"></div>
+		</div>
+	</div>
+	<!-- !MOBILE MENU -->
+
     <!-- SITE-HEADER -->
 	<header id="site-header" class="site-header">
         <div class="container">
