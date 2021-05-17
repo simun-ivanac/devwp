@@ -66,6 +66,11 @@
     display: block
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-height: $breakpoint-xs)
+    .hero-image--large
+        min-height: 370px
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
@@ -129,6 +134,11 @@ li.breadcrumb-taxonomy
 @media (max-width: $breakpoint-xs)
     .hero-image-breadcrumbs
         left: 15px
+
+@media (max-height: $breakpoint-xs)
+    .hero-image-small
+        min-height: 300px
+        padding-top: 50px
 
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 

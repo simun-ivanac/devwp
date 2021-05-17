@@ -36,11 +36,29 @@
     justify-content: space-between
     align-items: flex-start
 
+
+
+/* admin-bar adjustment */
+#wpadminbar + .site-wrapper
+    .site-header
+        margin-top: 32px
+
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
 @media (max-width: $breakpoint-xl)
     .site-header.fixed-menu
         max-height: 60px
+
+@media (max-width: 782px)
+    #wpadminbar + .site-wrapper
+        .site-header
+            margin-top: 46px
+
+@media (max-width: 600px)
+    #wpadminbar + .site-wrapper
+        .site-header.fixed-menu
+            margin-top: 0
 
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
@@ -177,6 +195,7 @@
 /*----------------------------------------------
  * #1.2 Navigation list
  */
+.header-content__navigation>div,
 .menu-primary-container
     position: relative
     display: inline-block
@@ -262,6 +281,7 @@
         top: 60px
 
 @media (max-width: $breakpoint-lg)
+    .header-content__navigation>div,
     .menu-primary-container
         display: none
     .primary-menu-icon
@@ -280,14 +300,14 @@
  *--------------------------------------------------------------*/
 
 .mobile-menu
-    background-color: rgba(#000, 0.1)
+    background-color: rgba(#000, 0.3)
     display: none
     height: 100%
     left: 0
     position: fixed
     top: 0
     width: 100%
-    z-index: 9999
+    z-index: 999999
     &.is-opened
         display: block
 
@@ -295,14 +315,12 @@
     background-color: $bg-color-dark-strong
     box-shadow: 0px 0px 20px $shadow-dark-menu-strong
     height: 100%
-    // left: -420px
-    max-width: 80%
+    left: -345px
+    max-width: 340px
     overflow: hidden
     position: relative
     transition: left 0.2s linear
-    white-space: nowrap
-    width: 320px
-    left: 0
+    width: 100%
     &.is-animated
         left: 0
 
@@ -313,21 +331,17 @@
     display: flex
     font-family: $font-family-secondary
     font-size: 25px
-    height: 100px
+    height: 90px
     justify-content: space-between
-    margin-bottom: 12px
-    padding: 25px 0
+    margin-bottom: 10px
+    padding: 25px 30px
     text-align: left
     width: 100%
-
-.mobile-heading
-    padding: 0 20px
 
 .mobile-menu-icon
     background-color: transparent
     cursor: pointer
     height: 48px
-    margin-right: 10px
     outline: none
     position: relative
     vertical-align: top
@@ -361,7 +375,7 @@
         width: 25px
 
 .mobile-menu-content
-    height: calc(100% - 110px)
+    height: calc(100% - 100px)
     overflow: hidden auto
     padding-bottom: 10px
     .primary-menu
@@ -372,16 +386,40 @@
     .header-menu-link
         letter-spacing: 1px
         line-height: 20px
-        padding: 20px
+        padding: 25px 30px
         text-align: left
         height: auto
         border: 0
-
     .header-menu-item.current-menu-item
         .header-menu-link
             color: $text-color-light-medium
 
+
+    /* submenu */
+    .header-menu-item.menu-item-has-children
+        >.header-menu-link
+            display: none
+
+    .header-sub-menu
+        display: block
+        position: relative
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: inherit
+        box-shadow: none
+        .header-menu-item
+            height: auto
+        .header-menu-link
+            text-transform: uppercase
+
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xs)
+    .mobile-menu-container
+        max-width: 100%
+
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------

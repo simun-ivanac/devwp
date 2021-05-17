@@ -34,14 +34,7 @@ require THEME_DIR . '/includes/core/template-functions.php';
 /**
  * Enqueue css stylesheets and js scripts
  */
-// 3rd party files (google font, slick...)
-require THEME_DIR . '/includes/scripts/3rd-party.php';
-
-// Core scripts: style.css, script.js
-require THEME_DIR . '/includes/scripts/core-scripts.php';
-
-// Inline scripts
-require THEME_DIR . '/includes/scripts/inline-scripts.php';
+require THEME_DIR . '/includes/scripts/scripts.php';
 
 
 /**

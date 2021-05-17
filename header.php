@@ -26,10 +26,10 @@
 
     <!-- MOBILE MENU -->
 	<div id="mobile-menu" class="mobile-menu">
-		<div class="mobile-menu-container">
+		<div class="mobile-menu-container js-mobile-menu-container">
 			<div class="mobile-menu-header">
 				<span class="mobile-heading">Menu</span>
-				<span class="mobile-menu-icon">
+				<span class="mobile-menu-icon js-close-mobile-menu">
 					<span class="mobile-menu-icon-style"></span>
 				</span>
 			</div>
