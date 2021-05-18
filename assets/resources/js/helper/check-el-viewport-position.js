@@ -3,9 +3,9 @@
  * It receives element and desired offset.
  * It returns one of values: 'above' | 'below' | 'in_view'.
  *
- * @param object el = HTML element selected in jQuery
- * @param int offset = offset from page fold
- * @return string
+ * @param {object} el = HTML element selected in jQuery
+ * @param {number} offset = offset from page position
+ * @return {string} = value where is element positioned relative to scrolled position
  */
 function checkElementViewportPosition(el, offset) {
 

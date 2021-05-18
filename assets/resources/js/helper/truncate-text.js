@@ -3,10 +3,10 @@
  * Reduce text to specific number of characters. Function displays only whole
  * words.
  *
- * @param string text = text to reduce
- * @param int maxCharNum = max number of characters
- * @param string endChars = characters to add at the end of shortened text
- * @return string
+ * @param {string} text = text to reduce
+ * @param {number} maxCharNum = max number of characters
+ * @param {string} endChars = characters to add at the end of shortened text
+ * @return {string} = shortened text
  */
 function truncateText(text, maxCharNum, endChars) {
 

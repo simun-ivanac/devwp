@@ -29,9 +29,9 @@ var InteractiveMap = (function() {
     /*
      * MAP CONFIGURATION
      *
-     * @param string element = selector where to load map
-     * @param bool wheelZoom = enable/disable wheel zooming
-     * @param int maxZoom = maximum available zoom
+     * @param {string} element = selector where to load map
+     * @param {bool} wheelZoom = enable/disable wheel zooming
+     * @param {int} maxZoom = maximum available zoom
      */
     function configMap(element, wheelZoom, maxZoom) {
         var zoom = 9;
