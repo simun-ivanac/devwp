@@ -1,6 +1,11 @@
 var SponsorsSlider = (function() {
-    // TRIGGER IMAGE SLIDER USING "SLICK MASTER" LIBRARY
-    // it has to be more than 4 images
+    /*
+     * SPONSORS SLIDER
+     * If at least 4 sponsor images exist, trigger slider using 'slick master'
+     * library.
+     * Adjust size of slider on certain breakpoints.
+     */
+
 
     var sponsorSlider = $('.js-sponsors-slider').eq(0);
     if (!sponsorSlider.length) return;

@@ -47,7 +47,7 @@ require THEME_DIR . '/includes/widgets/widgets-setup.php';
 require THEME_DIR . '/includes/widgets/widgets-customization.php';
 
 // My own widget: displays latest posts with thumbnails and some other options
-require THEME_DIR . '/includes/widgets/latest-posts-with-thumbnails.php';
+require THEME_DIR . '/includes/widgets/class-latest-posts-with-thumbnails.php';
 
 
 /**

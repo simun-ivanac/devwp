@@ -1,10 +1,14 @@
 var TestimonialsSetBackground = (function() {
-    // SECTION HAVE DIFFERENT IMAGES FOR CERTAIN SIZES (mobile, tablet, desktop)
-    // SET BACKGROUND DEPENDING ON SIZE
+    /*
+     * TESTIMONIALS BACKGROUND IMAGE
+     * Testimonials section have different background images depending on
+     * screen size (desktop, tablet, mobile).
+     * Set background on load, and adjust on resize if necessary.
+     */
+
 
     var testimonials = $('.js-set-testimonials-bg').eq(0);
     if (!testimonials.length) return;
-
 
 
     // SET BACKGROUND IMAGE DEPENDING ON SCREEN SIZE
@@ -32,7 +36,7 @@ var TestimonialsSetBackground = (function() {
     setBackgroundImage();
 
 
-    // set background image at different sizes
+    // adjust background image on resize
     var resizeTimer;
     $(window).on('resize', function() {
         clearTimeout(resizeTimer);

@@ -2,13 +2,8 @@
  * [TABLE OF CONTENTS]
  *
  * #1 COMMENTS
- * #2
- * #3
- *    #3.1
- *    #3.2
  *
  *--------------------------------------------------------------*/
-
 
 
 /*--------------------------------------------------------------
@@ -16,16 +11,16 @@
  *--------------------------------------------------------------*/
 
 .comments-area
-    border-radius: 3px
     background-color: $bg-color-light-medium
-    padding: 25px
+    border-radius: 3px
     border: 1px solid $border-color-dark
+    padding: 25px
 
 .comments-title
-    text-align: left
     font-size: $font-size-h3
     margin-bottom: 25px
     padding: 0
+    text-align: left
     >span
         font-size: 23px
 
@@ -36,17 +31,17 @@ li.comment
     margin-bottom: 20px
 
 .comment-body
-    border: 1px solid $border-color-dark
     border-radius: 3px
-    padding: 15px
+    border: 1px solid $border-color-dark
     padding-left: 90px
+    padding: 15px
     position: relative
 
 .avatar
-    position: absolute
-    left: 15px
-    top: 15px
     border-radius: 50%
+    left: 15px
+    position: absolute
+    top: 15px
     width: auto
 
 .comment-metadata
@@ -59,43 +54,38 @@ li.comment
 
 .comment-content
     >p
-        margin: 0 0 10px 0
         font-size: 15px
         line-height: 22px
+        margin: 0 0 10px 0
 
 .reply
     text-align: right
     .comment-reply-link
         display: inline-block
-        height: 35px
         font-size: 15px
+        height: 35px
         padding: 5px 25px
 
 
+/* child comments */
 ol.children
-    padding: 0 0 0 20px
     margin-top: 10px
+    padding: 0 0 0 20px
     li.comment
         margin-bottom: 10px
 
 li.comment
     .comment-respond
-        // margin-top: 5px
-        padding: 20px
+        background-color: scale-color($bg-color-light-medium, $lightness: -3%)
         border-bottom-left-radius: 3px
         border-bottom-right-radius: 3px
-        // background-color: darken($bg-color-light-medium, 3%)
-
-        background-color: scale-color($bg-color-light-medium, $lightness: -3%)
-        border: 1px solid $border-color-dark
         border-top: 0
-
-
-// .comment-respond
+        border: 1px solid $border-color-dark
+        padding: 20px
 
 .comment-reply-title
-    margin-bottom: 10px
     font-size: $font-size-h4
+    margin-bottom: 10px
     >small
         margin-left: 25px
 
@@ -113,8 +103,8 @@ li.comment
         display: none
     >input,
     >textarea
-        padding: 12px 10px
         line-height: 1.5
+        padding: 12px 10px
 
 .comment-form-author,
 .comment-form-email
@@ -131,6 +121,7 @@ li.comment
         min-width: 140px
         padding: 11px
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
 @media (max-width: $breakpoint-sm)
@@ -139,8 +130,8 @@ li.comment
     .comment-body
         padding-left: 80px
     .avatar
-        top: 10px
         left: 10px
+        top: 10px
     ol.children
         padding: 0 0 0 15px
 
@@ -148,8 +139,8 @@ li.comment
     .comment-body
         padding-left: 70px
     .avatar
-        width: 50px
         height: 50px
+        width: 50px
     .comment-reply-title
         font-size: $font-size-h4 * 0.9
         line-height: 28px

@@ -7,6 +7,7 @@
  */
 ?>
 
+
 <section class="section section--home-members section--dark">
     <div class="container">
         <div class="content-holder home-members">
@@ -22,14 +23,28 @@
                                 <div class="member-item-image-holder">
                                     <?php $member_image = get_sub_field( 'home_members_'.$i.'_image' ); ?>
                                     <?php if ( $member_image ) : ?>
-                                        <img
-                                        class="member-item-image"
-                                        src="<?php echo esc_url( $member_image[ 'url' ] ); ?>"
-                                        width="<?php esc_html_e( $member_image[ 'width' ] ); ?>"
-                                        height="<?php esc_html_e( $member_image[ 'height' ] ); ?>"
-                                        alt="<?php esc_html_e( $member_image[ 'alt' ] ); ?>" />
+
+                                        <?php $member_link = get_sub_field( 'home_members_'.$i.'_link' ); ?>
+                                        <?php if ( $member_link ) : ?>
+                                            <a class="member-item-link" href="<?php echo esc_url( the_sub_field( 'home_members_'.$i.'_link' ) ); ?>">
+                                                <img
+                                                class="member-item-image"
+                                                src="<?php echo esc_url( $member_image[ 'url' ] ); ?>"
+                                                width="<?php esc_html_e( $member_image[ 'width' ] ); ?>"
+                                                height="<?php esc_html_e( $member_image[ 'height' ] ); ?>"
+                                                alt="<?php esc_html_e( $member_image[ 'alt' ] ); ?>" />
+                                                <div class="member-item-image-overlay"></div>
+                                            </a>
+                                        <?php else : ?>
+                                            <img
+                                            class="member-item-image"
+                                            src="<?php echo esc_url( $member_image[ 'url' ] ); ?>"
+                                            width="<?php esc_html_e( $member_image[ 'width' ] ); ?>"
+                                            height="<?php esc_html_e( $member_image[ 'height' ] ); ?>"
+                                            alt="<?php esc_html_e( $member_image[ 'alt' ] ); ?>" />
+                                            <div class="member-item-image-overlay"></div>
+                                        <?php endif; ?>
                                     <?php endif; ?>
-                                    <div class="member-item-image-overlay"></div>
                                 </div>
                                 <div class="member-item-info">
                                     <h5 class="member-item-type"><?php esc_html( the_sub_field( 'home_members_'.$i.'_type' ) ); ?></h5>

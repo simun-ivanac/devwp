@@ -1,5 +1,10 @@
 var ContactForm = (function() {
-    // ON CONTACT FORM SUBMIT - SHOW FAILURE MESSAGE
+    /*
+     * FAILURE MESSAGE
+     * Email server is not configured. Notify user on form submit.
+     */
+
+
     var contactForm = $('#contact-form');
     if (!contactForm.length) return;
 

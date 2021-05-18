@@ -1,33 +1,29 @@
 /*--------------------------------------------------------------
  * [TABLE OF CONTENTS]
  *
- * #1
- * #2
- * #3
- *    #3.1
- *    #3.2
+ * #1 TESTIMONIALS
  *
  *--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
- * ===============  #1 >  ===============
+ * ===============  #1 TESTIMONIALS>  ===============
  *--------------------------------------------------------------*/
 
 .section--home-testimonials
-    position: relative
+    background-position: center
     background-repeat: no-repeat
     background-size: cover
-    background-position: center
+    position: relative
 
 .home-testimonials-overlay
+    background-color: rgba(#000000, 0.7)
+    height: 100%
+    left: 0
+    overflow: hidden
     position: absolute
     top: 0
-    left: 0
     width: 100%
-    height: 100%
-    overflow: hidden
-    background-color: rgba(#000000, 0.7)
 
 .home-testimonials__slider
     position: relative
@@ -40,29 +36,29 @@
 
 .home-testimonials-comment-text
     color: $text-color-light-strong
-    text-align: center
     height: auto
     margin-bottom: 25px
+    text-align: center
 
 .home-testimonials-comment-author
-    text-transform: uppercase
     color: $text-color-light-strong
+    display: block
     font-weight: 700
     line-height: 19px
-    text-align: center
-    display: block
     margin-bottom: 30px
+    text-align: center
+    text-transform: uppercase
 
 .home-testimonials__slider
     .slick-prev,
     .slick-next
-        width: 50px
+        background-color: transparent
+        border: none
+        bottom: 0px
         height: 40px
         padding: 0 10px
-        background-color: transparent
         position: relative
-        bottom: 0px
-        border: none
+        width: 50px
         >svg
             stroke: $icon-fill
         &:hover
@@ -74,6 +70,7 @@
         left: 50%
         transform: translateX(calc(-50% - 30px))
 
+
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
 @media (max-width: $breakpoint-md)
@@ -81,9 +78,8 @@
         max-height: 140px
         overflow-y: auto
 
-
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
- * ===============  <#1  ===============
+ * ===============  <#1 TESTIMONIALS ===============
  *--------------------------------------------------------------*/

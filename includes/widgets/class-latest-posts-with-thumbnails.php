@@ -10,25 +10,27 @@
 if ( ! class_exists( 'Latest_Posts_With_Thumbnails_Widget' ) ) :
 class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
 
+
     /**
      * Sets up a new widget instance.
      */
     function __construct() {
         $widget_ops = array(
 			'classname'                   => 'widget_latest_entries',
-			'description'                 => __( 'Your site&#8217;s latest Posts.' ),
+			'description'                 => __( 'Recent posts with thumbnails.' ),
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct(
-            'latest-posts',
-            __( 'Latest Posts with Thumbnails' ),
-            $widget_ops
-        );
+		parent::__construct( 'latest-posts', __( 'Latest Posts with Thumbnails' ), $widget_ops );
 		$this->alt_option_name = 'widget_latest_entries';
     }
 
+
     /**
      * Creating widget front-end.
+     *
+     * @param array $args     = display arguments including 'before_title',
+     *                          'after_title', 'before_widget', and 'after_widget'.
+     * @param array $instance = settings for widget instance.
      */
     public function widget( $args, $instance ) {
         if ( ! isset( $args['widget_id'] ) ) {
@@ -49,7 +51,10 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
         $show_thumbnail = ! empty( $instance['show_thumbnail'] ) ? '1' : '0';
         $thumbnail_size = ! empty( $instance['thumbnail_size'] ) ? $instance['thumbnail_size'] : 'thumbnail';
 
-        // standard params
+
+        /*
+         * Filters the parameters for widget.
+         */
         $query_args = array(
             'posts_per_page' => $num_of_posts,
             'no_found_rows'  => true,
@@ -112,8 +117,13 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
         echo $args['after_widget'];
     }
 
+
     /**
      * Updating widget - replacing old instances with new.
+     *
+     * @param array $new_instance = new settings set by user
+     * @param array $old_instance = old settings
+     * @return array
      */
     public function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
@@ -141,21 +151,10 @@ class Latest_Posts_With_Thumbnails_Widget extends WP_Widget {
 
     /**
      * Widget Backend: outputs the settings form for widget.
+     *
+     * @param array $instance = current settings
      */
     public function form( $instance ) {
-        // Merge with defaults
-        // $instance = wp_parse_args(
-		// 	(array) $instance,
-		// 	array(
-		// 		'title'          => 'Latest Posts',
-		// 		'num_of_posts'   => 5,
-		// 		'show_date'      => false,
-		// 		'random_order'   => false,
-		// 		'show_thumbnail' => false,
-		// 		'thumbnail_size' => 'thumbnail'
-		// 	)
-		// );
-
         $title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : 'Latest Posts';
         $num_of_posts = isset( $instance['num_of_posts'] ) ? absint( $instance['num_of_posts'] ) : 5;
         $show_date = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;

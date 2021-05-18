@@ -1,24 +1,23 @@
 /*--------------------------------------------------------------
  * [TABLE OF CONTENTS]
  *
- * #1
- * #2
- * #3
- *    #3.1
- *    #3.2
+ * #1 FORM-LAYOUT
+ * #2 WPCF-7
+ * #3 ADDRESS & MEMBERS
  *
  *--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
- * ===============  #1 >  ===============
+ * ===============  #1 FORM-LAYOUT>  ===============
  *--------------------------------------------------------------*/
 
+/* positioning */
 .contact-form__content
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
     box-shadow: 0px 0px 20px $shadow-dark-medium
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
 
 .contact-form-content
     background-color: $bg-color-light-medium
@@ -27,7 +26,19 @@
     padding: 40px
     width: 100%
 
-// form
+.contact-form-general
+    background-color: $bg-color-dark-strong
+    color: $text-color-light-medium
+    display: flex
+    flex-direction: column
+    flex: 0 0 45%
+    justify-content: center
+    max-width: 45%
+    padding: 100px 80px
+    width: 100%
+
+
+/* headings */
 .contact-form-heading
     color: $text-color-dark-medium
     cursor: default
@@ -38,78 +49,6 @@
     margin-bottom: 20px
     text-align: left
     text-transform: uppercase
-
-.screen-reader-response
-    display: none !important
-
-.wpcf7-form
-    >p
-        margin-bottom: 25px
-        &:last-of-type
-            margin-top: 40px
-            margin-bottom: 0
-
-    .wpcf7-text,
-    .wpcf7-email
-        width: 100%
-        padding: 14px 10px
-
-    .wpcf7-textarea
-        padding: 14px 10px
-        min-height: 200px
-
-    .wpcf7-form-control-wrap.checkbox-62,
-    .contact-form-consent
-        display: inline-block
-
-    .wpcf7-form-control-wrap.checkbox-62
-        vertical-align: top
-        margin-top: 3px
-        height: 25px
-        width: 20px
-        .wpcf7-not-valid-tip
-            position: relative
-            left: 25px
-            bottom: 0
-            margin-top: 23px
-            width: 200px
-        input
-            width: 18px
-            height: 18px
-
-    .contact-form-consent
-        width: calc(100% - 30px)
-
-    .wpcf7-list-item
-        margin: 0
-
-    .wpcf7-submit
-        display: block
-        margin: 0 auto
-        min-width: 140px
-        padding-top: 12px
-        padding-bottom: 12px
-
-    .ajax-loader
-        display: block !important
-        height: 0 !important
-        margin: 0 !important
-        opacity: 0 !important
-        visibility: hidden !important
-        width: 0 !important
-
-
-// general
-.contact-form-general
-    padding: 100px 80px
-    background-color: $bg-color-dark-strong
-    color: $text-color-light-medium
-    display: flex
-    flex-direction: column
-    flex: 0 0 45%
-    justify-content: center
-    max-width: 45%
-    width: 100%
 
 .form-general-heading
     color: $text-color-light-strong
@@ -122,6 +61,110 @@
     margin: 0 0 25px 0
     text-align: left
     text-transform: uppercase
+
+
+/*--------------------- MEDIA-QUERIES> ---------------------*/
+
+@media (max-width: $breakpoint-xl)
+    .contact-form-general
+        padding-left: 60px
+        padding-right: 60px
+
+@media (max-width: $breakpoint-lg)
+    .contact-form-content,
+    .contact-form-general
+        flex: 0 0 100%
+        max-width: 100%
+    .contact-form-general,
+    .form-general-heading
+        text-align: center
+
+
+@media (max-width: $breakpoint-xs)
+    .contact-form-content
+        padding: 35px 25px
+    .contact-form-heading,
+    .form-general-heading
+        line-height: 32px
+
+/*--------------------- <MEDIA-QUERIES ---------------------*/
+
+/*--------------------------------------------------------------
+ * ===============  <#1 LAYOUT ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #2 WPCF-7>  ===============
+ *--------------------------------------------------------------*/
+
+.screen-reader-response
+    display: none !important
+
+.wpcf7-form
+    >p
+        margin-bottom: 25px
+        &:last-of-type
+            margin-bottom: 0
+            margin-top: 40px
+
+    .wpcf7-text,
+    .wpcf7-email
+        padding: 14px 10px
+        width: 100%
+
+    .wpcf7-textarea
+        min-height: 200px
+        padding: 14px 10px
+
+    .wpcf7-form-control-wrap.checkbox-62,
+    .contact-form-consent
+        display: inline-block
+
+    .wpcf7-form-control-wrap.checkbox-62
+        height: 25px
+        margin-top: 3px
+        vertical-align: top
+        width: 20px
+        .wpcf7-not-valid-tip
+            bottom: 0
+            left: 25px
+            margin-top: 23px
+            position: relative
+            width: 200px
+        input
+            height: 18px
+            width: 18px
+
+    .contact-form-consent
+        width: calc(100% - 30px)
+
+    .wpcf7-list-item
+        margin: 0
+
+    .wpcf7-submit
+        display: block
+        margin: 0 auto
+        min-width: 140px
+        padding-bottom: 12px
+        padding-top: 12px
+
+    .ajax-loader
+        display: block !important
+        height: 0 !important
+        margin: 0 !important
+        opacity: 0 !important
+        visibility: hidden !important
+        width: 0 !important
+
+/*--------------------------------------------------------------
+ * ===============  <#2 WPCF-7 ===============
+ *--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ * ===============  #3 ADDRESS & MEMBERS>  ===============
+ *--------------------------------------------------------------*/
 
 .form-general-info
     margin-bottom: 60px
@@ -140,38 +183,6 @@
     &:last-of-type
         margin-bottom: 0
 
-
-/*--------------------- MEDIA-QUERIES> ---------------------*/
-
-@media (max-width: $breakpoint-xl)
-    .contact-form-general
-        padding-left: 60px
-        padding-right: 60px
-
-
-@media (max-width: $breakpoint-lg)
-    .contact-form-content,
-    .contact-form-general
-        flex: 0 0 100%
-        max-width: 100%
-
-    .contact-form-general,
-    .form-general-heading
-        text-align: center
-
-
-@media (max-width: $breakpoint-xs)
-    .contact-form-content
-        padding: 35px 25px
-
-    .contact-form-heading,
-    .form-general-heading
-        line-height: 32px
-
-
-
-/*--------------------- <MEDIA-QUERIES ---------------------*/
-
 /*--------------------------------------------------------------
- * ===============  <#1  ===============
+ * ===============  <#3 ADDRESS & MEMBERS ===============
  *--------------------------------------------------------------*/

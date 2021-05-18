@@ -32,7 +32,7 @@
                 <p class="section-description"><?php esc_html( the_field( 'home_work_description' ) ); ?></p>
                 <?php $work_link = get_field( 'home_work_link' ); ?>
                 <?php if ( $work_link ) : ?>
-                    <a href="<?php esc_url( the_sub_field( 'home_work_link' ) ); ?>" name="button" class="button home-work-button">Read more</a>
+                    <a href="<?php echo esc_url( the_field( 'home_work_link' ) ); ?>" name="button" class="button home-work-button">Read more</a>
                 <?php else : ?>
                     <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'about-us' ) ) ); ?>" name="button" class="button home-work-button">Read more</a>
                 <?php endif; ?>

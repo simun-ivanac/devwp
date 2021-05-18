@@ -1,4 +1,11 @@
 var MobileMenu = (function() {
+    /*
+     * OPEN/CLOSE MOBILE MENU
+     * On certain events, open and close menu. If menu doesn't exists in its
+     * container, clone it from main navigation.
+     */
+
+
     var siteNav = $('#site-navigation');
     var mobileMenu = $('#mobile-menu');
 

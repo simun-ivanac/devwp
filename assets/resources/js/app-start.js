@@ -1,10 +1,15 @@
 (function($) {
 
-    // if link goes nowhere, stop execution (only in development enabled)
-    $('body').on('click', 'a', function(event) {
-        var href = $(this).attr('href');
 
-        if ( href == '#' || href == '' || !href ) {
-            event.preventDefault();
-        }
-    });
+/*
+ * CAUTION: use only in development
+ * If link doesn't have href attribute set, prevent default behavior.
+ *
+ */
+$('body').on('click', 'a', function(event) {
+    var href = $(this).attr('href');
+
+    if ( href == '#' || href == '' || !href ) {
+        event.preventDefault();
+    }
+});

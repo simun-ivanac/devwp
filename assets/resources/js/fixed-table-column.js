@@ -1,6 +1,11 @@
 var TableFixedColumn = (function() {
-    // MAKES 1 COLUMN FIXED IN TABLE WHEN HORIZONTAL SCROLLING IS NECESSARY
-    // It uses 1 argument -> window width
+    /*
+     * FIXED TABLE COLUMN
+     * At certain breakpoint when table is too wide, make first column fixed
+     * and other columns scrollable.
+     * On resize event, adjust it if necesssary.
+     */
+
 
     // if not found, return
     var schedule = $('#schedule-table');

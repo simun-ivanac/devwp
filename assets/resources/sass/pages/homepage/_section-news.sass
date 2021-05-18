@@ -1,23 +1,19 @@
 /*--------------------------------------------------------------
  * [TABLE OF CONTENTS]
  *
- * #1
- * #2
- * #3
- *    #3.1
- *    #3.2
+ * #1 NEWS
  *
  *--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
- * ===============  #1 >  ===============
+ * ===============  #1 NEWS>  ===============
  *--------------------------------------------------------------*/
 
 .home-news__posts
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: space-between
 
 .news-post
     flex: 0 0 calc((100% - 60px) / 3)
@@ -36,23 +32,24 @@
     border-radius: 3px
 
 .news-post-caption
-    padding: 0 15px
     margin-top: 6px
+    padding: 0 15px
     transition: padding 0.2s ease-in
 
 .news-post-category
-    font-size: 16px
     color: $link-text
+    font-size: 16px
     transition: margin 0.1s ease-in
 
 .news-post-heading
-    font-family: $font-family-primary
     color: $text-color-base
+    font-family: $font-family-primary
+    font-size: 19px
     font-weight: 600
     line-height: 22px
-    font-size: 19px
     margin-top: 4px
     transition: margin 0.2s ease-in
+
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
@@ -70,22 +67,22 @@
 @media (max-width: $breakpoint-sm)
     .news-post
         flex: 0 0 100%
-        max-width: 100%
         margin-bottom: 30px
+        max-width: 100%
         &:last-of-type
             margin-bottom: 0
             margin-top: 0
 
     .news-post-attachment
-        width: auto
         margin: 0 auto
+        width: auto
 
     .news-post-caption
-        max-width: 350px
         margin: 0 auto
+        max-width: 350px
 
 /*--------------------- <MEDIA-QUERIES ---------------------*/
 
 /*--------------------------------------------------------------
- * ===============  <#1  ===============
+ * ===============  <#1 NEWS ===============
  *--------------------------------------------------------------*/

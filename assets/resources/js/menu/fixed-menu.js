@@ -1,4 +1,11 @@
 var FixedMenu = (function() {
+    /*
+     * ADD OR REMOVE CLASS ON SCROLL
+     * It checks if scrolling position is greater than 0 and add css class.
+     * If scrolling position is 0, it removes css class if exists.
+     *
+     * NOTE: debouncer and throttling needs to be added!
+     */
     var siteHeader = $('#site-header');
     var currentScroll = 0;
 

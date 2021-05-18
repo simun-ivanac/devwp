@@ -1,5 +1,10 @@
 var InteractiveMap = (function() {
-    // CONFIGURE AND DISPLAY INTERACTIVE MAP
+    /*
+     * LEAFLET API: interactive earth map
+     * It takes latitude and longitude from frontend which are inserted by user
+     * in admin dashboard. Default values point to Virovitica (Croatia).
+     */
+
 
     // if not found, return early
     var mapHolder = $('#map-holder');
@@ -21,10 +26,13 @@ var InteractiveMap = (function() {
     if (!longitude.length) longitude = 17.38545184;
 
 
-    // CONFIGURATION
-    // element: selector where to load map
-    // wheel_zoom: enable/disable wheel zooming
-    // max_zoom: maximum zoom
+    /*
+     * MAP CONFIGURATION
+     *
+     * @param string element = selector where to load map
+     * @param bool wheelZoom = enable/disable wheel zooming
+     * @param int maxZoom = maximum available zoom
+     */
     function configMap(element, wheelZoom, maxZoom) {
         var zoom = 9;
 
@@ -50,14 +58,14 @@ var InteractiveMap = (function() {
     }
 
 
-    // config
+    // configure VISIBLE map
     configMap('map-holder', false, 11);
     map.find('.js-map-preloader').addClass('hidden');
 
 
 
 
-    // if fullsize map configured?
+    // if FULLSCREEN map configured?
     var isFullConfigured = false;
 
     // on click - open FULLSCREEN

@@ -4,8 +4,7 @@
  * #1 GENERAL
  * #2 HERO-IMAGE--LARGE
  * #3 HERO-IMAGE--SMALL
- *    #3.1
- *    #3.2
+ *    #3.1 Breadcrumbs
  *
  *--------------------------------------------------------------*/
 
@@ -20,12 +19,12 @@
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    height: 100%
     min-height: 300px
     padding-bottom: 0px
     padding-top: 0px
     position: relative
     width: 100%
-    height: 100%
 
 .hero-image-overlay
     background-color: $bg-color-hero-image
@@ -54,16 +53,17 @@
 .hero-image-large
     align-items: center
     display: flex
+    height: 100%
     justify-content: center
     width: 100%
-    height: 100%
 
 .site-title-link
-    text-align: center
     display: inline-block
+    text-align: center
 
 .site-title-link-small
     display: block
+
 
 /*--------------------- MEDIA-QUERIES> ---------------------*/
 
@@ -83,17 +83,18 @@
  *--------------------------------------------------------------*/
 
 .hero-image-small
+    align-items: center
+    display: flex
+    justify-content: center
     min-height: 400px
     padding-top: 75px
-    display: flex
-    align-items: center
-    justify-content: center
 
 .hero-image-title
     text-align: center
 
+
 /*----------------------------------------------
- * #1.1 Breadcrumbs
+ * #3.1 Breadcrumbs
  */
 .hero-image-breadcrumbs
     bottom: 5px
@@ -111,20 +112,20 @@ li.breadcrumb-date
     display: inline-block
 
 li.breadcrumb-post
-    width: 200px
-    vertical-align: middle
     overflow: hidden
-    white-space: nowrap
     text-overflow: ellipsis
+    vertical-align: middle
+    white-space: nowrap
+    width: 200px
 
 li.breadcrumb-search-query,
 li.breadcrumb-taxonomy
     text-transform: lowercase
 
 .breadcrumb-link
-    display: inline-block
-    color: $text-color-light-strong
     border-bottom: 2px solid transparent
+    color: $text-color-light-strong
+    display: inline-block
     &:hover
         border-bottom: 2px solid $link-text
 

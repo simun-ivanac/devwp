@@ -1,16 +1,17 @@
-// Function for loading on scroll
+/*
+ * CHECK ELEMENT VIEWPORT POSITION
+ * It receives element and desired offset.
+ * It returns one of values: 'above' | 'below' | 'in_view'.
+ *
+ * @param object el = HTML element selected in jQuery
+ * @param int offset = offset from page fold
+ * @return string
+ */
 function checkElementViewportPosition(el, offset) {
-    // Pass HTML element ( selected in jQuery ) and offset from page fold ( top and bottom )
-    // Returns 'above' or 'below' or 'in_view' (page fold)
-    // It is enough to check if element is 'in_view' and to do the action but there are also other two options which can be used.
-    // offset = "NaN";
-    // offset = "undefined";
-    // offset = "";
 
     if (isNaN(offset) || offset == '') {
         offset = 0;
     }
-
 
     var rect = el[0].getBoundingClientRect();
 
