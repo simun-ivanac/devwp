@@ -1,0 +1,3897 @@
+[
+    {
+        "key": "group_5defc60e9a4a3",
+        "title": "Intro",
+        "fields": [
+            {
+                "key": "field_5defc71a5f278",
+                "label": "Title",
+                "name": "home_intro_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Who we are?",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5defc7535f279",
+                "label": "Description",
+                "name": "home_intro_description",
+                "type": "textarea",
+                "instructions": "Short section description (2-3 sentence)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "placeholder": "",
+                "maxlength": 1000,
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5df5363f71ca7",
+                "label": "Icons",
+                "name": "home_intro_icons",
+                "type": "group",
+                "instructions": "Add icons title",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df5366171ca8",
+                        "label": "Icon 1",
+                        "name": "home_intro_icons_1_title",
+                        "type": "text",
+                        "instructions": "Short icon title (max-2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "eirmod tempor",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5df536cd71ca9",
+                        "label": "Icon 2",
+                        "name": "home_intro_icons_2_title",
+                        "type": "text",
+                        "instructions": "Short icon title (max-2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "dolore magna",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5df536f571caa",
+                        "label": "Icon 3",
+                        "name": "home_intro_icons_3_title",
+                        "type": "text",
+                        "instructions": "Short icon title (max-2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "nonumy eirmod",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5defcafdb9d82",
+        "title": "Pricing",
+        "fields": [
+            {
+                "key": "field_5df14e72cd899",
+                "label": "Title",
+                "name": "home_pricing_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 riječi)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Pricing",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5df533a838eb9",
+                "label": "Option 1",
+                "name": "home_pricing_option_1",
+                "type": "group",
+                "instructions": "Add value for option",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df533a838eba",
+                        "label": "Price",
+                        "name": "home_pricing_option_1_price",
+                        "type": "text",
+                        "instructions": "Option price",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 20,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df533a838ebb",
+                        "label": "Currency and\/or period",
+                        "name": "home_pricing_option_1_currency_period",
+                        "type": "text",
+                        "instructions": "Currency and\/or period to which the price refers",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "kn",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df533a838ebc",
+                        "label": "Description",
+                        "name": "home_pricing_option_1_description",
+                        "type": "text",
+                        "instructions": "Description (max 2-3-words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Daily",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            },
+            {
+                "key": "field_5df531e80dee7",
+                "label": "Option 2",
+                "name": "home_pricing_option_2",
+                "type": "group",
+                "instructions": "Add value for option",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df531e80dee8",
+                        "label": "Price",
+                        "name": "home_pricing_option_2_price",
+                        "type": "text",
+                        "instructions": "Option price",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 100,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df531e80dee9",
+                        "label": "Currency and\/or period",
+                        "name": "home_pricing_option_2_currency_period",
+                        "type": "text",
+                        "instructions": "Currency and\/or period to which the price refers",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "kn",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df531e80deea",
+                        "label": "Description",
+                        "name": "home_pricing_option_2_description",
+                        "type": "text",
+                        "instructions": "Description (max 2-3-words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Weekly",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            },
+            {
+                "key": "field_5df530a747d94",
+                "label": "Option 3",
+                "name": "home_pricing_option_3",
+                "type": "group",
+                "instructions": "Add value for option",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df530c147d95",
+                        "label": "Price",
+                        "name": "home_pricing_option_3_price",
+                        "type": "text",
+                        "instructions": "Option price",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 300,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df530e147d96",
+                        "label": "Currency and\/or period",
+                        "name": "home_pricing_option_3_currency_period",
+                        "type": "text",
+                        "instructions": "Currency and\/or period to which the price refers",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "kn",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df5311b47d97",
+                        "label": "Description",
+                        "name": "home_pricing_option_3_description",
+                        "type": "text",
+                        "instructions": "Description (max 2-3-words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Monthly",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            },
+            {
+                "key": "field_5df52f1c666b6",
+                "label": "Option 4",
+                "name": "home_pricing_option_4",
+                "type": "group",
+                "instructions": "Add value for option",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df52f3c666b7",
+                        "label": "Price",
+                        "name": "home_pricing_option_4_price",
+                        "type": "text",
+                        "instructions": "Option price",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 800,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df52f62666b8",
+                        "label": "Currency and\/or period",
+                        "name": "home_pricing_option_4_currency_period",
+                        "type": "text",
+                        "instructions": "Currency and\/or period to which the price refers",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "kn",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df52f8e666b9",
+                        "label": "Description",
+                        "name": "home_pricing_option_4_description",
+                        "type": "text",
+                        "instructions": "Description (max 2-3-words)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Quartally",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            },
+            {
+                "key": "field_5defd19b03709",
+                "label": "Option 5",
+                "name": "home_pricing_option_5",
+                "type": "group",
+                "instructions": "Add value for option",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df529c0208e0",
+                        "label": "Price",
+                        "name": "home_pricing_option_5_price",
+                        "type": "text",
+                        "instructions": "Option price",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "1000-1500",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df52c1d16792",
+                        "label": "Currency and\/or period",
+                        "name": "home_pricing_option_5_currency_period",
+                        "type": "text",
+                        "instructions": "Currency and\/or period to which the price refers",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "kn",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 10
+                    },
+                    {
+                        "key": "field_5df529ed208e1",
+                        "label": "Description",
+                        "name": "home_pricing_option_5_description",
+                        "type": "text",
+                        "instructions": "Description (max 2-3-words)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Semi-annually",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 20,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_60a0406bc8d22",
+        "title": "Schedule",
+        "fields": [
+            {
+                "key": "field_60a0408be2f3e",
+                "label": "Title",
+                "name": "home_schedule_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Work schedule",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_60a040e31f390",
+                "label": "Work hours",
+                "name": "home_schedule_table",
+                "type": "table",
+                "instructions": "Select time and add value",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "use_header": 1,
+                "use_caption": 2
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 30,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5df151764f2c0",
+        "title": "Team members",
+        "fields": [
+            {
+                "key": "field_5df15196206f4",
+                "label": "Title",
+                "name": "home_members_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Team members",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5df64b35c5fd7",
+                "label": "Member 1",
+                "name": "home_members_1",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df64b52c5fd8",
+                        "label": "Name",
+                        "name": "home_members_1_name",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Robin Smith",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 25
+                    },
+                    {
+                        "key": "field_5df64b74c5fd9",
+                        "label": "Type",
+                        "name": "home_members_1_type",
+                        "type": "text",
+                        "instructions": "What's his role? (max 2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Tester",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5df68579c137f",
+                        "label": "Link",
+                        "name": "home_members_1_link",
+                        "type": "text",
+                        "instructions": "URL of member page",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5df64b9dc5fda",
+                        "label": "Image",
+                        "name": "home_members_1_image",
+                        "type": "image",
+                        "instructions": "Add member image (size <b>280x340px<\/b>)\r\n<br> note: all member's images should be the same size for design consistency",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    }
+                ]
+            },
+            {
+                "key": "field_60a01a2d13a05",
+                "label": "Member 2",
+                "name": "home_members_2",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_60a01a2d13a06",
+                        "label": "Name",
+                        "name": "home_members_2_name",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Larry Hops",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 25
+                    },
+                    {
+                        "key": "field_60a01a2d13a07",
+                        "label": "Type",
+                        "name": "home_members_2_type",
+                        "type": "text",
+                        "instructions": "What's his role? (max 2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Developer",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_60a01a2d13a08",
+                        "label": "Link",
+                        "name": "home_members_2_link",
+                        "type": "text",
+                        "instructions": "URL of member page",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60a01a2d13a09",
+                        "label": "Image",
+                        "name": "home_members_2_image",
+                        "type": "image",
+                        "instructions": "Add member image (size <b>280x340px<\/b>)\r\n<br> note: all member's images should be the same size for design consistency",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    }
+                ]
+            },
+            {
+                "key": "field_60a01a5a13a0a",
+                "label": "Member 3",
+                "name": "home_members_3",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_60a01a5a13a0b",
+                        "label": "Name",
+                        "name": "home_members_3_name",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Kelly Doyne",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 25
+                    },
+                    {
+                        "key": "field_60a01a5a13a0c",
+                        "label": "Type",
+                        "name": "home_members_3_type",
+                        "type": "text",
+                        "instructions": "What's his role? (max 2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Designer",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_60a01a5a13a0d",
+                        "label": "Link",
+                        "name": "home_members_3_link",
+                        "type": "text",
+                        "instructions": "URL of member page",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60a01a5a13a0e",
+                        "label": "Image",
+                        "name": "home_members_3_image",
+                        "type": "image",
+                        "instructions": "Add member image (size <b>280x340px<\/b>)\r\n<br> note: all member's images should be the same size for design consistency",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 40,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5df15c8816102",
+        "title": "Work",
+        "fields": [
+            {
+                "key": "field_5df15c967f3ae",
+                "label": "Title",
+                "name": "home_work_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Our work",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5df15cb57f3af",
+                "label": "Description",
+                "name": "home_work_description",
+                "type": "textarea",
+                "instructions": "Short description in 3-4 sentences.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy. Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+                "placeholder": "",
+                "maxlength": 700,
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5df15d077f3b0",
+                "label": "Image",
+                "name": "home_work_image",
+                "type": "image",
+                "instructions": "Add image for content explanation (ideal size <b>550x470px<\/b>)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "1,5",
+                "mime_types": "jpg, jpeg, png"
+            },
+            {
+                "key": "field_5e3aa73e1dfcb",
+                "label": "Link",
+                "name": "home_work_link",
+                "type": "page_link",
+                "instructions": "URL of page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 1,
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 50,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5df160c5ba263",
+        "title": "Testimonials",
+        "fields": [
+            {
+                "key": "field_5df160e1ed46f",
+                "label": "Title",
+                "name": "home_testimonials_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Testimonials",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5df161dd696f5",
+                "label": "Background image",
+                "name": "home_testimonials_backgrounds",
+                "type": "group",
+                "instructions": "Add background image",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e19ffc187e84",
+                        "label": "Background image - desktop",
+                        "name": "home_testimonials_backgrounds_desktop",
+                        "type": "image",
+                        "instructions": "Add desktop background image (ideal size <b>1920x510px<\/b>)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_5e19ffed87e85",
+                        "label": "Background image - tablet",
+                        "name": "home_testimonials_backgrounds_tablet",
+                        "type": "image",
+                        "instructions": "Add tablet background image (ideal size <b>800x550px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_5e1a000287e86",
+                        "label": "Background image - mobile",
+                        "name": "home_testimonials_backgrounds_mobile",
+                        "type": "image",
+                        "instructions": "Add mobile background image (ideal size <b>500x550px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "1,5",
+                        "mime_types": "jpg, jpeg, png"
+                    }
+                ]
+            },
+            {
+                "key": "field_5df5651aaaa39",
+                "label": "Comment 1",
+                "name": "home_testimonials_comment_1",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df5653baaa3a",
+                        "label": "Text",
+                        "name": "home_testimonials_comment_1_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5df56579aaa3b",
+                        "label": "Author",
+                        "name": "home_testimonials_comment_1_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "John Hedge",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5f8c798a348ad",
+                        "label": "Show",
+                        "name": "home_testimonials_comment_1_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5df566bae53b2",
+                "label": "Comment 2",
+                "name": "home_testimonials_comment_2",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df566bae53b3",
+                        "label": "Text",
+                        "name": "home_testimonials_comment_2_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu. Invidunt ut labore et dolore magna aliquyam erat sed diam nonumy eirmod.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5df566bae53b4",
+                        "label": "Author",
+                        "name": "home_testimonials_comment_2_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Sally Garden",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5f8c79b8348ae",
+                        "label": "Show",
+                        "name": "home_testimonials_comment_2_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5df566dee53b5",
+                "label": "Comment 3",
+                "name": "home_testimonials_comment_3",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5df566dee53b6",
+                        "label": "Text",
+                        "name": "home_testimonials_comment_3_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct. vero eos et accusam et justo duo dolores et ea rebum consetetur sadipscing elitr sed diam nonumy sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5df566dee53b7",
+                        "label": "Author",
+                        "name": "home_testimonials_comment_3_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Ryen Anderson",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5f8c79d0348af",
+                        "label": "Show",
+                        "name": "home_testimonials_comment_3_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5f8c754b66aed",
+                "label": "Comment 4",
+                "name": "home_testimonials_comment_4",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5f8c754b66aee",
+                        "label": "Text",
+                        "name": "home_testimonials_comment_4_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5f8c754b66aef",
+                        "label": "Author",
+                        "name": "home_testimonials_comment_4_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Firstname Lastname",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5f8c79e9348b0",
+                        "label": "Show",
+                        "name": "home_testimonials_comment_4_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5f8c755b66af0",
+                "label": "Comment 5",
+                "name": "home_testimonials_comment_5",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5f8c755c66af1",
+                        "label": "Text",
+                        "name": "home_testimonials_comment_5_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5f8c755c66af2",
+                        "label": "Author",
+                        "name": "home_testimonials_comment_5_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Firstname Lastname",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_5f8c7a01348b1",
+                        "label": "Show",
+                        "name": "home_testimonials_comment_5_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 60,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5df16664342ee",
+        "title": "Newest posts",
+        "fields": [
+            {
+                "key": "field_5df1667fb9dfe",
+                "label": "Title",
+                "name": "home_news_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Newest posts",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 70,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_60a01d77d64c8",
+        "title": "Location",
+        "fields": [
+            {
+                "key": "field_60a01d7831c0b",
+                "label": "Title",
+                "name": "home_location_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Where to find us",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_60a01d7831ff3",
+                "label": "Address",
+                "name": "home_location_address",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Address 20, Virovitica",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60a01d78323db",
+                "label": "Latitude",
+                "name": "home_location_latitude",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "45.83381143",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60a01d78327c3",
+                "label": "Longitude",
+                "name": "home_location_longitude",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "17.38545184",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 80,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (homepage)"
+    },
+    {
+        "key": "group_5e54222fcbeb0",
+        "title": "Address and members",
+        "fields": [
+            {
+                "key": "field_5e542251181a9",
+                "label": "Address and contact",
+                "name": "contact_address",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5e542273181aa",
+                        "label": "Title",
+                        "name": "contact_address_title",
+                        "type": "text",
+                        "instructions": "Short section title (max 2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Info",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e542293181ab",
+                        "label": "Name of organization",
+                        "name": "contact_address_organization",
+                        "type": "text",
+                        "instructions": "Full name of organization",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Theme Development",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 75
+                    },
+                    {
+                        "key": "field_5e5422af181ac",
+                        "label": "Address",
+                        "name": "contact_address_physical_location",
+                        "type": "text",
+                        "instructions": "Physical address of organization",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Address 20, Virovitica",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 75
+                    },
+                    {
+                        "key": "field_5e5422df181ae",
+                        "label": "Phone number",
+                        "name": "contact_address_phone",
+                        "type": "text",
+                        "instructions": "Add phone number",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "+3851234567",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            },
+            {
+                "key": "field_5e54231730d46",
+                "label": "Team members",
+                "name": "contact_members",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5e54233930d47",
+                        "label": "Title",
+                        "name": "contact_members_title",
+                        "type": "text",
+                        "instructions": "Short section title (max 2-3 words)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Team members",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e54235730d48",
+                        "label": "Member 1",
+                        "name": "contact_members_1",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Robin Smith",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e54236b30d49",
+                        "label": "Member 2",
+                        "name": "contact_members_2",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Larry Hops",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e54237f30d4a",
+                        "label": "Member 3",
+                        "name": "contact_members_3",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Kelly Doyne",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e54238a30d4b",
+                        "label": "Member 4",
+                        "name": "contact_members_4",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Samantha Wilson",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    },
+                    {
+                        "key": "field_5e54239b30d4c",
+                        "label": "Member 5",
+                        "name": "contact_members_5",
+                        "type": "text",
+                        "instructions": "First and Last Name",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Henry Hill",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 30
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/contact.php"
+                }
+            ]
+        ],
+        "menu_order": 90,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (contact)"
+    },
+    {
+        "key": "group_607f01e794fc7",
+        "title": "Location",
+        "fields": [
+            {
+                "key": "field_607f01e7d5afe",
+                "label": "Title",
+                "name": "contact_location_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Our location",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_609808d69435d",
+                "label": "Address",
+                "name": "contact_location_address",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Address 20, Virovitica",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_609ff2663aa3b",
+                "label": "Latitude",
+                "name": "contact_location_latitude",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "45.83381143",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_609ff28e3aa3c",
+                "label": "Longitude",
+                "name": "contact_location_longitude",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "17.38545184",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/contact.php"
+                }
+            ]
+        ],
+        "menu_order": 100,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (contact)"
+    },
+    {
+        "key": "group_5e56b040cecba",
+        "title": "Intro",
+        "fields": [
+            {
+                "key": "field_5e56b06acce10",
+                "label": "Title",
+                "name": "about_intro_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Who we are",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 35
+            },
+            {
+                "key": "field_5e56b0cd244ea",
+                "label": "Description",
+                "name": "about_intro_description",
+                "type": "textarea",
+                "instructions": "Short section description (2-3 sentence)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor amet. Lorem ipsum dolorit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.",
+                "placeholder": "",
+                "maxlength": 1100,
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5e56b167244eb",
+                "label": "Image",
+                "name": "about_intro_image",
+                "type": "image",
+                "instructions": "Add image (ideal size<b>550x470px<\/b>)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg, jpeg, png"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/about-us.php"
+                }
+            ]
+        ],
+        "menu_order": 120,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (about us)"
+    },
+    {
+        "key": "group_5e56b20f47888",
+        "title": "Features",
+        "fields": [
+            {
+                "key": "field_5e56b31d01581",
+                "label": "Title",
+                "name": "about_features_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Why choose us",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 35
+            },
+            {
+                "key": "field_5e56b23a01580",
+                "label": "Description",
+                "name": "about_features_description",
+                "type": "textarea",
+                "instructions": "Short section description (2-3 sentence)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+                "placeholder": "",
+                "maxlength": 600,
+                "rows": 5,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5e56b4a0e84db",
+                "label": "Cards",
+                "name": "about_features_cards",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_5e56b4c0e84dc",
+                        "label": "Card 1",
+                        "name": "about_features_card_1",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "card_1_about_us",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5e56b4e7e84dd",
+                                "label": "Number\/label",
+                                "name": "about_features_card_1_label",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "30+",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            },
+                            {
+                                "key": "field_5e56b519e84de",
+                                "label": "Description",
+                                "name": "about_features_card_1_description",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Awards",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5e56b5d52e85c",
+                        "label": "Card 2",
+                        "name": "about_features_card_2",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "card_2_about_us",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5e56b5d52e85d",
+                                "label": "Number\/label",
+                                "name": "about_features_card_2_label",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "45+",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            },
+                            {
+                                "key": "field_5e56b5d52e85e",
+                                "label": "Description",
+                                "name": "about_features_card_2_description",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Industry experts",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5e56b5fb2e85f",
+                        "label": "Card 3",
+                        "name": "about_features_card_3",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "card_3_about_us",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5e56b5fb2e860",
+                                "label": "Number\/label",
+                                "name": "about_features_card_3_label",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "110+",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            },
+                            {
+                                "key": "field_5e56b5fb2e861",
+                                "label": "Description",
+                                "name": "about_features_card_3_description",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Satisfied clients",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 25
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/about-us.php"
+                }
+            ]
+        ],
+        "menu_order": 130,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Eidt (about us)"
+    },
+    {
+        "key": "group_607f0713654f4",
+        "title": "Testimonials",
+        "fields": [
+            {
+                "key": "field_607f07140464e",
+                "label": "Title",
+                "name": "about_testimonials_title",
+                "type": "text",
+                "instructions": "Short section title (max 2-3 words)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Testimonials",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_607f071404e1f",
+                "label": "Comment 1",
+                "name": "about_testimonials_comment_1",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_607f0714cb615",
+                        "label": "Text",
+                        "name": "about_testimonials_comment_1_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_607f0714cb9fd",
+                        "label": "Author",
+                        "name": "about_testimonials_comment_1_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "John Hedge",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_607f0714cbde5",
+                        "label": "Show",
+                        "name": "about_testimonials_comment_1_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_607f071405207",
+                "label": "Comment 2",
+                "name": "about_testimonials_comment_2",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_607f071546d17",
+                        "label": "Text",
+                        "name": "about_testimonials_comment_2_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu. Invidunt ut labore et dolore magna aliquyam erat sed diam nonumy eirmod.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_607f0715470ff",
+                        "label": "Author",
+                        "name": "about_testimonials_comment_2_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Sally Garden",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_607f0715474e7",
+                        "label": "Show",
+                        "name": "about_testimonials_comment_2_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_607f0714059d7",
+                "label": "Comment 3",
+                "name": "about_testimonials_comment_3",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_607f071648c91",
+                        "label": "Text",
+                        "name": "about_testimonials_comment_3_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct. vero eos et accusam et justo duo dolores et ea rebum consetetur sadipscing elitr sed diam nonumy sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_607f071649079",
+                        "label": "Author",
+                        "name": "about_testimonials_comment_3_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Ryen Anderson",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_607f071649461",
+                        "label": "Show",
+                        "name": "about_testimonials_comment_3_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_607f071406977",
+                "label": "Comment 4",
+                "name": "about_testimonials_comment_4",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_607f0716bb89c",
+                        "label": "Text",
+                        "name": "about_testimonials_comment_4_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_607f0716bbc84",
+                        "label": "Author",
+                        "name": "about_testimonials_comment_4_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Author name",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_607f0716bc06c",
+                        "label": "Show",
+                        "name": "about_testimonials_comment_4_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_607f071406d5f",
+                "label": "Comment 5",
+                "name": "about_testimonials_comment_5",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "testimonials",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_607f071725e2a",
+                        "label": "Text",
+                        "name": "about_testimonials_comment_5_text",
+                        "type": "textarea",
+                        "instructions": "Short client comment (2-3 sentences)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanct.",
+                        "placeholder": "",
+                        "maxlength": 390,
+                        "rows": 3,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_607f071726212",
+                        "label": "Author",
+                        "name": "about_testimonials_comment_5_author",
+                        "type": "text",
+                        "instructions": "Name of author",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Author name",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 35
+                    },
+                    {
+                        "key": "field_607f0717265fa",
+                        "label": "Show",
+                        "name": "about_testimonials_comment_5_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/about-us.php"
+                }
+            ]
+        ],
+        "menu_order": 140,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (about us)"
+    },
+    {
+        "key": "group_5e56be3fee825",
+        "title": "Sponsors",
+        "fields": [
+            {
+                "key": "field_5e56be3ff0e55",
+                "label": "Sponsor 1",
+                "name": "about_sponsor_1",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_5e56be3ff1a85",
+                        "label": "Image",
+                        "name": "about_sponsor_1_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_5e56be3ff1abd",
+                        "label": "Link",
+                        "name": "about_sponsor_1_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5f7751ca07e97",
+                        "label": "Show",
+                        "name": "about_sponsor_1_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffb31fc214",
+                "label": "Sponsor 2",
+                "name": "about_sponsor_2",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffb31fc215",
+                        "label": "Image",
+                        "name": "about_sponsor_2_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffb31fc216",
+                        "label": "Link",
+                        "name": "about_sponsor_2_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffb31fc217",
+                        "label": "Show",
+                        "name": "about_sponsor_2_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffb58fc218",
+                "label": "Sponsor 3",
+                "name": "about_sponsor_3",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffb58fc219",
+                        "label": "Image",
+                        "name": "about_sponsor_3_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffb58fc21a",
+                        "label": "Link",
+                        "name": "about_sponsor_3_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffb58fc21b",
+                        "label": "Show",
+                        "name": "about_sponsor_3_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffb73fc21c",
+                "label": "Sponsor 4",
+                "name": "about_sponsor_4",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffb73fc21d",
+                        "label": "Image",
+                        "name": "about_sponsor_4_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffb73fc21e",
+                        "label": "Link",
+                        "name": "about_sponsor_4_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffb73fc21f",
+                        "label": "Show",
+                        "name": "about_sponsor_4_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffb92fc220",
+                "label": "Sponsor 5",
+                "name": "about_sponsor_5",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffb92fc221",
+                        "label": "Image",
+                        "name": "about_sponsor_5_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffb92fc222",
+                        "label": "Link",
+                        "name": "about_sponsor_5_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffb92fc223",
+                        "label": "Show",
+                        "name": "about_sponsor_5_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffba5fc224",
+                "label": "Sponsor 6",
+                "name": "about_sponsor_6",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffba5fc225",
+                        "label": "Image",
+                        "name": "about_sponsor_6_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffba5fc226",
+                        "label": "Link",
+                        "name": "about_sponsor_6_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffba5fc227",
+                        "label": "Show",
+                        "name": "about_sponsor_6_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffbb9fc228",
+                "label": "Sponsor 7",
+                "name": "about_sponsor_7",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffbbafc229",
+                        "label": "Image",
+                        "name": "about_sponsor_7_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffbbafc22a",
+                        "label": "Link",
+                        "name": "about_sponsor_7_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffbbafc22b",
+                        "label": "Show",
+                        "name": "about_sponsor_7_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffbcdfc22c",
+                "label": "Sponsor 8",
+                "name": "about_sponsor_8",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffbcdfc22d",
+                        "label": "Image",
+                        "name": "about_sponsor_8_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffbcdfc22e",
+                        "label": "Link",
+                        "name": "about_sponsor_8_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffbcdfc22f",
+                        "label": "Show",
+                        "name": "about_sponsor_8_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffbeffc230",
+                "label": "Sponsor 9",
+                "name": "about_sponsor_9",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffbeffc231",
+                        "label": "Image",
+                        "name": "about_sponsor_9_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffbeffc232",
+                        "label": "Link",
+                        "name": "about_sponsor_9_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffbeffc233",
+                        "label": "Show",
+                        "name": "about_sponsor_9_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "",
+                        "toggle": 0,
+                        "return_format": "",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_609ffc0efc234",
+                "label": "Sponsor 10",
+                "name": "about_sponsor_10",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_609ffc0efc235",
+                        "label": "Image",
+                        "name": "about_sponsor_10_image",
+                        "type": "image",
+                        "instructions": "Choose image (ideal size <b>240x170px<\/b>)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "jpg, jpeg, png"
+                    },
+                    {
+                        "key": "field_609ffc0efc236",
+                        "label": "Link",
+                        "name": "about_sponsor_10_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_609ffc0efc237",
+                        "label": "Show",
+                        "name": "about_sponsor_10_checkbox",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<b>Show<\/b>": "<b>Show<\/b>"
+                        },
+                        "allow_custom": 0,
+                        "default_value": [],
+                        "layout": "vertical",
+                        "toggle": 0,
+                        "return_format": "value",
+                        "save_custom": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5e56be3ff01c7",
+                "label": "",
+                "name": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "sponsors",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/about-us.php"
+                }
+            ]
+        ],
+        "menu_order": 150,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "Edit (about us)"
+    }
+]
