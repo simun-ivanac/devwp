@@ -13,8 +13,8 @@
             <div class="row about-intro__title">
                 <?php $section_title = devwp_split_last_word_from_string( get_field( 'about_intro_title' ) ) ?>
     			<h2 class="section-title section-title--dark-mix">
-    				<?php esc_html_e( $section_title[ 'all_but_last_word' ] ); ?>
-    				<span class="section-title-colored"><?php esc_html_e( $section_title[ 'last_word' ] ); ?></span>
+    				<?php esc_html_e( $section_title['all_but_last_word'] ); ?>
+    				<span class="section-title-colored"><?php esc_html_e( $section_title['last_word'] ); ?></span>
     			</h2>
             </div>
             <div class="row about-intro__image-holder">

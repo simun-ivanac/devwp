@@ -81,20 +81,31 @@ require THEME_DIR . '/includes/extras/post/comment-fields-customization.php';
 /**
  * Helper functions
  */
-// Split last word from string
+// Split last word from the rest of string
 require THEME_DIR . '/includes/helper/split-last-word-from-string.php';
 
 
 /**
  * Plugins files || modifications
  */
+
 // CONTACT-FORM-7: Dequeue scripts globally and enable only on certain page-templates
 require THEME_DIR . '/includes/plugins/contact-form/dequeue-scripts-selectively.php';
 
-// JETPACK: Load compatibility file
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require THEME_DIR . '/includes/plugins/jetpack/jetpack-setup.php';
+// TGMPA: install required plugins after theme activation
+if ( is_admin() ) {
+    require_once THEME_DIR . '/includes/plugins/tgmpa/tgm-plugin-activation.php';
 }
+
+// ACF: import necessary fields automatically (NOT WORKING for now, use .json in /assets)
+// if ( is_admin() ) {
+//     include_once THEME_DIR . '/includes/plugins/acf/acf-fields.php';
+// }
+
+// JETPACK: Load compatibility file
+// if ( defined( 'JETPACK__VERSION' ) ) {
+// 	require THEME_DIR . '/includes/plugins/jetpack/jetpack-setup.php';
+// }
 
 
 /**
@@ -116,4 +127,3 @@ if ( is_admin() ) {
  */
 // require THEME_DIR . '/page-templates/about-us.php';
 // require THEME_DIR . '/page-templates/contact.php';
-// require THEME_DIR . '/page-templates/gallery.php';

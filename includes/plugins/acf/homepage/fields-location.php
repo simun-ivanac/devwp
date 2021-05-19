@@ -1,0 +1,65 @@
+<?php
+acf_add_local_field_group(array(
+    'key' => 'group_60a01d77d64c8',
+    'title' => 'Location',
+    'fields' => array(
+        array(
+            'key' => 'field_60a01d7831c0b',
+            'label' => 'Title',
+            'name' => 'home_location_title',
+            'type' => 'text',
+            'instructions' => 'Short section title (max 2-3 words)',
+            'required' => 1,
+            'default_value' => 'Where to find us',
+            'maxlength' => 30,
+        ),
+        array(
+            'key' => 'field_60a01d7831ff3',
+            'label' => 'Address',
+            'name' => 'home_location_address',
+            'type' => 'text',
+            'default_value' => 'Address 20, Virovitica',
+        ),
+        array(
+            'key' => 'field_60a01d78323db',
+            'label' => 'Latitude',
+            'name' => 'home_location_latitude',
+            'type' => 'number',
+            'default_value' => '45.83381143',
+        ),
+        array(
+            'key' => 'field_60a01d78327c3',
+            'label' => 'Longitude',
+            'name' => 'home_location_longitude',
+            'type' => 'number',
+            'default_value' => '17.38545184',
+        ),
+    ),
+    'location' => array(
+        array(
+            array(
+                'param' => 'page_type',
+                'operator' => '==',
+                'value' => 'front_page',
+            ),
+        ),
+    ),
+    'menu_order' => 80,
+    'hide_on_screen' => array(
+        0  => 'permalink',
+        1  => 'the_content',
+        2  => 'excerpt',
+        3  => 'discussion',
+        4  => 'comments',
+        5  => 'revisions',
+        6  => 'slug',
+        7  => 'author',
+        8  => 'format',
+        9  => 'featured_image',
+        10 => 'categories',
+        11 => 'tags',
+        12 => 'send-trackbacks',
+    ),
+    'active' => true,
+    'description' => 'Edit (homepage)',
+));
