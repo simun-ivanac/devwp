@@ -89,7 +89,7 @@ require THEME_DIR . '/includes/helper/split-last-word-from-string.php';
  * Plugins files || modifications
  */
 
-// CONTACT-FORM-7: Dequeue scripts globally and enable only on certain page-templates
+// CF7: Dequeue scripts globally and enable only on certain page-templates
 require THEME_DIR . '/includes/plugins/contact-form/dequeue-scripts-selectively.php';
 
 // TGMPA: install required plugins after theme activation
@@ -118,12 +118,9 @@ if ( is_admin() ) {
 
 
 
-
-
 /**
  * Page templates: not needed to require, wordpress recognize templates
  * in 'page-templates' subdirectory
- * This throws error in admin.
+ * This throws error in admin:
+ *     require THEME_DIR . '/page-templates/about-us.php';
  */
-// require THEME_DIR . '/page-templates/about-us.php';
-// require THEME_DIR . '/page-templates/contact.php';
